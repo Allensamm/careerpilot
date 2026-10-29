@@ -13,7 +13,7 @@ from threading import Lock
 from cloud import storage
 
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
-from fastapi import FastAPI, Header, HTTPException
+from fastapi import FastAPI, Header, HTTPException, UploadFile, File
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
@@ -331,3 +331,36 @@ def list_receipts(pid: str, x_management_token: str | None = Header(default=None
     record = read_record(pid)
     authorize(record, x_management_token)
     return {'receipts': record.get('sandbox_receipts', []), 'real_application_submitted': False}
+
+# CV conversion is transient: this endpoint does not save uploaded documents.
+@app.post('/api/cv/extract')
+async def extract_resume(file: UploadFile = File(...)):
+    from io import BytesIO
+    from pypdf import PdfReader
+    from docx import Document
+    filename = (file.filename or '').lower()
+    if not filename.endswith(('.pdf', '.docx', '.txt')):
+        raise HTTPException(415, 'Please upload a PDF, Word (.docx), or TXT file')
+    data = await file.read(2_000_001)
+    if len(data) > 2_000_000:
+        raise HTTPException(413, 'Maximum file size is 2 MB')
+    try:
+        if filename.endswith('.pdf'):
+            reader = PdfReader(BytesIO(data))
+            if len(reader.pages) > 20:
+                raise HTTPException(413, 'Maximum 20 PDF pages')
+            cv_text = '\n'.join(page.extract_text() or '' for page in reader.pages)
+        elif filename.endswith('.docx'):
+            document = Document(BytesIO(data))
+            cv_text = '\n'.join(p.text for p in document.paragraphs)
+            for table in document.tables:
+                cv_text += '\n' + '\n'.join(' '.join(cell.text for cell in row.cells) for row in table.rows)
+        else:
+            cv_text = data.decode('utf-8')
+    except HTTPException:
+        raise
+    except Exception:
+        raise HTTPException(422, 'Could not read this file. Try a text-based PDF or DOCX.')
+    if len(cv_text.strip()) < 60:
+        raise HTTPException(422, 'No readable CV text found. Scanned PDFs need OCR.')
+    return {'text': cv_text[:120000]}
