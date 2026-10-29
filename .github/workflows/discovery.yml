@@ -1,0 +1,35 @@
+name: Scheduled job discovery
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+permissions:
+  contents: read
+concurrency:
+  group: careerpilot-discovery
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: cloud/requirements.txt
+      - name: Install worker dependencies
+        run: python -m pip install "cryptography>=43,<48" "fastapi>=0.115,<1" "pydantic>=2,<3" "psycopg[binary]>=3.2,<4"
+      - name: Check secrets are configured
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          CAREERPILOT_CLOUD_KEY: ${{ secrets.CAREERPILOT_CLOUD_KEY }}
+        run: |
+          test -n "$DATABASE_URL" || { echo "Missing DATABASE_URL secret"; exit 1; }
+          test -n "$CAREERPILOT_CLOUD_KEY" || { echo "Missing CAREERPILOT_CLOUD_KEY secret"; exit 1; }
+      - name: Run encrypted discovery worker once
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          CAREERPILOT_CLOUD_KEY: ${{ secrets.CAREERPILOT_CLOUD_KEY }}
+        run: python -m cloud.worker
