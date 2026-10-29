@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/cloud/:path*",
+      "destination": "https://careerpilot-g9pv.onrender.com/api/cloud/:path*"
+    }
+  ]
+}
