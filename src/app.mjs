@@ -76,3 +76,17 @@ if(simpleFind)simpleFind.onclick=async()=>{
  }catch(error){status.textContent='Search failed: '+error.message;}
  finally{simpleFind.disabled=false;}
 };
+
+// The sidebar explains the same CV-based recommendations shown in the main grid.
+document.addEventListener('careerpilot:matches',event=>{
+ const jobs=event.detail.jobs||[],profile=event.detail.profile||{};
+ const count=document.getElementById('insightCount'),skills=document.getElementById('insightSkills');
+ const intro=document.getElementById('insightIntro'),explanation=document.getElementById('insightExplanation');
+ if(!count||!skills)return;
+ count.textContent=jobs.length+' relevant opportunities identified';
+ intro.textContent='Insights from your uploaded CV';
+ skills.replaceChildren();
+ for(const skill of (profile.skills||[]).slice(0,12)){const chip=document.createElement('span');chip.textContent=skill;chip.className='insight-chip';skills.append(chip);}
+ if(!skills.childElementCount)skills.textContent='No recognized skills yet; try a more detailed CV.';
+ explanation.textContent=jobs.length?'Recommendations use professional alignment and supporting CV evidence. Review each employer’s requirements.':'No sufficiently relevant vacancies were identified from the available sources.';
+});
