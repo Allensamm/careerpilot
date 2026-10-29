@@ -38,7 +38,7 @@ def normalize(name, payload):
         output.append({"id": name + ":" + str(item.get("id") or item.get("slug") or url),
                        "title": title, "company": company, "location": str(location)[:120],
                        "url": url, "description": description[:1200],
-                       "source": name, "tags": tags[:10] if isinstance(tags, list) else []})
+                       "source": name, "published_at": str(item.get("publication_date") or item.get("created_at") or "")[:35], "tags": tags[:10] if isinstance(tags, list) else []})
     return output
 
 @router.get("/api/jobs/public")
