@@ -10,6 +10,7 @@ import mimetypes
 import time
 from pathlib import Path
 from threading import Lock
+from cloud import storage
 
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from fastapi import FastAPI, Header, HTTPException
@@ -55,6 +56,11 @@ def path_for(pid):
 
 
 def read_record(pid):
+    if storage.enabled():
+        record = storage.read(pid)
+        if record is None:
+            raise HTTPException(404, 'Not found')
+        return record
     try:
         return json.loads(path_for(pid).read_text())
     except (OSError, ValueError):
@@ -69,6 +75,9 @@ def authorize(record, token):
 
 
 def write_record(pid, record):
+    if storage.enabled():
+        storage.write(pid, record)
+        return
     STORE.mkdir(mode=0o700, parents=True, exist_ok=True)
     fd, tmp = tempfile.mkstemp(prefix='.package-', dir=STORE)
     try:
