@@ -70,7 +70,7 @@ if(simpleFind)simpleFind.onclick=async()=>{
 
   const profile={cv,skills,role:''};
   const seen=new Set();const ranked=found.map(job=>({...job,match:scoreJob(profile,job)})).filter(j=>{if(!j.url||!/^https:\/\//.test(j.url)||seen.has(j.url))return false;seen.add(j.url);return j.match.score>0;}).sort((a,b)=>b.match.score-a.match.score).slice(0,36);document.dispatchEvent(new CustomEvent('careerpilot:matches',{detail:{jobs:ranked,profile}}));
-  status.textContent=ranked.length+' potential matches from '+found.length+' public listings. Scores are indicative, not hiring eligibility.';
+  status.textContent=ranked.length+' potential matches from '+found.length+' public listings. Check each employer page for location eligibility and current availability.';
   for(const job of ranked){
    const card=el('article');card.className='job';
    const link=el('a','View & Apply');link.href=job.url;link.target='_blank';link.rel='noopener noreferrer';
