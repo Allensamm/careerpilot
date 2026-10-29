@@ -2,8 +2,35 @@ export const SKILLS=['python','javascript','typescript','react','next.js','node.
 const GROUPS=[['software engineer','software developer','backend developer','frontend developer','web developer'],['accountant','accounting officer','bookkeeper','finance officer','financial analyst'],['teacher','educator','tutor','instructor'],['nurse','registered nurse','nursing officer'],['administrative assistant','office assistant','office administrator','executive assistant'],['customer support','customer service representative','customer success'],['sales representative','sales executive','account executive','business development'],['marketing specialist','marketing executive','digital marketer','content marketer'],['graphic designer','visual designer','brand designer'],['data analyst','business intelligence analyst','reporting analyst'],['project manager','project coordinator','programme coordinator'],['human resources','hr officer','recruiter','talent acquisition'],['operations manager','operations coordinator','logistics coordinator'],['civil engineer','site engineer','construction engineer']];
 const COMMON=new Set(['experience','professional','responsible','responsibilities','skills','strong','excellent','working','ability','knowledge','including','required','preferred','years','using','company','business','support','team','work','role','career','resume','curriculum','vitae','education','university','degree','summary','profile','employment','references','projects','management']);
 function terms(text){return new Set(String(text||'').toLowerCase().match(/[a-z]{4,}/g)?.filter(w=>!COMMON.has(w))||[]);}
-export function extractSkills(text){const t=String(text||'').toLowerCase();return SKILLS.filter(s=>t.includes(s));}
-export function scoreJob(profile,job){const cv=String(profile.cv||'');const title=String(job.title||'').toLowerCase();const description=String(job.description||'').slice(0,3000);const skills=profile.skills||extractSkills(cv);const needed=extractSkills(title+' '+description);const matched=needed.filter(x=>skills.includes(x));const titleTerms=terms(title);const cvTerms=terms(cv);const overlap=[...titleTerms].filter(w=>cvTerms.has(w));const related=GROUPS.some(group=>group.some(role=>title.includes(role))&&group.some(role=>cv.toLowerCase().includes(role)));const role=String(profile.role||'').toLowerCase();const roleFit=role&&title.includes(role);const evidence=matched.length+overlap.length+(related?2:0)+(roleFit?2:0);const score=evidence?Math.min(92,Math.round(20+Math.min(4,matched.length)*11+Math.min(3,overlap.length)*10+(related?20:0)+(roleFit?15:0))):0;return {score,matched,required:needed,eligibility:'unknown',reason:'Indicative skills and role similarity; mandatory qualifications and work authorization not verified'};}
+export function extractSkills(text){const t=' '+String(text||'').toLowerCase().replace(/[^a-z0-9+#.]+/g,' ')+' ';return SKILLS.filter(skill=>t.includes(' '+skill+' '));}
+const CATEGORIES={
+ technology:['software','developer','backend','frontend','engineer','programmer','devops','python','javascript','react','java','kubernetes'],
+ finance:['accountant','accounting','bookkeeping','auditor','finance','financial','payroll','taxation'],
+ marketing:['marketing','copywriter','copywriting','social media','communications','content writer','seo','brand strategist'],
+ sales:['sales','business development','account executive'],
+ healthcare:['nurse','nursing','clinical','patient care','pharmacy','medical'],
+ education:['teacher','teaching','tutor','lecturer','curriculum'],
+ administration:['administrative','administrator','secretary','office assistant','receptionist'],
+ design:['designer','graphic design','figma','ux design','ui design','motion design','vfx'],
+ analytics:['data analyst','data analysis','business intelligence','power bi'],
+ human_resources:['recruitment','recruiter','human resources','talent acquisition','hr officer'],
+ operations:['logistics','supply chain','procurement','warehouse','operations'],
+ construction:['civil engineer','construction','architect','autocad'],
+ projects:['project manager','project coordinator','programme manager']
+};
+function categories(text){const t=' '+String(text||'').toLowerCase().replace(/[^a-z0-9]+/g,' ')+' ';return Object.entries(CATEGORIES).filter(([,words])=>words.some(w=>t.includes(' '+w+' '))).map(([name])=>name);}
+export function scoreJob(profile,job){
+ const cv=String(profile.cv||'');const title=String(job.title||'');const desc=String(job.description||'').slice(0,3000);
+ const cvSkills=profile.skills||extractSkills(cv);const required=extractSkills(title+' '+desc);
+ const roleCategories=categories(title),cvCategories=categories(cv+' '+String(profile.role||''));
+ const aligned=roleCategories.filter(c=>cvCategories.includes(c));
+ const matched=required.filter(s=>cvSkills.includes(s)&&aligned.some(c=>CATEGORIES[c].includes(s)));
+ const titleTerms=terms(title),cvTerms=terms(cv);
+ const overlap=[...titleTerms].filter(t=>cvTerms.has(t));
+ const valid=aligned.length>0&&(matched.length>0||overlap.length>=2);
+ const score=valid?Math.min(95,55+Math.min(3,matched.length)*10+Math.min(2,overlap.length)*5):0;
+ return {score,matched,required,eligibility:'unknown',reason:valid?'Professional field and CV evidence align; eligibility unverified':'Insufficient evidence of role relevance'};
+}
 export function normalizeGreenhouse(payload,board){if(!payload||!Array.isArray(payload.jobs))throw Error('Unexpected feed');return payload.jobs.filter(x=>Number.isInteger(x.id)&&typeof x.title==='string').slice(0,1000).map(x=>({id:`greenhouse:${board}:${x.id}`,company:board,title:x.title,location:x.location?.name||'Unspecified',url:x.absolute_url,description:stripHtml(x.content||''),source:'greenhouse'})).filter(x=>/^https:\/\/(boards\.greenhouse\.io|job-boards\.greenhouse\.io)\//.test(x.url||''));}
 function stripHtml(s){const doc=new DOMParser().parseFromString(String(s),'text/html');return (doc.body.textContent||'').replace(/\s+/g,' ').slice(0,12000);}
 export function canSubmit({consent,eligibility,channel,duplicate,unknownAnswers}){if(!consent?.enabled)return 'Autopilot not authorized';if(eligibility!=='eligible')return 'Eligibility not verified';if(!channel?.authorized)return 'No authorized submission channel';if(duplicate)return 'Duplicate application';if(unknownAnswers)return 'Required answers unknown';return null;}
