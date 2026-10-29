@@ -51,11 +51,11 @@ if(simpleFind)simpleFind.onclick=async()=>{
  const status=document.getElementById('simpleStatus'),root=document.getElementById('simpleResults');
  root.replaceChildren();
  const file=document.getElementById('simpleCv').files?.[0];
- if(!file||!file.name.toLowerCase().endsWith('.txt')){status.textContent='Please select a TXT résumé.';return;}
+ if(!file||!/\.(pdf|docx|txt)$/i.test(file.name)){status.textContent='Please select a PDF, Word (.docx), or TXT résumé.';return;}
  if(file.size>2000000){status.textContent='File must be under 2 MB.';return;}
  simpleFind.disabled=true;status.textContent='Finding relevant public jobs…';
  try{
-  const cv=await file.text(),skills=extractSkills(cv);
+  const upload=new FormData();upload.append('file',file);const extraction=await fetch('/api/cv/extract',{method:'POST',body:upload});const parsed=await extraction.json();if(!extraction.ok)throw Error(parsed.detail||'Could not read CV');const cv=parsed.text,skills=extractSkills(cv);
   const boards=['stripe','gitlab','cloudflare','datadog','figma'];
   const batches=await Promise.allSettled(boards.map(async board=>{
    const response=await fetch('https://boards-api.greenhouse.io/v1/boards/'+board+'/jobs');
