@@ -1,0 +1,38 @@
+/* CareerPilot vibrant product refresh — accessible cobalt / teal palette */
+:root{color:#172544;background:#eaf1fc}
+body{background:radial-gradient(ellipse at 8% 5%,#d6e9ff 0%,transparent 46%),linear-gradient(135deg,#edf4ff,#e9f7f4)}
+.site{background:linear-gradient(145deg,#f8fbff 0%,#f2f7ff 58%,#edf9f5 100%);border:1px solid #ffffff;box-shadow:0 28px 85px #24477c22}
+.logo-disc{background:linear-gradient(135deg,#375cf5,#00a7ac);color:#fff;box-shadow:0 7px 18px #4364f64a}
+.logo b{color:#315be8}
+.toplinks a.selected{background:#365be8;color:#fff;box-shadow:0 6px 18px #365be83d}
+.toplinks a:hover:not(.selected){background:#e6eeff;color:#2544a8}
+.profile-bubble{background:linear-gradient(135deg,#345be8,#15a5a7)}
+.welcome{padding:28px 0 30px}
+.welcome h1{color:#192c54}
+.welcome-dot{color:#3569ed}
+.welcome p{color:#60718d}
+.mini-stats span{background:#eaf1ff;border:1px solid #d8e5ff;border-radius:100px;color:#3d5a92;padding:7px 12px}
+.search-bar,.filter-box,.panel,.job-tile{border:1px solid #dfe9fa;box-shadow:0 9px 30px #365c9510}
+.black-button,.black-link,.tile-link,button:not(.danger):not(.outline-button){background:linear-gradient(110deg,#375cf1,#2b73de);color:#fff;border-color:transparent;box-shadow:0 5px 14px #315fe32b}
+.black-button:hover,.black-link:hover,.tile-link:hover,button:not(.danger):not(.outline-button):hover{background:linear-gradient(110deg,#244ad6,#1463ca)}
+.search-bar input,.search-bar select,.filter-box input:not([type=range]),.filter-box select{background:#f6f9ff;border-color:#dce6f8}
+.results-header h2,.workspace-heading h2,.filter-box h2,.panel h2{color:#203b6c}
+.overline,.eyebrow{color:#4169dd}
+.count-pill{background:#e4edff;color:#2b54d3}
+.job-tile:nth-child(4n+3){background:linear-gradient(145deg,#243e83,#3157a4);color:#fff}
+.job-tile:nth-child(4n+3) h3{color:#fff}
+#simpleSearch{position:relative;overflow:hidden;background:linear-gradient(120deg,#2445b8 0%,#3d6cf0 56%,#14a5aa 130%);color:white;border:0;border-radius:25px;padding:32px 36px;box-shadow:0 20px 50px #2c57cb35}
+#simpleSearch:before{content:'';position:absolute;width:250px;height:250px;right:-80px;top:-110px;border-radius:50%;border:50px solid #ffffff15;pointer-events:none}
+#simpleSearch h2{color:white;font-size:clamp(25px,3vw,36px);letter-spacing:-.04em;margin:0 0 8px}
+#simpleSearch>p{color:#e6edff;max-width:630px;line-height:1.6}
+#simpleCv{display:block;max-width:540px;width:100%;padding:17px;background:#ffffffed;color:#1d356b;border:1px dashed #a9c8ff;border-radius:14px;margin:18px 0 14px}
+#simpleFind{background:#fff!important;color:#244bc2!important;font-weight:800;padding:13px 23px;border-radius:11px;box-shadow:0 9px 25px #102c7040}
+#simpleFind:hover{background:#eef4ff!important}
+#simpleStatus{color:#fff;font-weight:600}
+#simpleResults{margin-top:18px}
+#simpleResults .job{background:white;color:#203354;border:1px solid #d9e5fb;border-radius:16px;padding:18px;box-shadow:0 8px 22px #12317c22}
+#simpleResults .job h3{color:#1b3365}
+#simpleResults .job a{display:inline-block;margin-top:10px;color:#2458d9;font-weight:800}
+#simpleSearch .hint{color:#e1ecff}
+.panel input:focus,.panel textarea:focus,.search-bar input:focus{outline-color:#3d70ef}
+@media(max-width:750px){#simpleSearch{padding:23px 20px;border-radius:19px}.site{background:#f7faff}}
