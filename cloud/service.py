@@ -100,8 +100,9 @@ def create_package(package: Package):
     if any(not re.fullmatch(r'[a-zA-Z0-9_-]{2,80}', b) for b in package.boards):
         raise HTTPException(422, 'Invalid board token')
     with lock:
-        STORE.mkdir(mode=0o700, parents=True, exist_ok=True)
-        if len(list(STORE.glob('*.json'))) >= MAX_PACKAGES:
+        if not storage.enabled():
+            STORE.mkdir(mode=0o700, parents=True, exist_ok=True)
+        if (storage.count() if storage.enabled() else len(list(STORE.glob('*.json')))) >= MAX_PACKAGES:
             raise HTTPException(503, 'Prototype package capacity reached')
         pid = secrets.token_hex(16)
         token = secrets.token_urlsafe(32)
@@ -133,12 +134,17 @@ def revoke_package(pid: str, x_management_token: str | None = Header(default=Non
     with lock:
         record = read_record(pid)
         authorize(record, x_management_token)
-        path_for(pid).unlink()
+        if storage.enabled():
+            storage.delete(pid)
+        else:
+            path_for(pid).unlink()
     return {'revoked': True}
 
 
 def purge_expired():
     """Call periodically from a scheduler; expiration also blocks status access."""
+    if storage.enabled():
+        return storage.purge()
     if not STORE.exists():
         return 0
     removed = 0
