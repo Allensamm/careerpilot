@@ -4,9 +4,9 @@ const COMMON=new Set(['experience','professional','responsible','responsibilitie
 function terms(text){return new Set(String(text||'').toLowerCase().match(/[a-z]{4,}/g)?.filter(w=>!COMMON.has(w))||[]);}
 export function extractSkills(text){const t=' '+String(text||'').toLowerCase().replace(/[^a-z0-9+#.]+/g,' ')+' ';return SKILLS.filter(skill=>t.includes(' '+skill+' '));}
 const CATEGORIES={
- technology:['software','developer','backend','frontend','engineer','programmer','devops','python','javascript','react','java','kubernetes'],
+ technology:['software engineer','software developer','backend','frontend','full stack','web developer','programmer','devops','platform engineer','site reliability engineer','data engineer'],
  finance:['accountant','accounting','bookkeeping','auditor','finance','financial','payroll','taxation'],
- marketing:['marketing','copywriter','copywriting','social media','communications','content writer','seo','brand strategist'],
+ marketing:['marketing','copywriter','copywriting','social media','communications','content writer','seo','brand strategist','campaign manager','public relations'],
  sales:['sales','business development','account executive'],
  healthcare:['nurse','nursing','clinical','patient care','pharmacy','medical'],
  education:['teacher','teaching','tutor','lecturer','curriculum'],
@@ -19,12 +19,14 @@ const CATEGORIES={
  projects:['project manager','project coordinator','programme manager']
 };
 function categories(text){const t=' '+String(text||'').toLowerCase().replace(/[^a-z0-9]+/g,' ')+' ';return Object.entries(CATEGORIES).filter(([,words])=>words.some(w=>t.includes(' '+w+' '))).map(([name])=>name);}
+const FIELD_SKILLS={technology:['python','javascript','typescript','react','node.js','java','docker','kubernetes','aws','git','fastapi'],finance:['accounting','bookkeeping','auditing','payroll','financial reporting','taxation','quickbooks'],marketing:['marketing','digital marketing','seo','social media','content writing','copywriting'],sales:['sales','business development'],healthcare:['nursing','patient care','clinical research','pharmacy'],education:['teaching','lesson planning','curriculum development'],administration:['administration','office management'],design:['graphic design','ui design','ux design','figma'],analytics:['data analysis','power bi','sql'],human_resources:['recruitment','human resources','talent acquisition'],operations:['logistics','supply chain','procurement','inventory management'],construction:['civil engineering','autocad','construction'],projects:['project management']};
 export function scoreJob(profile,job){
  const cv=String(profile.cv||'');const title=String(job.title||'');const desc=String(job.description||'').slice(0,3000);
  const cvSkills=profile.skills||extractSkills(cv);const required=extractSkills(title+' '+desc);
  const roleCategories=categories(title),cvCategories=categories(cv+' '+String(profile.role||''));
+ for(const [field,skills] of Object.entries(FIELD_SKILLS)){if(skills.filter(skill=>cvSkills.includes(skill)).length>=2&&!cvCategories.includes(field))cvCategories.push(field);}
  const aligned=roleCategories.filter(c=>cvCategories.includes(c));
- const matched=required.filter(s=>cvSkills.includes(s)&&aligned.some(c=>CATEGORIES[c].includes(s)));
+ const matched=required.filter(s=>cvSkills.includes(s)&&aligned.some(c=>(FIELD_SKILLS[c]||[]).includes(s)));
  const titleTerms=terms(title),cvTerms=terms(cv);
  const overlap=[...titleTerms].filter(t=>cvTerms.has(t));
  const valid=aligned.length>0&&(matched.length>0||overlap.length>=2);
