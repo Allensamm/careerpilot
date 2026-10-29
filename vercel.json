@@ -2,6 +2,10 @@
   "version": 2,
   "rewrites": [
     {
+      "source": "/api/jobs/:path*",
+      "destination": "https://careerpilot-g9pv.onrender.com/api/jobs/:path*"
+    },
+    {
       "source": "/api/cv/:path*",
       "destination": "https://careerpilot-g9pv.onrender.com/api/cv/:path*"
     },
