@@ -71,11 +71,7 @@ if(simpleFind)simpleFind.onclick=async()=>{
   const profile={cv,skills,role:''};
   const seen=new Set();const ranked=found.map(job=>({...job,match:scoreJob(profile,job)})).filter(j=>{if(!j.url||!/^https:\/\//.test(j.url)||seen.has(j.url))return false;seen.add(j.url);return j.match.score>0;}).sort((a,b)=>b.match.score-a.match.score).slice(0,36);document.dispatchEvent(new CustomEvent('careerpilot:matches',{detail:{jobs:ranked,profile}}));
   status.textContent=ranked.length+' potential matches from '+found.length+' public listings. Check each employer page for location eligibility and current availability.';
-  for(const job of ranked){
-   const card=el('article');card.className='job';
-   const link=el('a','View & Apply');link.href=job.url;link.target='_blank';link.rel='noopener noreferrer';
-   card.append(el('h3',job.title),el('p',job.company+' · '+job.location+' · Estimated relevance '+job.match.score+'%'),el('p',job.match.matched.length?'Matching skills: '+job.match.matched.slice(0,5).join(', '):'Potential role similarity based on your CV; check the requirements.'),link);root.append(card);
-  }
+  if(ranked.length)document.getElementById('discover')?.scrollIntoView({behavior:'smooth',block:'start'});
   if(!ranked.length)root.append(el('p','No verified matches from the sources checked. Try broadening the role or location, or search again later. We will never invent job listings.'));
  }catch(error){status.textContent='Search failed: '+error.message;}
  finally{simpleFind.disabled=false;}
