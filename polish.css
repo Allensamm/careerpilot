@@ -1,0 +1,29 @@
+/* CareerPilot design system: editorial, precise, and restrained. No external font calls. */
+:root{font-family:"Avenir Next","Helvetica Neue",Inter,Arial,sans-serif;font-size:14px;color:#141820;background:#aebdd0;font-synthesis:none}
+body{font-family:"Avenir Next","Helvetica Neue",Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.logo,.metric strong{font-family:"Avenir Next","Helvetica Neue",Inter,Arial,sans-serif;font-weight:750;letter-spacing:-.045em}
+.site{background:linear-gradient(145deg,#f1f2f4 0%,#e5e9f0 54%,#cdd8e7 100%);box-shadow:0 30px 100px #17263822}
+.logo{letter-spacing:-.07em;font-size:23px}.logo-disc{font-size:15px;letter-spacing:-.07em;border-radius:14px;transform:rotate(-8deg)}
+.toplinks a{font-weight:650;letter-spacing:-.015em;transition:background .18s,color .18s}
+.toplinks a.selected{background:#101318;box-shadow:0 6px 15px #1317201c}
+.welcome h1{font-weight:550;letter-spacing:-.055em;font-size:clamp(34px,3.9vw,55px)}
+.welcome p{font-size:13px;max-width:680px}
+.search-bar,.filter-box,.job-tile,.panel{box-shadow:0 9px 35px #22314a0b;border:1px solid #ffffffb8}
+.search-bar{padding:25px 26px}.search-bar input,.search-bar select,.filter-box input:not([type=range]),.filter-box select{transition:border-color .18s,background .18s}
+.search-bar input:focus,.search-bar select:focus,.filter-box input:focus,.filter-box select:focus,.panel input:focus,.panel textarea:focus{outline:2px solid #455f9e;outline-offset:2px;background:#fff}
+.black-button,.black-link,.tile-link{background:#14171c;transition:transform .18s,background .18s}
+.black-button:hover,.black-link:hover,.tile-link:hover{background:#34435d;transform:translateY(-1px)}
+.job-tile{transition:transform .18s,box-shadow .18s}.job-tile:hover{transform:translateY(-3px);box-shadow:0 18px 45px #25334b1a}
+.job-tile:nth-child(4n+3){background:#22252c}
+.job-tile h3{font-size:17px;font-weight:750}
+.results-header h2,.workspace-heading h2{font-weight:750}
+.overline{letter-spacing:.18em}
+.filter-box h2{font-weight:750}
+.panel{box-shadow:0 10px 32px #24334b0a}
+.ui-icon{width:19px;height:19px;display:inline-block;vertical-align:middle;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.round-icon .ui-icon{width:19px;height:19px}.mobile-bottom .ui-icon{width:23px;height:23px}
+.ui-notice{position:sticky;top:10px;z-index:15;padding:13px 17px;margin:10px 0;border-radius:12px;background:#171b22;color:#fff;box-shadow:0 12px 35px #10182624;font-size:13px}
+.ui-notice[hidden]{display:none}
+:focus-visible{outline:3px solid #536fc0!important;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media(max-width:750px){.site{background:linear-gradient(165deg,#f0f1f4,#d4deeb)}.welcome h1{font-size:36px}.search-bar{padding:16px}.top-actions{gap:8px}}
