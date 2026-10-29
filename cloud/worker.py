@@ -42,11 +42,12 @@ def process_once(service, fetcher=fetch_greenhouse, now=None):
     service.ensure_key()
     now = time.time() if now is None else now
     processed = 0
-    if not service.STORE.exists():
+    from cloud import storage
+    if not storage.enabled() and not service.STORE.exists():
         return processed
-    for path in list(service.STORE.glob('*.json')):
+    package_ids = storage.ids() if storage.enabled() else [p.stem for p in service.STORE.glob('*.json')]
+    for pid in package_ids:
         try:
-            pid = path.stem
             with service.lock:
                 record = service.read_record(pid)
                 if record['expires_at'] <= now or record.get('status') == 'REVOKED':
