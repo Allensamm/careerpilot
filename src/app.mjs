@@ -63,6 +63,11 @@ if(simpleFind)simpleFind.onclick=async()=>{
    return normalizeGreenhouse(await response.json(),board);
   }));
   const found=batches.filter(x=>x.status==='fulfilled').flatMap(x=>x.value);
+  try{
+   const more=await fetch('/api/jobs/public',{signal:AbortSignal.timeout(20000)});
+   if(more.ok){const data=await more.json();if(Array.isArray(data.jobs))found.push(...data.jobs);}
+  }catch(_error){/* Other public boards remain available if a feed is offline. */}
+
   const profile={cv,skills,role:''};
   const seen=new Set();const ranked=found.map(job=>({...job,match:scoreJob(profile,job)})).filter(j=>{if(!j.url||!/^https:\/\//.test(j.url)||seen.has(j.url))return false;seen.add(j.url);return j.match.score>0;}).sort((a,b)=>b.match.score-a.match.score).slice(0,36);document.dispatchEvent(new CustomEvent('careerpilot:matches',{detail:{jobs:ranked,profile}}));
   status.textContent=ranked.length+' potential matches from '+found.length+' public listings. Scores are indicative, not hiring eligibility.';
