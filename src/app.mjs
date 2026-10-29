@@ -56,7 +56,7 @@ if(simpleFind)simpleFind.onclick=async()=>{
  simpleFind.disabled=true;status.textContent='Finding relevant public jobs…';
  try{
   const upload=new FormData();upload.append('file',file);const extraction=await fetch('/api/cv/extract',{method:'POST',body:upload});const parsed=await extraction.json();if(!extraction.ok)throw Error(parsed.detail||'Could not read CV');const cv=parsed.text,skills=extractSkills(cv);
-  const boards=['stripe','gitlab','cloudflare','datadog','figma'];
+  const boards=['stripe','gitlab','cloudflare','datadog','figma','notion','reddit','airbnb','coinbase','mongodb','elastic','plaid','asana','brex','webflow','zapier','canonical','automattic','sourcegraph','vercel'];
   const batches=await Promise.allSettled(boards.map(async board=>{
    const response=await fetch('https://boards-api.greenhouse.io/v1/boards/'+board+'/jobs');
    if(!response.ok)throw Error('Board unavailable');
@@ -71,7 +71,7 @@ if(simpleFind)simpleFind.onclick=async()=>{
    const link=el('a','View & Apply');link.href=job.url;link.target='_blank';link.rel='noopener noreferrer';
    card.append(el('h3',job.title),el('p',job.company+' · '+job.location+' · Match '+job.match.score+'%'),link);root.append(card);
   }
-  if(!ranked.length)root.append(el('p','No matches found from currently available boards. Try again later.'));
+  if(!ranked.length)root.append(el('p','No verified matches from the sources checked. Try broadening the role or location, or search again later. We will never invent job listings.'));
  }catch(error){status.textContent='Search failed: '+error.message;}
  finally{simpleFind.disabled=false;}
 };
