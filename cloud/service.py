@@ -364,3 +364,6 @@ async def extract_resume(file: UploadFile = File(...)):
     if len(cv_text.strip()) < 60:
         raise HTTPException(422, 'No readable CV text found. Scanned PDFs need OCR.')
     return {'text': cv_text[:120000]}
+
+from cloud.public_jobs import router as public_jobs_router
+app.include_router(public_jobs_router)
