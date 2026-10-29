@@ -45,3 +45,33 @@ $('cloudCreate').onclick=async()=>{try{
 }catch(e){cloudMsg(e.message);}};
 $('cloudStatus').onclick=async()=>{try{requireVault();const p=await vaultGet('cloudPackage');if(!p)throw Error('No local package reference');const r=await fetch(`/api/cloud/packages/${p.id}`,{headers:{'X-Management-Token':p.token}});const d=await r.json();if(!r.ok)throw Error(d.detail||'Unavailable');cloudMsg(`Status: ${d.status}. ${d.matches?.length||0} preliminary matches. ${d.note}`);const list=$('cloudMatches');if(list){list.replaceChildren();for(const job of (d.matches||[]).slice(0,30)){const item=el('article');item.className='job';item.append(el('h3',job.title||'Untitled job'));item.append(el('p',`${job.board||'Public board'} · ${job.status||'Review required'}`));if(typeof job.url==='string'&&job.url.startsWith('https://')){const link=el('a','View original listing ↗');link.href=job.url;link.target='_blank';link.rel='noopener noreferrer';item.append(link);}list.append(item);}if(!d.matches?.length)list.append(el('p','No cloud matches yet. Discovery runs on a schedule once configured.'));}}catch(e){cloudMsg(e.message);}};
 $('cloudRevoke').onclick=async()=>{try{requireVault();const p=await vaultGet('cloudPackage');if(!p)throw Error('No local package reference');const r=await fetch(`/api/cloud/packages/${p.id}`,{method:'DELETE',headers:{'X-Management-Token':p.token}});if(!r.ok)throw Error((await r.json()).detail||'Revocation failed');await vaultSet('cloudPackage',null);cloudMsg('Cloud package deleted. Local CV remains in your vault.');}catch(e){cloudMsg(e.message);}};
+
+const simpleFind=document.getElementById('simpleFind');
+if(simpleFind)simpleFind.onclick=async()=>{
+ const status=document.getElementById('simpleStatus'),root=document.getElementById('simpleResults');
+ root.replaceChildren();
+ const file=document.getElementById('simpleCv').files?.[0];
+ if(!file||!file.name.toLowerCase().endsWith('.txt')){status.textContent='Please select a TXT résumé.';return;}
+ if(file.size>2000000){status.textContent='File must be under 2 MB.';return;}
+ simpleFind.disabled=true;status.textContent='Finding relevant public jobs…';
+ try{
+  const cv=await file.text(),skills=extractSkills(cv);
+  const boards=['stripe','gitlab','cloudflare','datadog','figma'];
+  const batches=await Promise.allSettled(boards.map(async board=>{
+   const response=await fetch('https://boards-api.greenhouse.io/v1/boards/'+board+'/jobs');
+   if(!response.ok)throw Error('Board unavailable');
+   return normalizeGreenhouse(await response.json(),board);
+  }));
+  const found=batches.filter(x=>x.status==='fulfilled').flatMap(x=>x.value);
+  const profile={cv,skills,role:'',region:''};
+  const ranked=found.map(job=>({...job,match:scoreJob(profile,job)})).filter(j=>j.match.score>0).sort((a,b)=>b.match.score-a.match.score).slice(0,36);
+  status.textContent=ranked.length+' potential matches from '+found.length+' public listings. Scores are indicative, not hiring eligibility.';
+  for(const job of ranked){
+   const card=el('article');card.className='job';
+   const link=el('a','View & Apply');link.href=job.url;link.target='_blank';link.rel='noopener noreferrer';
+   card.append(el('h3',job.title),el('p',job.company+' · '+job.location+' · Match '+job.match.score+'%'),link);root.append(card);
+  }
+  if(!ranked.length)root.append(el('p','No matches found from currently available boards. Try again later.'));
+ }catch(error){status.textContent='Search failed: '+error.message;}
+ finally{simpleFind.disabled=false;}
+};
