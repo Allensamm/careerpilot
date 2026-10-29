@@ -74,7 +74,7 @@ if(simpleFind)simpleFind.onclick=async()=>{
   for(const job of ranked){
    const card=el('article');card.className='job';
    const link=el('a','View & Apply');link.href=job.url;link.target='_blank';link.rel='noopener noreferrer';
-   card.append(el('h3',job.title),el('p',job.company+' · '+job.location+' · Match '+job.match.score+'%'),link);root.append(card);
+   card.append(el('h3',job.title),el('p',job.company+' · '+job.location+' · Estimated relevance '+job.match.score+'%'),el('p',job.match.matched.length?'Matching skills: '+job.match.matched.slice(0,5).join(', '):'Potential role similarity based on your CV; check the requirements.'),link);root.append(card);
   }
   if(!ranked.length)root.append(el('p','No verified matches from the sources checked. Try broadening the role or location, or search again later. We will never invent job listings.'));
  }catch(error){status.textContent='Search failed: '+error.message;}
