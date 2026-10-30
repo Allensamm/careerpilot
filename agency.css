@@ -45,3 +45,23 @@ body{background:var(--paper);color:var(--ink)}
 .linkedin-card-status{display:flex;align-items:center;justify-content:space-between;padding-top:9px;border-top:1px solid #e6eaff;font-size:10px;color:#667085}
 .linkedin-card-status b{color:#16865b;font-size:14px}
 @media(max-width:800px){.linkedin-profile-card{right:10px;bottom:12px}.linkedin-visual .service-detail-image{height:280px}}
+
+/* Two clear customer pathways: business support and career support */
+.pathways-section{padding-top:72px}
+.pathway-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.pathway-card{background:#fff;border:1px solid #dfe6ff;border-radius:12px;padding:clamp(26px,4vw,42px);display:flex;flex-direction:column;min-height:390px;box-shadow:0 16px 44px rgba(30,55,120,.055)}
+.pathway-business{background:linear-gradient(145deg,#fff 0%,#f2f6ff 100%)}
+.pathway-career{background:linear-gradient(145deg,#fff 0%,#fff5f2 100%)}
+.pathway-kicker{font-size:10px;letter-spacing:.16em;font-weight:800;color:#2855f5}
+.pathway-card h3{font-family:var(--display);font-size:clamp(25px,3vw,34px);line-height:1.16;letter-spacing:-.045em;margin:28px 0 13px;max-width:430px}
+.pathway-card p,.service-group-heading p{font-size:14px;line-height:1.8;color:var(--muted);max-width:560px}
+.pathway-card ul{list-style:none;margin:14px 0 26px;padding:0;display:grid;gap:11px}
+.pathway-card li{font-size:13px;color:#35415c;display:flex;gap:10px;align-items:flex-start}
+.pathway-card li:before{content:"✓";color:#2855f5;font-weight:800}
+.pathway-card .text-link{padding-top:0;margin-top:auto}
+.service-group-heading{padding:34px 0 24px;border-top:1px solid var(--line);scroll-margin-top:28px}
+.service-group-heading .eyebrow{display:block;margin-bottom:12px}
+.service-group-heading h2{font-family:var(--display);font-size:clamp(28px,3.5vw,40px);line-height:1.15;letter-spacing:-.045em;max-width:720px;margin:0}
+.service-group-heading p{margin:13px 0 0}
+.service-group-heading.career-group{margin-top:56px}
+@media(max-width:800px){.pathway-grid{grid-template-columns:1fr}.pathway-card{min-height:0}.pathways-section{padding-top:48px}.service-group-heading.career-group{margin-top:35px}.nav{gap:16px}}
