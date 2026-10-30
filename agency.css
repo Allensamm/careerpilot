@@ -366,3 +366,69 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .service-detail{grid-template-columns:24px minmax(0,1fr);column-gap:10px}
   .service-detail>.detail-cta{padding:12px 14px}
 }
+
+
+/* Services page closing CTA — balanced, readable and responsive */
+.band{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  width:100%;
+  margin:clamp(42px,6vw,84px) 0 0;
+  padding:clamp(42px,6vw,76px) clamp(24px,5vw,72px);
+  border-radius:8px;
+  background:linear-gradient(118deg,#172f50 0%,#203e63 100%);
+}
+.band:after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  width:340px;height:340px;
+  right:-130px;top:-190px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:50%;
+  box-shadow:0 0 0 34px rgba(255,255,255,.035),0 0 0 68px rgba(255,255,255,.025);
+  pointer-events:none;
+}
+.band-inner{
+  width:100%;
+  max-width:1080px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(280px,.8fr);
+  gap:clamp(32px,6vw,88px);
+  align-items:center;
+}
+.band-inner>div{min-width:0}
+.band .eyebrow{display:block;color:#b9d0f4;font-size:11px;letter-spacing:.19em;margin:0 0 20px}
+.band h2{
+  display:block!important;
+  visibility:visible!important;
+  color:#fff!important;
+  max-width:590px;
+  font-family:var(--display);
+  font-size:clamp(30px,3.5vw,48px);
+  font-weight:650;
+  letter-spacing:-.055em;
+  line-height:1.12;
+  margin:0;
+}
+.band p{max-width:470px;color:#d2ddec;font-size:16px;line-height:1.8;margin:0 0 25px}
+.band .btn{
+  min-height:52px;
+  padding:15px 23px;
+  border-radius:5px;
+  background:#f18b78;
+  color:#172f50;
+  border:1px solid #f18b78;
+  font-weight:700;
+}
+.band .btn:hover{background:#ffa08e;border-color:#ffa08e;color:#172f50;transform:translateY(-2px)}
+@media(max-width:800px){
+  .band{margin-top:44px;padding:36px 25px;border-radius:7px}
+  .band-inner{grid-template-columns:1fr;gap:20px}
+  .band .eyebrow{margin-bottom:14px}
+  .band h2{font-size:clamp(29px,8vw,40px);max-width:17ch}
+  .band p{font-size:15px;margin-bottom:20px}
+  .band .btn{width:100%;max-width:320px}
+}
