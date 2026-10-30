@@ -179,3 +179,5 @@ body{background:var(--paper);color:var(--ink)}
 .testimonial-note p{font-size:14px;line-height:1.8;color:var(--muted);margin:0}
 .service-page-hero .lead{max-width:790px}
 @media(max-width:800px){.service-feature{grid-template-columns:1fr;padding-bottom:40px}.service-feature img{height:240px}.service-page-hero .actions{align-items:stretch;flex-direction:column}.service-page-hero .actions .btn{width:100%;text-align:center}.testimonial-note{padding:23px}}
+
+.knowledge-intro{max-width:760px;margin-bottom:36px}.knowledge-topic{margin:54px 0}.knowledge-topic h3{font-size:24px;letter-spacing:-.03em;margin-bottom:8px}.knowledge-topic>p{max-width:680px;color:var(--muted);line-height:1.75;margin-bottom:22px}.knowledge-topic .agency-card a{display:inline-block;margin-top:12px;color:#5268d8;font-weight:700;text-decoration:none}.knowledge-topic .agency-card{height:100%}
