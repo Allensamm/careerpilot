@@ -65,3 +65,29 @@ body{background:var(--paper);color:var(--ink)}
 .service-group-heading p{margin:13px 0 0}
 .service-group-heading.career-group{margin-top:56px}
 @media(max-width:800px){.pathway-grid{grid-template-columns:1fr}.pathway-card{min-height:0}.pathways-section{padding-top:48px}.service-group-heading.career-group{margin-top:35px}.nav{gap:16px}}
+
+/* Expanded CareerPilot agency platform */
+.nav{gap:clamp(12px,1.7vw,23px)}
+.nav a{white-space:nowrap}
+.footer-links{max-width:680px;justify-content:flex-end;row-gap:17px}
+.agency-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.agency-card{background:#fff;border:1px solid #dfe6ff;border-radius:8px;padding:30px;display:flex;flex-direction:column;min-height:205px}
+.agency-card h3{font-family:var(--display);font-size:21px;letter-spacing:-.035em;margin:0 0 12px}
+.agency-card p{font-size:14px;line-height:1.8;color:var(--muted);margin:0 0 20px}
+.agency-card .text-link{margin-top:auto;padding-top:10px}
+.detail-cta{margin:0 0 25px;font-size:12px;padding:11px 14px;justify-self:start}
+.faq-list details{border-top:1px solid var(--line);padding:22px 0}
+.faq-list details:last-child{border-bottom:1px solid var(--line)}
+.faq-list summary{cursor:pointer;font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.02em;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faq-list summary:after{content:"+";color:#2855f5;font-size:22px}
+.faq-list details[open] summary:after{content:"−"}
+.faq-list details p{max-width:760px;color:var(--muted);font-size:14px;line-height:1.8;padding-top:12px}
+.tool-panel{max-width:780px;padding:clamp(24px,5vw,44px)}
+.tool-checklist{display:grid;gap:15px;margin:26px 0}
+.tool-checklist label{display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.6;color:#35415c}
+.tool-checklist input{width:18px;height:18px;accent-color:#2855f5;flex:0 0 auto;margin-top:1px}
+.tool-score{border-top:1px solid #d5defb;padding-top:20px;margin:10px 0 22px}
+.tool-score strong{font-family:var(--display);font-size:24px;color:#2855f5}
+.tool-score p{font-size:13px;color:var(--muted);margin-bottom:0}
+@media(max-width:1000px){.nav{gap:11px}.nav a{font-size:11px}}
+@media(max-width:800px){.nav{gap:18px}.nav a{font-size:13px}.agency-card-grid{grid-template-columns:1fr}.footer-links{justify-content:flex-start}}
