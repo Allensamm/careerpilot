@@ -483,3 +483,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .service-detail-image{height:190px}
   .linkedin-visual .service-detail-image{height:260px}
 }
+
+/* Visible processing feedback for browser-based tools */
+.btn:disabled{opacity:.78;cursor:wait;transform:none!important;box-shadow:none}
+.btn[aria-busy="true"]{min-width:220px;background:#173fd0}
+.tool-spinner{display:inline-block;width:17px;height:17px;border:2px solid rgba(255,255,255,.42);border-top-color:#fff;border-radius:50%;vertical-align:-3px;animation:tool-spin .75s linear infinite}
+@keyframes tool-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.tool-spinner{animation:none;border-top-color:rgba(255,255,255,.42);border-right-color:#fff}}
