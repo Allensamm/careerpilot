@@ -41,7 +41,7 @@ if(cvChecks.length){
   const ext=(file.name.split(".").pop()||"").toLowerCase();
   if(!["pdf","docx"].includes(ext)){setMessage(cvReport,"<strong>Unsupported file type.</strong><p>Please choose a PDF or DOCX file.</p>");return;}
   if(file.size===0||file.size>10*1024*1024){setMessage(cvReport,"<strong>Check the file size.</strong><p>The document must be larger than 0 bytes and no more than 10 MB.</p>");return;}
-  analyse.disabled=true;analyse.textContent="Reviewing…";
+  analyse.disabled=true;analyse.setAttribute("aria-busy","true");analyse.innerHTML="<span class=\"tool-spinner\" aria-hidden=\"true\"></span> Reviewing your CV…";
   setMessage(cvReport,"<strong>Reviewing your CV…</strong><p>Your document is being processed in this browser. It is not sent to CareerPilot.</p>");
   try{
    const buffer=await file.arrayBuffer();let extracted="";
@@ -73,7 +73,7 @@ if(cvChecks.length){
    const passed=checks.filter(item=>item[1]).length,missing=checks.filter(item=>!item[1]);
    cvReport.innerHTML="<strong>"+passed+" of "+checks.length+" content checks passed</strong><p>"+count+" words extracted from <b>"+escapeHTML(file.name)+"</b>.</p><h3>Detected strengths</h3><ul>"+checks.filter(item=>item[1]).map(item=>"<li>"+escapeHTML(item[0])+"</li>").join("")+"</ul><h3>Recommended improvements</h3><ul>"+(missing.length?missing.map(item=>"<li><b>"+escapeHTML(item[0])+":</b> "+escapeHTML(item[2])+"</li>").join(""):"<li>Core content signals were detected. Check relevance and evidence against each vacancy.</li>")+"</ul><p class='tool-privacy'><b>Limitations:</b> This is a content checklist, not an ATS compatibility score or hiring prediction. It cannot reliably assess visual layout, tables, columns, reading order, spelling quality or how a specific employer's system parses the file. Review the original document before applying.</p>";
   }catch(error){setMessage(cvReport,"<strong>We couldn't complete the review.</strong><p>"+escapeHTML(error.message||"An unexpected error occurred.")+"</p><p>Try a standard text-based PDF or DOCX file.</p>");}
-  finally{analyse.disabled=false;analyse.textContent="Review my CV";}
+  finally{analyse.disabled=false;analyse.removeAttribute("aria-busy");analyse.textContent="Review my CV";}
  });
  
  // 02 — LinkedIn content helper. This is a guided template generator, not an AI/live profile audit.
