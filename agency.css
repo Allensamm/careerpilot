@@ -91,3 +91,47 @@ body{background:var(--paper);color:var(--ink)}
 .tool-score p{font-size:13px;color:var(--muted);margin-bottom:0}
 @media(max-width:1000px){.nav{gap:11px}.nav a{font-size:11px}}
 @media(max-width:800px){.nav{gap:18px}.nav a{font-size:13px}.agency-card-grid{grid-template-columns:1fr}.footer-links{justify-content:flex-start}}
+
+/* CareerPilot resource centre and interactive tool components */
+.tool-intro{padding-top:35px}
+.tool-intro h2{font-family:var(--display);font-size:clamp(30px,4vw,44px);letter-spacing:-.045em;margin:12px 0}
+.tool-intro>p{max-width:720px;color:var(--muted);line-height:1.8}
+.tool-jump-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:26px}
+.tool-jump-grid a{padding:15px 17px;border:1px solid #dfe6ff;border-radius:7px;background:#fff;color:#2855f5;font-size:12px;font-weight:700;text-decoration:none}
+.tool-jump-grid a:hover{background:#f2f6ff}
+.tool-section{padding:64px 0;border-top:1px solid var(--line);scroll-margin-top:25px}
+.tool-heading{max-width:760px;margin-bottom:24px}
+.tool-heading h2{font-family:var(--display);font-size:clamp(28px,3.5vw,40px);letter-spacing:-.045em;margin:10px 0}
+.tool-heading p{font-size:14px;line-height:1.8;color:var(--muted)}
+.tool-panel{max-width:900px;background:#fff;border:1px solid #dfe6ff;border-radius:10px;padding:clamp(22px,4vw,38px);box-shadow:0 15px 40px rgba(30,55,120,.045)}
+.tool-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:22px}
+.tool-form-grid label,.tool-file-label,.email-draft-label{display:grid;gap:8px;font-size:12px;font-weight:700;color:#34415d}
+.tool-form-grid input,.tool-form-grid select,.tool-form-grid textarea,.tool-panel>textarea,.tool-file-label input{width:100%;padding:12px 13px;border:1px solid #d5defb;border-radius:5px;background:#fff;color:#14213d;font:inherit;font-size:14px}
+.tool-form-grid textarea,.tool-panel>textarea{resize:vertical;line-height:1.6}
+.tool-form-grid .span-two{grid-column:1/-1}
+.tool-file-label{margin-bottom:14px}
+.tool-file-label input{font-weight:400}
+.tool-privacy{font-size:11px;line-height:1.7;color:#778198;margin:17px 0}
+.tool-score{margin-top:22px;padding:20px;border-top:1px solid #e5eaff;background:#f7f9ff;border-radius:6px}
+.tool-score strong{display:block;color:#2855f5;font-family:var(--display);font-size:22px;margin-bottom:8px}
+.tool-score p,.tool-score li{font-size:13px;line-height:1.7;color:#536079}
+.tool-score h3,.generated-block h3{font-size:14px;margin:18px 0 8px}
+.tool-score ul,.tool-score ol{padding-left:20px}
+.tool-output{display:grid;gap:14px;margin-top:22px}
+.generated-block{padding:18px;background:#f7f9ff;border:1px solid #e1e8ff;border-radius:7px}
+.generated-block textarea{width:100%;border:1px solid #d5defb;border-radius:5px;padding:12px;font:inherit;font-size:13px;line-height:1.6;margin:8px 0}
+.generated-block p{font-size:13px;line-height:1.7;color:#34415d}
+.generated-block .btn{font-size:11px;padding:9px 12px}
+.tool-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px}
+.tool-metrics>div{padding:20px 15px;background:#f2f6ff;border-radius:7px;display:grid;gap:7px}
+.tool-metrics strong{font-family:var(--display);font-size:clamp(23px,3vw,32px);color:#2855f5}
+.tool-metrics span{font-size:11px;color:#667085}
+.planner-list{display:grid;gap:10px;margin:20px 0}
+.planner-item{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:13px 15px;border:1px solid #e1e8ff;border-radius:6px}
+.planner-item span{display:grid;gap:4px;font-size:13px;color:#24334f}
+.planner-item small{font-size:11px;color:#778198}
+.planner-item .btn{font-size:10px;padding:7px 10px}
+.tool-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}
+.email-draft-label{margin:22px 0 9px}
+.tool-panel>textarea{display:block;margin-bottom:12px}
+@media(max-width:800px){.tool-jump-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tool-section{padding:44px 0}.tool-form-grid{grid-template-columns:1fr}.tool-form-grid .span-two{grid-column:auto}.tool-metrics{grid-template-columns:1fr}.planner-item{align-items:flex-start}.tool-panel{padding:20px}}
