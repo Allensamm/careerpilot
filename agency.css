@@ -432,3 +432,54 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .band p{font-size:15px;margin-bottom:20px}
   .band .btn{width:100%;max-width:320px}
 }
+
+
+/* Services directory: explicit placement prevents the fourth grid child
+   (the service link) from falling into the index column. */
+.service-detail{
+  width:100%;
+  min-width:0;
+  grid-template-columns:55px minmax(240px,.9fr) minmax(0,1fr);
+  column-gap:clamp(18px,2.5vw,30px);
+  row-gap:22px;
+  align-items:start;
+}
+.service-detail>*{min-width:0}
+.service-detail>.index{grid-column:1;grid-row:1}
+.service-detail>.service-detail-image,
+.service-detail>.linkedin-visual{grid-column:2;grid-row:1}
+.service-detail>div:not(.linkedin-visual){grid-column:3;grid-row:1}
+.service-detail>.detail-cta{
+  grid-column:2 / 4;
+  grid-row:2;
+  justify-self:start;
+  align-self:start;
+  width:auto;
+  max-width:min(100%,340px);
+  margin:0;
+  white-space:normal;
+  line-height:1.5;
+  overflow-wrap:anywhere;
+}
+.service-detail-image{width:100%;max-width:100%;height:clamp(190px,23vw,280px);object-fit:cover}
+.linkedin-visual{grid-column:2;grid-row:1;min-width:0;width:100%}
+.linkedin-visual .service-detail-image{width:100%;max-width:100%}
+@media(max-width:1050px){
+  .service-detail{grid-template-columns:40px minmax(0,1fr);column-gap:16px}
+  .service-detail>.index{grid-column:1;grid-row:1}
+  .service-detail>.service-detail-image,
+  .service-detail>.linkedin-visual{grid-column:2;grid-row:1}
+  .service-detail>div:not(.linkedin-visual){grid-column:2;grid-row:2}
+  .service-detail>.detail-cta{grid-column:2;grid-row:3}
+  .service-detail-image{height:clamp(190px,34vw,280px)}
+}
+@media(max-width:800px){
+  .service-detail{grid-template-columns:28px minmax(0,1fr);column-gap:12px;row-gap:16px}
+  .service-detail>.index{grid-column:1;grid-row:1}
+  .service-detail>.service-detail-image,
+  .service-detail>.linkedin-visual{grid-column:2;grid-row:1}
+  .service-detail>div:not(.linkedin-visual){grid-column:2;grid-row:2}
+  .service-detail>.detail-cta{grid-column:2;grid-row:3;max-width:100%}
+  .service-detail-image{height:190px}
+  .linkedin-visual .service-detail-image{height:260px}
+}
