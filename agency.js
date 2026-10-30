@@ -15,89 +15,155 @@ if(cvChecks.length){
  updateScore();
 }
 
-/* CareerPilot free tools — all processing stays in the visitor's browser */
+/* CareerPilot free tools — local-first, validated and accessible */
 (()=>{
+ "use strict";
  const $=id=>document.getElementById(id);
- const safe=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
- const words=s=>(s.toLowerCase().match(/[a-z][a-z'-]{2,}/g)||[]);
- const unique=a=>[...new Set(a)];
- const report=$("cv-report");
- const upload=$("cv-upload");
- const analyse=$("cv-analyse");
- if(analyse) analyse.addEventListener("click",async()=>{
-  const file=upload&&upload.files&&upload.files[0];
-  if(!file){report.innerHTML="<strong>Please choose a PDF or DOCX file first.</strong>";return;}
-  const ext=file.name.toLowerCase().split(".").pop();
-  if(!["pdf","docx"].includes(ext)){report.innerHTML="<strong>Unsupported file.</strong><p>Please upload a PDF or DOCX document.</p>";return;}
-  report.innerHTML="<strong>Reviewing your document…</strong><p>Text is being extracted locally in your browser.</p>";
+ const escapeHTML=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+ const setMessage=(el,html)=>{if(el)el.innerHTML=html;};
+ const words=value=>(String(value||"").toLowerCase().match(/[a-z][a-z'-]{2,}/g)||[]);
+ const unique=items=>[...new Set(items.filter(Boolean))];
+ const copyText=async(text,button)=>{
   try{
-   let text="";
-   const buffer=await file.arrayBuffer();
+   if(navigator.clipboard&&window.isSecureContext) await navigator.clipboard.writeText(text);
+   else {const area=document.createElement("textarea");area.value=text;area.style.position="fixed";area.style.opacity="0";document.body.appendChild(area);area.select();const ok=document.execCommand("copy");area.remove();if(!ok)throw new Error("Copy unavailable");}
+   if(button){const old=button.textContent;button.textContent="Copied";setTimeout(()=>button.textContent=old,1600);}
+   return true;
+  }catch(_){return false;}
+ };
+ const showCopyFallback=(text,container)=>{const area=document.createElement("textarea");area.value=text;area.rows=5;area.setAttribute("aria-label","Text to copy manually");container.appendChild(area);area.focus();area.select();};
+ 
+ // 01 — CV review: browser-only PDF/DOCX extraction with useful failure states.
+ const upload=$("cv-upload"),analyse=$("cv-analyse"),cvReport=$("cv-report");
+ if(analyse&&upload&&cvReport)analyse.addEventListener("click",async()=>{
+  const file=upload.files&&upload.files[0];
+  if(!file){setMessage(cvReport,"<strong>Choose a CV to begin.</strong><p>Select a PDF or DOCX document first.</p>");upload.focus();return;}
+  const ext=(file.name.split(".").pop()||"").toLowerCase();
+  if(!["pdf","docx"].includes(ext)){setMessage(cvReport,"<strong>Unsupported file type.</strong><p>Please choose a PDF or DOCX file.</p>");return;}
+  if(file.size===0||file.size>10*1024*1024){setMessage(cvReport,"<strong>Check the file size.</strong><p>The document must be larger than 0 bytes and no more than 10 MB.</p>");return;}
+  analyse.disabled=true;analyse.textContent="Reviewing…";
+  setMessage(cvReport,"<strong>Reviewing your CV…</strong><p>Your document is being processed in this browser. It is not sent to CareerPilot.</p>");
+  try{
+   const buffer=await file.arrayBuffer();let extracted="";
    if(ext==="pdf"){
-    if(!window.pdfjsLib)throw new Error("The PDF reader could not load. Refresh the page and try again.");
+    if(!window.pdfjsLib)throw new Error("The PDF reader did not load. Check your connection, refresh the page and try again.");
     window.pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
     const pdf=await window.pdfjsLib.getDocument({data:new Uint8Array(buffer)}).promise;
-    for(let n=1;n<=pdf.numPages;n++){const pg=await pdf.getPage(n);const c=await pg.getTextContent();text+=c.items.map(x=>x.str).join(" ")+"\n";}
+    if(pdf.numPages>40)throw new Error("This PDF has more than 40 pages. Please upload a shorter CV.");
+    for(let pageNo=1;pageNo<=pdf.numPages;pageNo++){
+     const page=await pdf.getPage(pageNo),content=await page.getTextContent();
+     extracted+=content.items.map(item=>item.str||"").join(" ")+"\n";
+    }
    }else{
-    if(!window.mammoth)throw new Error("The DOCX reader could not load. Refresh the page and try again.");
-    const result=await window.mammoth.extractRawText({arrayBuffer:buffer});text=result.value||"";
+    if(!window.mammoth)throw new Error("The DOCX reader did not load. Check your connection, refresh the page and try again.");
+    const result=await window.mammoth.extractRawText({arrayBuffer:buffer});extracted=result.value||"";
    }
-   const low=text.toLowerCase(), ws=words(text), count=ws.length;
+   const text=extracted.trim(),lower=text.toLowerCase(),count=words(text).length;
+   if(count<35)throw new Error("Very little readable text was found. If this is a scanned PDF, run OCR first or upload a text-based PDF/DOCX.");
    const checks=[
-    ["Contact information",/(email|@|phone|linkedin|www\.)/.test(low),"Include a professional email address and a suitable contact method."],
-    ["Professional summary",/(summary|profile|professional statement|career objective)/.test(low),"Add a short, role-relevant professional summary."],
-    ["Work experience",/(experience|employment|professional history|work history)/.test(low),"Make your employment history easy to locate."],
-    ["Education",/(education|academic|university|college|degree|diploma)/.test(low),"Add relevant education or qualifications."],
-    ["Skills",/(skills|competencies|technical|proficiencies)/.test(low),"Include a clearly labelled skills section."],
-    ["Achievements and evidence",/(achieved|improved|increased|reduced|delivered|managed|created|led|saved|%)/.test(low),"Where possible, show outcomes, scope or measurable achievements."],
-    ["Dates and role details",/(20[0-9]{2}|19[89][0-9])/.test(low),"Check that roles, employers and dates are clear and consistent."],
-    ["Readable length",count>=180&&count<=1400,count<180?"The extracted text is very short; check whether the document is complete or add relevant detail.":"The document is quite long; consider prioritising the most relevant experience."]
+    ["Contact details",/(email|@|phone|linkedin|www\.)/.test(lower),"Add a professional email address and a suitable contact method."],
+    ["Professional summary",/(summary|profile|professional statement|career objective)/.test(lower),"Add a short, role-relevant professional summary."],
+    ["Work experience",/(experience|employment|professional history|work history)/.test(lower),"Make your employment history easy to locate."],
+    ["Education",/(education|academic|university|college|degree|diploma)/.test(lower),"Include relevant education or qualifications."],
+    ["Skills",/(skills|competencies|technical|proficiencies)/.test(lower),"Include a clearly labelled skills section."],
+    ["Achievements and evidence",/(achieved|improved|increased|reduced|delivered|managed|created|led|saved|%|\$|£|€)/.test(lower),"Use specific outcomes, scope or measurable achievements where accurate."],
+    ["Dates and chronology",/(19[89]\d|20\d{2})/.test(text),"Check that role dates are clear and consistent."],
+    ["Content length",count>=180&&count<=1400,count<180?"Your CV text is brief; check that the document is complete and includes relevant detail.":"Your CV is lengthy; prioritise the experience most relevant to your target role."]
    ];
-   const score=checks.filter(x=>x[1]).length;
-   const missing=checks.filter(x=>!x[1]);
-   report.innerHTML="<strong>"+score+" of "+checks.length+" review checks passed</strong><p>"+count+" words extracted from "+safe(file.name)+". This is a content checklist, not a true ATS compatibility score.</p><h3>What looks present</h3><ul>"+checks.filter(x=>x[1]).map(x=>"<li>"+x[0]+"</li>").join("")+"</ul><h3>Suggested improvements</h3><ul>"+(missing.length?missing.map(x=>"<li><b>"+x[0]+":</b> "+x[2]+"</li>").join(""):"<li>Core sections were detected. Now check relevance, clarity and consistency against the role you want.</li>")+"</ul><p><b>Important:</b> Automated text extraction cannot reliably assess visual design, tables, columns, reading order or every ATS parser. Review the original document before applying.</p>";
-  }catch(e){report.innerHTML="<strong>We couldn't read this document.</strong><p>"+safe(e.message)+"</p><p>Try exporting it again as a text-based PDF or a standard DOCX file.</p>";}
+   const passed=checks.filter(item=>item[1]).length,missing=checks.filter(item=>!item[1]);
+   cvReport.innerHTML="<strong>"+passed+" of "+checks.length+" content checks passed</strong><p>"+count+" words extracted from <b>"+escapeHTML(file.name)+"</b>.</p><h3>Detected strengths</h3><ul>"+checks.filter(item=>item[1]).map(item=>"<li>"+escapeHTML(item[0])+"</li>").join("")+"</ul><h3>Recommended improvements</h3><ul>"+(missing.length?missing.map(item=>"<li><b>"+escapeHTML(item[0])+":</b> "+escapeHTML(item[2])+"</li>").join(""):"<li>Core content signals were detected. Check relevance and evidence against each vacancy.</li>")+"</ul><p class='tool-privacy'><b>Limitations:</b> This is a content checklist, not an ATS compatibility score or hiring prediction. It cannot reliably assess visual layout, tables, columns, reading order, spelling quality or how a specific employer's system parses the file. Review the original document before applying.</p>";
+  }catch(error){setMessage(cvReport,"<strong>We couldn't complete the review.</strong><p>"+escapeHTML(error.message||"An unexpected error occurred.")+"</p><p>Try a standard text-based PDF or DOCX file.</p>");}
+  finally{analyse.disabled=false;analyse.textContent="Review my CV";}
  });
- const liBtn=$("li-generate");
- if(liBtn)liBtn.addEventListener("click",()=>{
+ 
+ // 02 — LinkedIn content helper. This is a guided template generator, not an AI/live profile audit.
+ const liButton=$("li-generate"),liOutput=$("li-output");
+ if(liButton&&liOutput)liButton.addEventListener("click",()=>{
   const role=$("li-role").value.trim(),industry=$("li-industry").value.trim(),skills=$("li-skills").value.trim(),goal=$("li-goal").value.trim(),experience=$("li-experience").value.trim();
-  if(!role||!skills){$("li-output").innerHTML="<p>Please add at least your target role and key strengths.</p>";return;}
-  const skillList=skills.split(/[,;\n]/).map(x=>x.trim()).filter(Boolean);
-  const headline=role+" | "+skillList.slice(0,3).join(" · ")+(industry?" | "+industry:"");
-  const about="I am a "+role+(industry?" working in "+industry:"")+". My strengths include "+skillList.join(", ")+". "+(experience||"I bring a thoughtful, practical approach to solving problems and supporting team goals.")+" "+(goal?"I am currently focused on "+goal+".":"I am interested in connecting with people working on meaningful challenges in my field.")+"\n\nI value clear communication, continuous learning and delivering work that makes a practical difference.";
-  const keywords=unique([role,industry,...skillList].filter(Boolean));
-  const themes=["A lesson learned from a recent project","How you approach a common challenge in your field","A practical tip your colleagues or clients may find useful"];
-  $("li-output").innerHTML="<div class='generated-block'><h3>Headline suggestion</h3><p>"+safe(headline)+"</p><button type='button' class='btn btn-light copy-tool' data-copy='li-head'>Copy headline</button><textarea id='li-head' rows='2'>"+safe(headline)+"</textarea></div><div class='generated-block'><h3>About section starting point</h3><textarea id='li-about' rows='7'>"+safe(about)+"</textarea><button type='button' class='btn btn-light copy-tool' data-copy='li-about'>Copy About section</button></div><div class='generated-block'><h3>Keyword ideas</h3><p>"+safe(keywords.join(" · "))+"</p></div><div class='generated-block'><h3>Content themes</h3><ul>"+themes.map(x=>"<li>"+x+"</li>").join("")+"</ul></div><p class='tool-privacy'>These are structured writing suggestions generated from your inputs, not AI research or a live LinkedIn audit. Verify every claim and only include skills and achievements you can substantiate.</p>";
+  if(!role||!skills){setMessage(liOutput,"<p><b>Please enter your target role and at least one key strength.</b></p>");(!role? $("li-role"):$("li-skills")).focus();return;}
+  const list=skills.split(/[,;\n]/).map(x=>x.trim()).filter(Boolean);
+  const headline=[role,list.slice(0,3).join(" · "),industry].filter(Boolean).join(" | ");
+  const about="I am a "+role+(industry?" with experience in "+industry:"")+". My strengths include "+list.join(", ")+".\n\n"+(experience||"I bring a practical, thoughtful approach to solving problems, collaborating with teams and delivering quality work.")+"\n\n"+(goal?"I am currently focused on "+goal+".":"I am interested in connecting with professionals and organisations working on meaningful challenges in my field.")+"\n\nI value clear communication, continuous learning and work that makes a measurable difference.";
+  const keywordIdeas=unique([role,industry,...list]);
+  const themes=["A practical lesson from a recent project","How you approach a recurring challenge in your field","A useful tip for colleagues, clients or peers"];
+  liOutput.innerHTML="<div class='generated-block'><h3>Headline suggestion</h3><textarea id='li-head-result' rows='2'>"+escapeHTML(headline)+"</textarea><button type='button' class='btn btn-light copy-generated' data-copy='li-head-result'>Copy headline</button></div><div class='generated-block'><h3>About section starting point</h3><textarea id='li-about-result' rows='8'>"+escapeHTML(about)+"</textarea><button type='button' class='btn btn-light copy-generated' data-copy='li-about-result'>Copy About section</button></div><div class='generated-block'><h3>Keyword ideas</h3><p>"+keywordIdeas.map(escapeHTML).join(" · ")+"</p></div><div class='generated-block'><h3>Content themes</h3><ul>"+themes.map(x=>"<li>"+escapeHTML(x)+"</li>").join("")+"</ul></div><p class='tool-privacy'>These are structured suggestions based on your inputs. This tool does not access LinkedIn, perform live keyword research or independently verify your experience. Edit every statement so it remains accurate and genuinely yours.</p>";
  });
- document.addEventListener("click",async e=>{const b=e.target.closest(".copy-tool");if(b){const el=$(b.dataset.copy);if(el){el.select();try{await navigator.clipboard.writeText(el.value);b.textContent="Copied";}catch(_){b.textContent="Select and copy the text";}}}});
- const calc=$("calculate-time");
- if(calc)calc.addEventListener("click",()=>{
-  const h=Number($("admin-hours").value),pct=Number($("delegate-share").value),weeks=Number($("work-weeks").value);
-  if(!Number.isFinite(h)||!Number.isFinite(pct)||!Number.isFinite(weeks)||h<0||h>168||pct<0||pct>100||weeks<1||weeks>52){$("time-results").innerHTML="<p>Enter valid values within the ranges shown.</p>";return;}
-  const weekly=h*pct/100,monthly=weekly*weeks/12,yearly=weekly*weeks;
+ document.addEventListener("click",async event=>{
+  const button=event.target.closest(".copy-generated");if(!button)return;
+  const field=$(button.dataset.copy);if(!field)return;
+  if(!await copyText(field.value,button)){field.focus();field.select();button.textContent="Select the text and copy";}
+ });
+ 
+ // 03 — time savings calculator.
+ const calculate=$("calculate-time");
+ if(calculate)calculate.addEventListener("click",()=>{
+  const hours=Number($("admin-hours").value),share=Number($("delegate-share").value),weeks=Number($("work-weeks").value);
+  if($("admin-hours").value.trim()===""||$("delegate-share").value.trim()===""||$("work-weeks").value.trim()===""||![hours,share,weeks].every(Number.isFinite)||hours<0||hours>168||share<0||share>100||weeks<1||weeks>52){
+   $("time-results").innerHTML="<p role='alert'>Enter admin hours from 0–168, a delegation share from 0–100%, and 1–52 working weeks.</p>";return;
+  }
+  const weekly=hours*share/100,monthly=weekly*weeks/12,yearly=weekly*weeks;
   $("time-results").innerHTML="<div><strong>"+weekly.toFixed(1)+"</strong><span>Potential hours per week</span></div><div><strong>"+monthly.toFixed(1)+"</strong><span>Average hours per month</span></div><div><strong>"+yearly.toFixed(1)+"</strong><span>Potential hours per year</span></div>";
  });
- const ready=$("check-readiness");
- if(ready)ready.addEventListener("click",()=>{
-  const ids=["jr-cv","jr-role","jr-tailor","jr-track","jr-linkedin","jr-interview"],labels=["Update and tailor your CV to a clearly defined target role.","Choose a realistic target role and identify the evidence employers ask for.","Adapt your experience and achievements to each relevant application.","Set up a simple tracker for roles, deadlines and follow-ups.","Refresh your LinkedIn headline, About section and experience.","Prepare specific examples that demonstrate your skills and impact."];
-  const vals=ids.map(id=>Number($(id).value)),score=vals.reduce((a,b)=>a+b,0),pct=Math.round(score/12*100),todo=ids.map((id,i)=>({v:vals[i],label:labels[i]})).filter(x=>x.v<2);
-  $("readiness-report").innerHTML="<strong>"+pct+"% readiness checklist score</strong><p>"+(score>=10?"You have a good foundation. Focus on tailoring and consistency.":score>=6?"You have some foundations in place. Strengthen the areas below before increasing application volume.":"Start with the fundamentals. A clearer target and stronger application materials will make the search more manageable.")+"</p><h3>Your suggested next steps</h3><ol>"+(todo.length?todo.map(x=>"<li>"+x.label+"</li>").join(""):"<li>Keep your materials current and review each application before submission.</li>")+"</ol><p class='tool-privacy'>This self-assessment is guidance, not a prediction of hiring outcomes.</p>";
+ 
+ // 04 — six-dimension job application readiness self-assessment.
+ const readiness=$("check-readiness");
+ if(readiness)readiness.addEventListener("click",()=>{
+  const ids=["jr-cv","jr-role","jr-tailor","jr-track","jr-linkedin","jr-interview"];
+  const labels=["Update your CV and tailor it to a specific target role.","Choose a realistic target role and identify the evidence employers request.","Adapt relevant experience and achievements for each application.","Create a tracker for roles, deadlines, contacts and follow-ups.","Refresh your LinkedIn headline, About section and experience.","Prepare concise examples that demonstrate your skills and impact."];
+  const values=ids.map(id=>Number($(id).value)),score=values.reduce((sum,value)=>sum+value,0),percent=Math.round(score/12*100),actions=ids.map((id,index)=>({value:values[index],label:labels[index]})).filter(item=>item.value<2);
+  $("readiness-report").innerHTML="<strong>"+percent+"% checklist completion</strong><p>"+(score>=10?"You have a good foundation. Focus on relevance, tailoring and consistent follow-through.":score>=6?"You have some foundations in place. Strengthen the areas below before increasing application volume.":"Start with the fundamentals: define your target, prepare your materials and build a repeatable application process.")+"</p><h3>Your next steps</h3><ol>"+(actions.length?actions.map(item=>"<li>"+escapeHTML(item.label)+"</li>").join(""):"<li>Keep your materials current and review each application before submitting.</li>")+"</ol><p class='tool-privacy'>This is a self-assessment based on your answers, not a prediction of interviews, job offers or hiring outcomes.</p>";
  });
- const tasks=[];
- const planner=$("planner-list");
- const renderTasks=()=>{if(!planner)return;planner.innerHTML=tasks.length?tasks.map((t,i)=>"<div class='planner-item'><span><b>"+safe(t.name)+"</b><small>"+safe(t.owner||"Unassigned")+" · "+safe(t.date||"No due date")+" · "+safe(t.priority)+"</small></span><button type='button' class='btn btn-light remove-task' data-index='"+i+"'>Remove</button></div>").join(""):"<p>Your tasks will appear here.</p>";};
- const add=$("add-task");
- if(add)add.addEventListener("click",()=>{const name=$("task-name").value.trim();if(!name){$("task-name").focus();return;}tasks.push({name,owner:$("task-owner").value.trim(),date:$("task-date").value,priority:$("task-priority").value});$("task-name").value="";renderTasks();});
- if(planner)planner.addEventListener("click",e=>{const b=e.target.closest(".remove-task");if(b){tasks.splice(Number(b.dataset.index),1);renderTasks();}});
- const clear=$("clear-plan");if(clear)clear.addEventListener("click",()=>{tasks.length=0;renderTasks();});
- const download=$("download-plan");if(download)download.addEventListener("click",()=>{if(!tasks.length){planner.innerHTML="<p>Add at least one task before downloading.</p>";return;}const rows=[["Task","Owner","Due date","Priority"],...tasks.map(t=>[t.name,t.owner,t.date,t.priority])];const csv=rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(",")).join("\r\n");const a=document.createElement("a"),url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));a.href=url;a.download="careerpilot-weekly-plan.csv";a.click();URL.revokeObjectURL(url);});
- const draft=$("draft-email");
- if(draft)$("draft-email").addEventListener("click",()=>{
-  const type=$("email-type").value,tone=$("email-tone").value,to=$("email-recipient").value.trim()||"there",from=$("email-sender").value.trim()||"[Your name]",details=$("email-details").value.trim()||"[Add the relevant details]";
-  const subjects={followup:"Following up",meeting:"Request for a meeting",thankyou:"Thank you",client:"Project update",application:"Application for [Role title]"};
-  const openings={followup:"I hope you are well. I wanted to follow up on our recent conversation and check whether there are any updates.",meeting:"I hope you are well. I would like to arrange a meeting to discuss the points below and agree on next steps.",thankyou:"Thank you for taking the time to speak with me. I appreciated the opportunity to connect.",client:"I am writing to share a brief update and outline the current position and next steps.",application:"I am writing to express my interest in the [Role title] opportunity. I have included my application materials for your consideration."};
-  const close=tone==="formal"?"Please let me know if you require any further information. I look forward to your response.":tone==="concise"?"Please let me know the next step.":"Thanks again for your time. I look forward to hearing from you.";
-  draft.value="Subject: "+subjects[type]+"\n\nDear "+to+",\n\n"+openings[type]+"\n\n"+details+"\n\n"+close+"\n\nKind regards,\n"+from;
+ 
+ // 05 — task planner with local persistence, safe CSV export and remove/clear controls.
+ const planner=$("planner-list"),storageKey="careerpilot-free-tool-tasks-v1";
+ let tasks=[];
+ try{const saved=JSON.parse(localStorage.getItem(storageKey)||"[]");if(Array.isArray(saved))tasks=saved.filter(t=>t&&typeof t.name==="string").slice(0,300);}catch(_){tasks=[];}
+ const saveTasks=()=>{try{localStorage.setItem(storageKey,JSON.stringify(tasks));}catch(_){if(planner)planner.insertAdjacentHTML("afterbegin","<p class='tool-privacy'>Your browser could not save this plan. You can still download it as a CSV.</p>");}};
+ const renderTasks=()=>{
+  if(!planner)return;
+  if(!tasks.length){planner.innerHTML="<p>Your tasks will appear here. Add a task to start your plan.</p>";return;}
+  const sorted=tasks.map((task,index)=>({...task,index})).sort((a,b)=>(a.date||"9999-12-31").localeCompare(b.date||"9999-12-31"));
+  planner.innerHTML=sorted.map(task=>"<div class='planner-item'><span><b>"+escapeHTML(task.name)+"</b><small>"+escapeHTML(task.owner||"Unassigned")+" · "+escapeHTML(task.date||"No due date")+" · "+escapeHTML(task.priority)+" priority</small></span><button type='button' class='btn btn-light remove-task' data-index='"+task.index+"' aria-label='Remove "+escapeHTML(task.name)+"'>Remove</button></div>").join("");
+ };
+ renderTasks();
+ const addTask=$("add-task");
+ if(addTask)addTask.addEventListener("click",()=>{
+  const name=$("task-name").value.trim(),date=$("task-date").value,owner=$("task-owner").value.trim(),priority=$("task-priority").value;
+  if(!name){$("task-name").focus();planner.insertAdjacentHTML("afterbegin","<p role='alert'>Enter a task description before adding it.</p>");return;}
+  if(date&&!/^\d{4}-\d{2}-\d{2}$/.test(date)){planner.insertAdjacentHTML("afterbegin","<p role='alert'>Choose a valid due date.</p>");return;}
+  tasks.push({name,owner,date,priority});saveTasks();renderTasks();$("task-name").value="";$("task-name").focus();
  });
- const copy=$("copy-email");if(copy)copy.addEventListener("click",async()=>{if(!draft.value)return;try{await navigator.clipboard.writeText(draft.value);copy.textContent="Copied";}catch(_){draft.select();copy.textContent="Select and copy";}});
+ if(planner)planner.addEventListener("click",event=>{const button=event.target.closest(".remove-task");if(!button)return;const index=Number(button.dataset.index);if(Number.isInteger(index)&&index>=0&&index<tasks.length){tasks.splice(index,1);saveTasks();renderTasks();}});
+ const clear=$("clear-plan");if(clear)clear.addEventListener("click",()=>{if(!tasks.length)return;if(!window.confirm("Clear all tasks in this browser?"))return;tasks=[];saveTasks();renderTasks();});
+ const download=$("download-plan");if(download)download.addEventListener("click",()=>{
+  if(!tasks.length){planner.innerHTML="<p role='alert'>Add at least one task before downloading your plan.</p>";return;}
+  const csvCell=value=>{let text=String(value??"");if(/^[=+\-@]/.test(text))text="'"+text;return '"'+text.replace(/"/g,'""')+'"';};
+  const rows=[["Task","Owner","Due date","Priority"],...tasks.map(task=>[task.name,task.owner,task.date,task.priority])];
+  const csv="\uFEFF"+rows.map(row=>row.map(csvCell).join(",")).join("\r\n");
+  const url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"})),anchor=document.createElement("a");
+  anchor.href=url;anchor.download="careerpilot-task-plan.csv";document.body.appendChild(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ });
+ 
+ // 06 — editable, template-based email writer (not an AI service and never sends).
+ const draftButton=$("draft-email"),draft=$("email-draft"),copyButton=$("copy-email");
+ if(draftButton&&draft)draftButton.addEventListener("click",()=>{
+  const type=$("email-type").value,tone=$("email-tone").value,recipient=$("email-recipient").value.trim()||"there",sender=$("email-sender").value.trim()||"[Your name]",details=$("email-details").value.trim();
+  if(!details){$("email-details").focus();draft.value="Please add the key details you want the message to communicate, then generate your draft.";return;}
+  const subjects={followup:"Following up",meeting:"Meeting request",thankyou:"Thank you",client:"Project update",application:"Application for [Role title]"};
+  const openings={
+   followup:"I hope you are well. I am following up on our recent conversation and would appreciate an update when convenient.",
+   meeting:"I hope you are well. I would like to arrange a meeting to discuss the points below and agree on practical next steps.",
+   thankyou:"Thank you for taking the time to speak with me. I appreciated the opportunity to connect and learn more.",
+   client:"I am writing to share an update on the work and outline the current position and next steps.",
+   application:"I am writing to express my interest in the [Role title] opportunity. I would welcome the opportunity to be considered."
+  };
+  const closing=tone==="formal"?"Please let me know if you require any further information. I look forward to your response.":tone==="concise"?"Please let me know if you need anything further.": "Thank you for your time. I look forward to hearing from you.";
+  const greeting=tone==="formal"?"Dear "+recipient+",":"Hello "+recipient+",";
+  draft.value="Subject: "+subjects[type]+"\n\n"+greeting+"\n\n"+openings[type]+"\n\n"+details+"\n\n"+closing+"\n\nKind regards,\n"+sender;
+  draft.focus();
+ });
+ if(copyButton&&draft)copyButton.addEventListener("click",async()=>{
+  if(!draft.value.trim()){draft.focus();return;}
+  if(!await copyText(draft.value,copyButton)){draft.focus();draft.select();copyButton.textContent="Select the draft and copy";}
+ });
 })();
