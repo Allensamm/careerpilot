@@ -315,3 +315,54 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .promise-paths p{color:#667085;margin:0 0 18px}
 .promise-paths a{color:#3569ed;font-weight:700;font-size:13px}
 @media(max-width:680px){.promise-paths{grid-template-columns:1fr}.promise-panel{padding:26px}}
+
+/* Mobile repair: service directory cards must fit narrow screens */
+@media(max-width:800px){
+  .service-group-heading{min-width:0}
+  .service-group-heading h2{
+    width:100%;
+    max-width:100%;
+    font-size:clamp(25px,8vw,38px);
+    line-height:1.12;
+    letter-spacing:-.055em;
+    overflow-wrap:anywhere;
+  }
+  .service-group-heading p{max-width:100%;overflow-wrap:break-word}
+  .service-detail{
+    width:100%;
+    min-width:0;
+    grid-template-columns:28px minmax(0,1fr);
+    column-gap:12px;
+    row-gap:18px;
+    align-items:start;
+  }
+  .service-detail>*{min-width:0}
+  .service-detail-image{
+    grid-column:2;
+    grid-row:1;
+    width:100%;
+    max-width:100%;
+    height:190px;
+    object-fit:cover;
+  }
+  .service-detail>div:not(.linkedin-visual){grid-column:2}
+  .service-detail>.detail-cta{
+    grid-column:2;
+    grid-row:auto;
+    justify-self:start;
+    width:fit-content;
+    max-width:100%;
+    white-space:normal;
+    overflow-wrap:anywhere;
+    line-height:1.5;
+  }
+  .service-detail .pills{max-width:100%}
+  .service-detail .pill{max-width:100%;overflow-wrap:anywhere}
+  .linkedin-visual{grid-column:2;min-width:0;width:100%}
+  .linkedin-visual .service-detail-image{width:100%;max-width:100%}
+}
+@media(max-width:380px){
+  .service-group-heading h2{font-size:26px}
+  .service-detail{grid-template-columns:24px minmax(0,1fr);column-gap:10px}
+  .service-detail>.detail-cta{padding:12px 14px}
+}
