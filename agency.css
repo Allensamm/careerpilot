@@ -504,3 +504,37 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .work-progress::-moz-progress-bar{background:#71876c;border-radius:20px}
 .tool-panel button[data-work-action]:disabled{opacity:.75;cursor:wait;transform:none}
 @media(max-width:700px){.work-result-card{padding:16px}.work-result-text{font-size:13px}}
+
+/* CareerPilot deterministic resource reports */
+.work-result-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px;margin-top:18px}
+.work-result-card h3{font-family:var(--display);font-size:20px;margin:18px 0 12px}
+.work-result-card h3:first-child{margin-top:0}
+.work-result-card h4{font-family:var(--display);font-size:16px;margin:0 0 10px}
+.work-result-content{font-size:14px;line-height:1.75;color:var(--ink)}
+.work-result-content p{color:var(--muted);line-height:1.75}
+.work-result-content li{margin:7px 0}
+.work-status{font-size:12px;color:var(--muted);margin:8px 0 14px}
+.work-progress{display:block;width:100%;height:6px;margin:12px 0;border:0;border-radius:20px;overflow:hidden;background:#edf0f7}
+.work-progress::-webkit-progress-bar{background:#edf0f7;border-radius:20px}
+.work-progress::-webkit-progress-value{background:#2855f5;border-radius:20px}
+.work-progress::-moz-progress-bar{background:#2855f5;border-radius:20px}
+.work-result-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.work-template{white-space:pre-wrap;background:#f5f7ff;border-left:3px solid #2855f5;padding:15px;font:13px/1.7 var(--sans);overflow-wrap:anywhere}
+.review-check-list{list-style:none;padding:0;display:grid;gap:8px}
+.review-check{display:flex;justify-content:space-between;gap:16px;padding:12px;border:1px solid var(--line);border-radius:5px}
+.review-check span{display:grid;gap:3px}
+.review-check small,.generated-block small{display:block;color:var(--muted);font-size:12px;line-height:1.55}
+.review-check>strong{font-size:11px;white-space:nowrap}
+.review-check.is-pass>strong{color:#24734f}
+.review-check.is-gap>strong{color:#b45335}
+.review-check.is-neutral>strong{color:var(--muted)}
+.generated-block{padding:17px 0;border-top:1px solid var(--line)}
+.generated-block textarea{width:100%;padding:13px;border:1px solid var(--line);border-radius:4px;background:#fbfcff;color:var(--ink);font:13px/1.65 var(--sans);resize:vertical}
+.generated-block .btn{margin-top:10px}
+.keyword-list{display:flex;flex-wrap:wrap;gap:7px}
+.keyword-chip{display:inline-block;background:#edf2ff;color:#2948a8;padding:6px 9px;border-radius:3px;font-size:11px}
+.tool-panel button[data-work-action]:disabled{opacity:.75;cursor:wait;transform:none}
+.tool-spinner{display:inline-block;width:13px;height:13px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:cp-spin .7s linear infinite;vertical-align:-2px}
+@keyframes cp-spin{to{transform:rotate(360deg)}}
+@media(max-width:700px){.work-result-card{padding:16px}.review-check{align-items:flex-start;flex-direction:column;gap:5px}}
+@media(prefers-reduced-motion:reduce){.tool-spinner{animation:none;border-right-color:currentColor}}
