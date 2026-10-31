@@ -17,7 +17,7 @@ export function analyzeCV(text,targetRole=""){
  const wordCount=tokens.length;
  const lines=source.split(/\n+/).map(x=>x.trim()).filter(Boolean);
  const bulletLines=lines.filter(x=>/^(?:[•●▪*-]|\d+[.)])\s+/.test(x));
- const metricMatches=source.match(/(?:[$£€]\s?\d[\d,]*(?:\.\d+)?|\b\d+(?:[.,]\d+)?\s?(?:%|percent|years?|months?|weeks?|days?|hours?|clients?|customers?|projects?|people|staff|users?|k|m|million|billion)\b)/gi)||[];
+ const metricMatches=source.match(/(?:[$£€]\s?\d[\d,]*(?:\.\d+)?|\b\d+(?:[.,]\d+)?\s?(?:%|percent\b|years?\b|months?\b|weeks?\b|days?\b|hours?\b|clients?\b|customers?\b|projects?\b|people\b|staff\b|users?\b|[km]\b))/gi)||[];
  const verbMatches=ACTION_VERBS.filter(v=>new RegExp("\\b"+v+"\\b","i").test(source));
  const dates=source.match(/\b(?:19|20)\d{2}\b/g)||[];
  const contactEmail=/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i.test(source);
@@ -51,7 +51,8 @@ export function analyzeCV(text,targetRole=""){
   {key:"bullets",label:"Scannable achievement statements",weight:10,passed:bullets,detail:bulletLines.length+" bullet-style lines and "+verbMatches.length+" recognised action-verb types were detected.",fix:"Use concise bullets that begin with an action and explain the task, scope and result. Avoid long blocks of duties."},
   {key:"role",label:"Target-role relevance",weight:10,passed:role?roleScore>=6:null,detail:role?(matchedKeywords.length+" of "+targetTerms.length+" target-role terms were found."): "No target role was supplied, so role relevance could not be assessed.",fix:role?"Compare the vacancy requirements with your evidence. Add missing terms only where they accurately describe your skills or experience.":"Enter a target role to receive a more useful relevance and keyword comparison."}
  ];
- const score=Math.round(checks.reduce((sum,item)=>sum+(item.passed===null?item.weight*.5:item.passed?item.weight:0),0));
+ const rawScore=Math.round(checks.reduce((sum,item)=>sum+(item.passed===null?item.weight*.5:item.passed?item.weight:0),0));
+ const score=wordCount<120?Math.min(rawScore,69):wordCount>1500?Math.min(rawScore,79):rawScore;
  const weakBullets=lines.filter(line=>line.length>=25&&line.length<=220&&/(responsible for|duties included|worked on|helped with|assisted with|involved in|tasked with|handled)/i.test(line)).slice(0,4);
  const strengths=[];
  if(contact)strengths.push("At least one contact method is present.");
@@ -120,11 +121,12 @@ export function assessJobReadiness(values={}){
  ],disclaimer:"This is a self-assessment based on the answers selected. It is not a measure of employability and cannot predict interviews, offers or hiring decisions."};
 }
 
-export function buildWeeklyPlan(tasks=[],todayISO=new Date().toISOString().slice(0,10)){
- const today=new Date(todayISO+"T00:00:00");
+export function buildWeeklyPlan(tasks=[],todayISO){
+ const currentISO=todayISO||(()=>{const now=new Date();return now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0")+"-"+String(now.getDate()).padStart(2,"0");})();
+ const today=new Date(currentISO+"T00:00:00");
  if(Number.isNaN(today.getTime()))throw new Error("A valid planning date is required.");
  const end=new Date(today);end.setDate(end.getDate()+7);
- const dateISO=date=>date.toISOString().slice(0,10);
+ const dateISO=date=>date.getFullYear()+"-"+String(date.getMonth()+1).padStart(2,"0")+"-"+String(date.getDate()).padStart(2,"0");
  const groups={overdue:[],dueSoon:[],later:[],undated:[]};
  const sorted=(Array.isArray(tasks)?tasks:[]).filter(t=>t&&typeof t.name==="string"&&t.name.trim()).map((task,index)=>({...task,_index:index}));
  sorted.forEach(task=>{
