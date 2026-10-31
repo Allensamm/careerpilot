@@ -30,6 +30,7 @@ test('all free-tool generation buttons are wired to the on-device AI agent',()=>
   assert.match(html,new RegExp('id="'+id+'"[^>]*data-ai-action="'+action+'"'));
  }
  assert.match(html,/ai-engine\.js/);
- assert.match(html,/ai-worker\.js/);
+  const engine=readFileSync(new URL("../ai-engine.js",import.meta.url),"utf8");
+  assert.match(engine,/ai-worker\.js/);
  assert.match(html,/https:\/\/esm\.run/);
 });
