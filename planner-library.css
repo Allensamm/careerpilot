@@ -76,3 +76,111 @@
 @media(max-width:1050px){.digital-planner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.planner-library-toolbar{grid-template-columns:1fr}.planner-result-count{grid-column:auto}}
 @media(max-width:620px){.digital-planner-grid{grid-template-columns:1fr}.planner-cover{min-height:225px}.planner-library-toolbar{gap:15px}.planner-filters{gap:6px}.planner-filters button{padding:9px 10px}.planner-card-body{padding:17px}}
 @media(prefers-reduced-motion:reduce){.digital-planner-card,.planner-filters button,.planner-download{transition:none}}
+
+
+/* Interactive planner preview and on-site workspace */
+.planner-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 12px}
+.planner-action{min-height:40px;padding:10px 9px;border-radius:5px;border:1px solid #dce4f0;background:#fff;color:#244b93;font:700 10px var(--sans);cursor:pointer;transition:background .18s,border-color .18s,color .18s}
+.planner-action:hover{border-color:#9bb5ef;background:#f5f8ff}
+.planner-action--use{background:#142746;border-color:#142746;color:#fff}
+.planner-action--use:hover{background:#3569ed;border-color:#3569ed;color:#fff}
+.planner-experience{width:min(1180px,calc(100vw - 28px));max-width:none;max-height:calc(100dvh - 28px);padding:0;border:1px solid #dfe6f0;border-radius:13px;background:#f7f9fc;color:#142746;box-shadow:0 28px 90px rgba(10,25,48,.3);overflow:hidden}
+.planner-experience::backdrop{background:rgba(9,19,34,.72);backdrop-filter:blur(4px)}
+.planner-experience[open]{display:block}
+.planner-experience-shell{display:flex;flex-direction:column;max-height:calc(100dvh - 28px);min-height:520px}
+.planner-experience-header{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:22px 26px 17px;background:#fff;border-bottom:1px solid #e5eaf2}
+.planner-experience-heading .eyebrow{font-size:9px;letter-spacing:.16em;color:#3569ed;font-weight:800}
+.planner-experience-heading h2{font:800 25px/1.15 var(--display);letter-spacing:-.045em;margin:7px 0 4px}
+.planner-experience-heading p{margin:0;color:#6d788b;font-size:12px;line-height:1.5}
+.planner-modal-close{width:38px;height:38px;flex:0 0 38px;border:1px solid #e0e6ef;border-radius:50%;background:#fff;color:#142746;font-size:25px;line-height:1;cursor:pointer}
+.planner-experience-tabs{display:flex;gap:6px;padding:12px 26px;background:#fff;border-bottom:1px solid #e5eaf2}
+.planner-experience-tabs button{padding:10px 15px;border:1px solid transparent;border-radius:5px;background:transparent;color:#68758a;font:700 11px var(--sans);cursor:pointer}
+.planner-experience-tabs button.is-active{background:#142746;color:#fff}
+.planner-experience-status{padding:8px 26px;background:#f0f4fb;color:#56657b;font-size:11px;border-bottom:1px solid #e1e8f2}
+.planner-experience-status:empty{display:none}
+.planner-preview-view,.planner-workspace-view{padding:18px 24px 22px;overflow:auto;min-height:0}
+.planner-page-strip{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:9px;margin-bottom:15px}
+.planner-thumb{min-width:0;padding:6px;border:1px solid #dce3ed;border-radius:6px;background:#fff;color:#5e6d81;text-align:left;cursor:pointer}
+.planner-thumb.is-active{border:2px solid #3569ed;padding:5px;box-shadow:0 0 0 2px rgba(53,105,237,.1)}
+.planner-thumb canvas{display:block;width:100%;height:auto;background:#fff;border:1px solid #edf0f4}
+.planner-thumb span{display:block;padding:5px 1px 0;font-size:9px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.planner-document-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:900px;margin:0 auto 10px;color:#64748b;font-size:11px;font-weight:700}
+.planner-document-toolbar>div{display:flex;gap:7px}
+.planner-tool-button,.planner-primary-button,.planner-reset-button{min-height:36px;padding:9px 12px;border:1px solid #d5deeb;border-radius:5px;background:#fff;color:#294365;font:700 10px var(--sans);cursor:pointer}
+.planner-tool-button:hover{border-color:#8fa8d4;background:#f7f9fd}
+.planner-primary-button{background:#142746;border-color:#142746;color:#fff}
+.planner-primary-button:hover{background:#3569ed;border-color:#3569ed}
+.planner-reset-button{color:#9b4b4b;border-color:#ecdada}
+.planner-document-stage{display:flex;justify-content:center;align-items:flex-start;max-width:900px;min-height:400px;margin:0 auto;padding:18px;background:#e5eaf1;border:1px solid #d8e0eb;border-radius:8px;overflow:auto}
+#planner-document-canvas{display:block;width:auto;max-width:100%;height:auto;background:#fff;box-shadow:0 6px 22px rgba(17,31,52,.14)}
+.planner-preview-caption{text-align:center;color:#78869a;font-size:10px;margin:10px 0 0}
+.planner-workspace-layout{display:grid;grid-template-columns:215px minmax(0,1fr);gap:22px;align-items:start;max-width:1060px;margin:0 auto}
+.planner-workspace-sidebar{position:sticky;top:0;padding:14px;background:#fff;border:1px solid #e0e7f0;border-radius:8px}
+.planner-sidebar-label{display:block;margin-bottom:11px;color:#8a95a6;font-size:9px;font-weight:800;letter-spacing:.14em}
+#planner-workspace-pages{display:grid;gap:5px}
+.planner-workspace-page-link{display:flex;gap:9px;align-items:flex-start;width:100%;padding:9px;border:1px solid transparent;border-radius:5px;background:transparent;color:#58677d;text-align:left;font:600 10px/1.45 var(--sans);cursor:pointer}
+.planner-workspace-page-link span:first-child{display:grid;place-items:center;width:21px;height:21px;flex:0 0 21px;border-radius:50%;background:#edf1f7;color:#52637b;font-size:9px}
+.planner-workspace-page-link.is-active{background:#f1f5ff;border-color:#d9e4ff;color:#214d9f}
+.planner-workspace-page-link.is-active span:first-child{background:#244f9f;color:#fff}
+.planner-local-note{margin-top:16px;padding:11px;background:#f5f8fc;border-radius:5px}
+.planner-local-note strong,.planner-local-note span{display:block}
+.planner-local-note strong{font-size:10px;color:#294b78;margin-bottom:5px}
+.planner-local-note span{font-size:9px;line-height:1.55;color:#78869a}
+.planner-workspace-main{min-width:0}
+.planner-workspace-toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 12px;color:#68768b;font-size:10px;font-weight:700}
+.planner-save-state{color:#26815f}
+.planner-worksheet{padding:clamp(17px,3vw,28px);border:1px solid #e0e7f0;border-radius:8px;background:#fff;box-shadow:0 8px 25px rgba(22,43,73,.04)}
+.planner-worksheet-kicker{font-size:9px;letter-spacing:.14em;font-weight:800;color:#3569ed;text-transform:uppercase}
+.planner-worksheet h3{font:800 clamp(20px,3vw,27px)/1.2 var(--display);letter-spacing:-.04em;margin:8px 0 7px;color:#142746}
+.planner-worksheet-intro{margin:0 0 18px;color:#69778b;font-size:11px;line-height:1.65}
+.planner-worksheet label{display:block;color:#43536a;font-size:10px;font-weight:700}
+.planner-field-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 16px}
+.planner-worksheet input[type=text],.planner-worksheet input[type=date],.planner-worksheet textarea{display:block;width:100%;margin-top:6px;padding:10px 11px;border:1px solid #dce4ee;border-radius:5px;background:#fff;color:#172b47;font:400 11px/1.5 var(--sans)}
+.planner-worksheet textarea{min-height:82px;resize:vertical}
+.planner-online-block{margin-top:17px;padding-top:15px;border-top:1px solid #edf0f5}
+.planner-online-block h4{margin:0 0 8px;color:#294b78;font:800 10px var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.planner-online-prompt{margin:0 0 10px;color:#63728a;font-size:10px;line-height:1.6}
+.planner-checklist{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
+.planner-check-item{display:flex!important;gap:8px;align-items:flex-start;padding:8px;border:1px solid #e9edf3;border-radius:5px;background:#fbfcfe;font-weight:500!important;line-height:1.45}
+.planner-check-item input{margin:1px 0 0;accent-color:#3569ed}
+.planner-online-table-wrap{overflow-x:auto}
+.planner-online-table{width:100%;border-collapse:collapse;min-width:430px}
+.planner-online-table th{padding:9px 7px;background:#142746;color:#fff;text-align:left;font-size:9px}
+.planner-online-table td{padding:5px;border:1px solid #e5eaf1}
+.planner-online-table input{width:100%;min-width:65px;padding:8px 6px;border:1px solid #e1e7ef;border-radius:3px;font:10px var(--sans)}
+.planner-workspace-navigation{display:flex;justify-content:space-between;gap:10px;margin:13px 0}
+.planner-export-actions{display:flex;flex-wrap:wrap;gap:8px;padding-top:13px;border-top:1px solid #e3e9f1}
+.planner-experience-footer{display:flex;justify-content:space-between;gap:12px;padding:12px 25px;background:#fff;border-top:1px solid #e4e9f1;color:#8290a2;font-size:9px}
+.planner-experience-footer a{color:#2e5cba;font-weight:800;text-decoration:none}
+@media(max-width:760px){
+ .planner-experience{width:calc(100vw - 12px);max-height:calc(100dvh - 12px);border-radius:9px}
+ .planner-experience-shell{max-height:calc(100dvh - 12px)}
+ .planner-experience-header{padding:17px 16px 13px}
+ .planner-experience-tabs{padding:9px 12px}
+ .planner-experience-status{padding:8px 14px}
+ .planner-preview-view,.planner-workspace-view{padding:13px 12px 18px}
+ .planner-page-strip{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+ .planner-workspace-layout{grid-template-columns:1fr;gap:12px}
+ .planner-workspace-sidebar{position:static}
+ #planner-workspace-pages{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .planner-local-note{display:none}
+ .planner-workspace-main{width:100%}
+ .planner-document-stage{padding:8px;min-height:250px}
+ .planner-field-grid{grid-template-columns:1fr}
+ .planner-checklist{grid-template-columns:1fr}
+ .planner-experience-footer{padding:10px 13px}
+}
+@media print{
+ body.planner-printing>*:not(#planner-print-root){display:none!important}
+ #planner-print-root{display:block!important}
+ #planner-print-root .print-sheet{page-break-after:always;break-after:page;padding:18mm 15mm;color:#172b47;font:11pt/1.5 Arial,sans-serif}
+ #planner-print-root .print-sheet h1{font-size:23pt;margin:0 0 5mm}
+ #planner-print-root .print-sheet h2{font-size:13pt;margin:7mm 0 2mm}
+ #planner-print-root .print-meta{color:#596a80;font-size:9pt;margin-bottom:8mm}
+ #planner-print-root .print-line{min-height:12mm;border-bottom:1px solid #cbd4df;white-space:pre-wrap}
+ #planner-print-root .print-check{margin:2mm 0}
+ #planner-print-root table{width:100%;border-collapse:collapse;margin-top:4mm}
+ #planner-print-root th,#planner-print-root td{border:1px solid #b9c5d3;padding:3mm;text-align:left;vertical-align:top}
+ #planner-print-root th{background:#eef2f7}
+}
+#planner-print-root{display:none}
