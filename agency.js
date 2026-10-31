@@ -25,7 +25,7 @@ if(cvChecks.length){
  // own longer-lived async state, so it is intentionally handled separately.
  document.addEventListener("click",event=>{
   const button=event.target.closest(".tool-panel button");
-  if(!button||button.dataset.aiAction||button.id==="cv-analyse"||button.disabled)return;
+  if(!button||button.dataset.workAction||button.id==="cv-analyse"||button.disabled)return;
   const original=button.innerHTML;
   button.disabled=true;
   button.setAttribute("aria-busy","true");
