@@ -57,6 +57,7 @@
   if(reason==="device-unsupported")return "This browser or device cannot prepare this workspace yet. Please try an up-to-date Chrome or Edge browser on a computer with compatible graphics hardware. Your information has not been uploaded.";
   if(reason==="empty-result")return "We could not produce a complete result this time. Please try again with a little more detail.";
   if(reason==="missing-result-area")return "This page did not load correctly. Refresh it and try again.";
+  if(["Choose a PDF","Please upload","The CV must","This CV has","The file contains","The PDF reader","The DOCX reader","Enter a target role","Add a few business tasks","Add the key details","Check the inputs"].some(prefix=>reason.startsWith(prefix)))return reason;
   return "We could not finish preparing your workspace. Check your connection and try again. Your information has not been uploaded.";
  };
  const showError=(container,message)=>{
@@ -110,7 +111,7 @@
   const model=await ensureEngine();
   setStatus("Working through your request…","working");
   const stream=await model.chat.completions.create({
-   messages:messages,temperature:0.6,top_p:0.95,max_tokens:maxTokens||1100,stream:true,
+   messages:messages,temperature:0.6,top_p:0.95,presence_penalty:1.5,max_tokens:maxTokens||1100,stream:true,
    extra_body:{enable_thinking:true}
   });
   let raw="",answer="";
