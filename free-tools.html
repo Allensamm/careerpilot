@@ -1,4 +1,260 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="https://careerpilot-inky.vercel.app/free-tools"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><meta property="og:type" content="website"><meta property="og:site_name" content="CareerPilot"><meta property="og:title" content="Career & Business Resources | CareerPilot"><meta property="og:description" content="Explore practical CV, LinkedIn, job-search and business productivity support from CareerPilot. Free to use, no account required."><meta property="og:url" content="https://careerpilot-inky.vercel.app/free-tools"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Career & Business Resources | CareerPilot"><meta name="twitter:description" content="Explore practical CV, LinkedIn, job-search and business productivity support from CareerPilot. Free to use, no account required."><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Career & Business Resources | CareerPilot","url":"https://careerpilot-inky.vercel.app/free-tools","description":"Explore practical CV, LinkedIn, job-search and business productivity support from CareerPilot. Free to use, no account required.","isPartOf":{"@type":"WebSite","name":"CareerPilot","url":"https://careerpilot-inky.vercel.app/"}}</script><meta name="description" content="Explore practical CV, LinkedIn, job-search and business productivity support from CareerPilot. Free to use, no account required."><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; worker-src 'self' blob: https://cdnjs.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'"><title>Career & Business Resources | CareerPilot</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="./agency.css"><script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script defer src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script><script defer src="./agency-config.js"></script><script defer src="./agency.js"></script><script type="module" src="./careerpilot-workspace.js"></script></head><body><div class="wrap"><header class="site-header"><a class="brand" href="/">career<span>pilot</span></a><button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu ☰</button><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/who-we-help">Who we help</a><a href="/how-we-work">How we work</a><a href="/resources">Resources</a><a href="/get-started">Get started</a><a href="/free-tools" aria-current="page">Free resources</a><a href="/about">About</a><a href="/faqs">FAQs</a><a href="/contact" class="nav-cta">Let's talk</a></nav></header></div><main><div class="wrap"><section class="page-hero"><span class="eyebrow">CareerPilot resource centre</span><h1>Practical support for your next move.</h1><p class="lead">Practical, free career and business support for job seekers, professionals and busy business owners. Start with a quick review, build a plan or draft your next message—no account required.</p></section><section class="section tool-intro"><span class="eyebrow">CareerPilot resource centre</span><h2>Practical support for your next move.</h2><p>Free, practical support for job seekers, professionals and busy business owners. No account required.</p><div class="tool-jump-grid"><a href="#cv-health">01 · Free CV Health Check</a><a href="#linkedin-tool">02 · LinkedIn Profile Improvement</a><a href="#time-calculator">03 · Productivity & Time Savings Calculator</a><a href="#job-readiness">04 · Job Application Readiness Checker</a><a href="#task-planner">05 · Free Business Task Planner</a><a href="#email-assistant">06 · Professional Email Writing</a></div></section><section class="tool-section" id="cv-health"><div class="tool-heading"><span class="eyebrow">01 / Career support</span><h2>Free CV Health Check</h2><p>Upload a PDF or DOCX for a detailed review of content strength, section coverage, role keywords, measurable evidence and practical improvements.</p></div><div class="tool-panel"><label class="tool-file-label">Choose your CV (PDF or DOCX)<input id="cv-upload" type="file" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label><label>Target role (optional, for relevance checks)<input id="cv-target-role" placeholder="e.g. Senior Project Manager"></label><p class="tool-privacy">Your CV is read in this browser and is not uploaded to CareerPilot. Review all suggestions before using them.</p><button class="btn" id="cv-analyse" data-work-action="cv" type="button">Review my CV</button><div class="tool-score" id="cv-report" aria-live="polite"><strong>Your report will appear here.</strong></div></div></section><section class="tool-section" id="linkedin-tool"><div class="tool-heading"><span class="eyebrow">02 / Personal branding</span><h2>LinkedIn Profile Improvement</h2><p>Build a more specific LinkedIn positioning draft with headline options, a structured About section, keyword priorities and content prompts.</p></div><div class="tool-panel"><div class="tool-form-grid"><label>Target role<input id="li-role" placeholder="e.g. Project Manager"></label><label>Industry<input id="li-industry" placeholder="e.g. Technology"></label><label>Key strengths<input id="li-skills" placeholder="e.g. stakeholder management"></label><label>Career goal<input id="li-goal" placeholder="e.g. attract hiring managers"></label><label class="span-two">Experience and value<textarea id="li-experience" rows="4" placeholder="Summarise your experience and achievements."></textarea></label></div><button class="btn" id="li-generate" data-work-action="linkedin" type="button">Create profile suggestions</button><div id="li-output" class="tool-output" aria-live="polite"></div></div></section><section class="tool-section" id="time-calculator"><div class="tool-heading"><span class="eyebrow">03 / Business productivity</span><h2>Productivity & Time Savings Calculator</h2><p>Estimate hours that could be recovered through delegation and, optionally, their illustrative value in your own currency.</p></div><div class="tool-panel"><div class="tool-form-grid"><label>Admin hours each week<input type="number" id="admin-hours" min="0" max="168" value="8"></label><label>Share you could delegate (%)<input type="number" id="delegate-share" min="0" max="100" value="50"></label><label>Working weeks per year<input type="number" id="work-weeks" min="1" max="52" value="48"></label><label>Value of one working hour (optional; enter your currency)<input type="number" id="hour-value" min="0" max="100000" value="25"></label></div><button class="btn" id="calculate-time" data-work-action="time" type="button">Calculate time savings</button><div class="tool-metrics" id="time-results" aria-live="polite"><div><strong>—</strong><span>Hours per week</span></div><div><strong>—</strong><span>Hours per month</span></div><div><strong>—</strong><span>Hours per year</span></div></div><div class="tool-output" id="time-insight" aria-live="polite"></div><p class="tool-privacy">Illustrative estimate only. Actual results depend on handover time and task suitability.</p></div></section><section class="tool-section" id="job-readiness"><div class="tool-heading"><span class="eyebrow">04 / Career planning</span><h2>Job Application Readiness Checker</h2><p>Assess six parts of your job-search process and receive a prioritised action plan—not just a score.</p></div><div class="tool-panel"><div class="tool-form-grid"><label>CV up to date?<select id="jr-cv"><option value="0">Not yet</option><option value="1">Needs updates</option><option value="2">Yes</option></select></label><label>Clear target role?<select id="jr-role"><option value="0">Still exploring</option><option value="1">Some ideas</option><option value="2">Yes</option></select></label><label>Tailor experience to roles?<select id="jr-tailor"><option value="0">Not currently</option><option value="1">Sometimes</option><option value="2">Yes</option></select></label><label>Track applications?<select id="jr-track"><option value="0">No system</option><option value="1">Informally</option><option value="2">Consistently</option></select></label><label>LinkedIn profile current?<select id="jr-linkedin"><option value="0">No</option><option value="1">Partly</option><option value="2">Yes</option></select></label><label>Interview prepared?<select id="jr-interview"><option value="0">Not yet</option><option value="1">Some preparation</option><option value="2">Yes</option></select></label></div><button class="btn" id="check-readiness" data-work-action="readiness" type="button">Show readiness report</button><div class="tool-score" id="readiness-report" aria-live="polite"><strong>Your report will appear here.</strong></div></div></section><section class="tool-section" id="task-planner"><div class="tool-heading"><span class="eyebrow">05 / Business organisation</span><h2>Free Business Task Planner</h2><p>Organise tasks by owner, priority and deadline, then download your weekly plan as a CSV file.</p></div><div class="tool-panel"><div class="tool-form-grid"><label>Task<input id="task-name" placeholder="Prepare client proposal"></label><label>Owner<input id="task-owner" placeholder="Name"></label><label>Due date<input type="date" id="task-date"></label><label>Priority<select id="task-priority"><option>High</option><option selected>Medium</option><option>Low</option></select></label></div><button class="btn" id="add-task" type="button">Add task</button><div class="planner-list" id="planner-list" aria-live="polite"><p>Your tasks will appear here.</p></div><div class="tool-actions"><button class="btn btn-light" id="plan-week" data-work-action="tasks" type="button">Build my weekly plan</button></div><div class="tool-output" id="planner-insight" aria-live="polite"></div><div class="tool-actions"><button class="btn btn-light" id="download-plan" type="button">Download weekly plan (CSV)</button><button class="btn btn-light" id="clear-plan" type="button">Clear plan</button></div></div></section><section class="tool-section" id="email-assistant"><div class="tool-heading"><span class="eyebrow">06 / Communication</span><h2>Professional Email Writer</h2><p>Draft clear, professional emails from your instructions. Edit the result before sending; nothing is sent automatically.</p></div><div class="tool-panel"><div class="tool-form-grid"><label>Message type<select id="email-type"><option value="followup">Follow-up email</option><option value="meeting">Meeting request</option><option value="thankyou">Thank-you note</option><option value="client">Client update</option><option value="application">Job application email</option></select></label><label>Tone<select id="email-tone"><option value="warm">Warm and professional</option><option value="formal">Formal</option><option value="concise">Concise and direct</option></select></label><label>Recipient<input id="email-recipient" placeholder="Name"></label><label>Your name<input id="email-sender" placeholder="Your name"></label><label class="span-two">Key details<textarea id="email-details" rows="4" placeholder="What should the email communicate?"></textarea></label></div><button class="btn" id="draft-email" data-work-action="email" type="button">Draft my email</button><p class="work-status" id="email-work-status" aria-live="polite">Your draft will appear below.</p><label class="email-draft-label" for="email-draft">Editable draft</label><textarea id="email-draft" rows="12" placeholder="Your draft will appear here."></textarea><button class="btn btn-light" id="copy-email" type="button">Copy draft</button><p class="tool-privacy">Review facts, names and sensitive information before sending. Nothing is sent automatically.</p></div></section><section class="band"><div class="band-inner"><div><span class="eyebrow">Want expert support?</span><h2>Turn your next step into a clear plan.</h2></div><div><p>Use these tools independently or speak with CareerPilot about tailored business or career support.</p><a class="btn" href="/contact">Talk to CareerPilot</a></div></div></section></div></main><footer class="footer"><div class="wrap"><div class="footer-top"><div><a class="brand" href="/">career<span>pilot</span></a><p class="footer-copy">Professional virtual assistance, career support, LinkedIn optimisation and business productivity for businesses and ambitious professionals.</p></div><div class="footer-links"><a href="/services">All services</a><a href="/virtual-assistant-services">Virtual assistance</a><a href="/job-search-support">Job search</a><a href="/services">Productivity support</a><a href="/linkedin-optimisation">LinkedIn</a><a href="/who-we-help">Who we help</a><a href="/how-we-work">How we work</a><a href="/results-testimonials">Results</a><a href="/resources">Resources</a><a href="/free-tools">Free resources</a><a href="/faqs">FAQs</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div><div class="footer-bottom"><span>© 2026 CareerPilot. All rights reserved.</span><span>Your time is valuable. Your next move should be strategic.</span></div></div></footer></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="https://careerpilot-inky.vercel.app/free-tools"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><meta property="og:type" content="website"><meta property="og:site_name" content="CareerPilot"><meta property="og:title" content="Career & Business Resources | CareerPilot"><meta property="og:description" content="Explore practical CV, LinkedIn, job-search and business productivity support from CareerPilot. Free to use, no account required."><meta property="og:url" content="https://careerpilot-inky.vercel.app/free-tools"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Career & Business Resources | CareerPilot"><meta name="twitter:description" content="Explore practical CV, LinkedIn, job-search and business productivity support from CareerPilot. Free to use, no account required."><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Career & Business Resources | CareerPilot","url":"https://careerpilot-inky.vercel.app/free-tools","description":"Explore practical CV, LinkedIn, job-search and business productivity support from CareerPilot. Free to use, no account required.","isPartOf":{"@type":"WebSite","name":"CareerPilot","url":"https://careerpilot-inky.vercel.app/"}}</script><meta name="description" content="Explore practical CV, LinkedIn, job-search and business productivity support from CareerPilot. Free to use, no account required."><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; worker-src 'self' blob: https://cdnjs.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'"><title>Career & Business Resources | CareerPilot</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="./agency.css"><link rel="stylesheet" href="./planner-library.css"><script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script defer src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script><script defer src="./agency-config.js"></script><script defer src="./agency.js"></script><script defer src="./planner-library.js"></script><script type="module" src="./careerpilot-workspace.js"></script></head><body><div class="wrap"><header class="site-header"><a class="brand" href="/">career<span>pilot</span></a><button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu ☰</button><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/who-we-help">Who we help</a><a href="/how-we-work">How we work</a><a href="/resources">Resources</a><a href="/get-started">Get started</a><a href="/free-tools" aria-current="page">Free resources</a><a href="/about">About</a><a href="/faqs">FAQs</a><a href="/contact" class="nav-cta">Let's talk</a></nav></header></div><main><div class="wrap"><section class="page-hero"><span class="eyebrow">CareerPilot resource centre</span><h1>Practical support for your next move.</h1><p class="lead">Practical, free career and business support for job seekers, professionals and busy business owners. Start with a quick review, build a plan or draft your next message—no account required.</p></section><section class="section tool-intro"><span class="eyebrow">CareerPilot resource centre</span><h2>Practical support for your next move.</h2><p>Free, practical support for job seekers, professionals and busy business owners. No account required.</p><div class="tool-jump-grid"><a href="#cv-health">01 · Free CV Health Check</a><a href="#linkedin-tool">02 · LinkedIn Profile Improvement</a><a href="#time-calculator">03 · Productivity & Time Savings Calculator</a><a href="#job-readiness">04 · Job Application Readiness Checker</a><a href="#task-planner">05 · Free Business Task Planner</a><a href="#email-assistant">06 · Professional Email Writing</a><a href="#digital-planners">07 · Downloadable Business Planners</a></div></section><section class="tool-section" id="cv-health"><div class="tool-heading"><span class="eyebrow">01 / Career support</span><h2>Free CV Health Check</h2><p>Upload a PDF or DOCX for a detailed review of content strength, section coverage, role keywords, measurable evidence and practical improvements.</p></div><div class="tool-panel"><label class="tool-file-label">Choose your CV (PDF or DOCX)<input id="cv-upload" type="file" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label><label>Target role (optional, for relevance checks)<input id="cv-target-role" placeholder="e.g. Senior Project Manager"></label><p class="tool-privacy">Your CV is read in this browser and is not uploaded to CareerPilot. Review all suggestions before using them.</p><button class="btn" id="cv-analyse" data-work-action="cv" type="button">Review my CV</button><div class="tool-score" id="cv-report" aria-live="polite"><strong>Your report will appear here.</strong></div></div></section><section class="tool-section" id="linkedin-tool"><div class="tool-heading"><span class="eyebrow">02 / Personal branding</span><h2>LinkedIn Profile Improvement</h2><p>Build a more specific LinkedIn positioning draft with headline options, a structured About section, keyword priorities and content prompts.</p></div><div class="tool-panel"><div class="tool-form-grid"><label>Target role<input id="li-role" placeholder="e.g. Project Manager"></label><label>Industry<input id="li-industry" placeholder="e.g. Technology"></label><label>Key strengths<input id="li-skills" placeholder="e.g. stakeholder management"></label><label>Career goal<input id="li-goal" placeholder="e.g. attract hiring managers"></label><label class="span-two">Experience and value<textarea id="li-experience" rows="4" placeholder="Summarise your experience and achievements."></textarea></label></div><button class="btn" id="li-generate" data-work-action="linkedin" type="button">Create profile suggestions</button><div id="li-output" class="tool-output" aria-live="polite"></div></div></section><section class="tool-section" id="time-calculator"><div class="tool-heading"><span class="eyebrow">03 / Business productivity</span><h2>Productivity & Time Savings Calculator</h2><p>Estimate hours that could be recovered through delegation and, optionally, their illustrative value in your own currency.</p></div><div class="tool-panel"><div class="tool-form-grid"><label>Admin hours each week<input type="number" id="admin-hours" min="0" max="168" value="8"></label><label>Share you could delegate (%)<input type="number" id="delegate-share" min="0" max="100" value="50"></label><label>Working weeks per year<input type="number" id="work-weeks" min="1" max="52" value="48"></label><label>Value of one working hour (optional; enter your currency)<input type="number" id="hour-value" min="0" max="100000" value="25"></label></div><button class="btn" id="calculate-time" data-work-action="time" type="button">Calculate time savings</button><div class="tool-metrics" id="time-results" aria-live="polite"><div><strong>—</strong><span>Hours per week</span></div><div><strong>—</strong><span>Hours per month</span></div><div><strong>—</strong><span>Hours per year</span></div></div><div class="tool-output" id="time-insight" aria-live="polite"></div><p class="tool-privacy">Illustrative estimate only. Actual results depend on handover time and task suitability.</p></div></section><section class="tool-section" id="job-readiness"><div class="tool-heading"><span class="eyebrow">04 / Career planning</span><h2>Job Application Readiness Checker</h2><p>Assess six parts of your job-search process and receive a prioritised action plan—not just a score.</p></div><div class="tool-panel"><div class="tool-form-grid"><label>CV up to date?<select id="jr-cv"><option value="0">Not yet</option><option value="1">Needs updates</option><option value="2">Yes</option></select></label><label>Clear target role?<select id="jr-role"><option value="0">Still exploring</option><option value="1">Some ideas</option><option value="2">Yes</option></select></label><label>Tailor experience to roles?<select id="jr-tailor"><option value="0">Not currently</option><option value="1">Sometimes</option><option value="2">Yes</option></select></label><label>Track applications?<select id="jr-track"><option value="0">No system</option><option value="1">Informally</option><option value="2">Consistently</option></select></label><label>LinkedIn profile current?<select id="jr-linkedin"><option value="0">No</option><option value="1">Partly</option><option value="2">Yes</option></select></label><label>Interview prepared?<select id="jr-interview"><option value="0">Not yet</option><option value="1">Some preparation</option><option value="2">Yes</option></select></label></div><button class="btn" id="check-readiness" data-work-action="readiness" type="button">Show readiness report</button><div class="tool-score" id="readiness-report" aria-live="polite"><strong>Your report will appear here.</strong></div></div></section><section class="tool-section" id="task-planner"><div class="tool-heading"><span class="eyebrow">05 / Business organisation</span><h2>Free Business Task Planner</h2><p>Organise tasks by owner, priority and deadline, then download your weekly plan as a CSV file.</p></div><div class="tool-panel"><div class="tool-form-grid"><label>Task<input id="task-name" placeholder="Prepare client proposal"></label><label>Owner<input id="task-owner" placeholder="Name"></label><label>Due date<input type="date" id="task-date"></label><label>Priority<select id="task-priority"><option>High</option><option selected>Medium</option><option>Low</option></select></label></div><button class="btn" id="add-task" type="button">Add task</button><div class="planner-list" id="planner-list" aria-live="polite"><p>Your tasks will appear here.</p></div><div class="tool-actions"><button class="btn btn-light" id="plan-week" data-work-action="tasks" type="button">Build my weekly plan</button></div><div class="tool-output" id="planner-insight" aria-live="polite"></div><div class="tool-actions"><button class="btn btn-light" id="download-plan" type="button">Download weekly plan (CSV)</button><button class="btn btn-light" id="clear-plan" type="button">Clear plan</button></div></div></section>
+<section class="tool-section planner-library" id="digital-planners">
+  <div class="tool-heading">
+    <span class="eyebrow">07 / Downloadable business planners</span>
+    <h2>Choose a planner that fits the way you work.</h2>
+    <p>Explore ten purpose-built planner collections for founders, executives, creators, small businesses, freelancers and service providers. Each download includes a cover and seven practical worksheets you can print or annotate digitally.</p>
+  </div>
+  <div class="planner-library-toolbar">
+    <label class="planner-search" for="planner-search">Find a planner
+      <input id="planner-search" type="search" placeholder="Search by goal, topic or planner name">
+    </label>
+    <div class="planner-filters" role="group" aria-label="Filter planners by category">
+      <button type="button" data-planner-filter="all" aria-pressed="true" class="is-active">All planners</button>
+      <button type="button" data-planner-filter="business" aria-pressed="false">Business</button>
+      <button type="button" data-planner-filter="marketing" aria-pressed="false">Marketing</button>
+      <button type="button" data-planner-filter="finance" aria-pressed="false">Finance</button>
+      <button type="button" data-planner-filter="projects" aria-pressed="false">Projects</button>
+      <button type="button" data-planner-filter="personal" aria-pressed="false">Personal</button>
+    </div>
+    <p class="planner-result-count" id="planner-result-count" aria-live="polite">Showing 10 planners</p>
+  </div>
+  <div class="digital-planner-grid" id="digital-planner-grid">
+    
+<article class="digital-planner-card" data-category="business" data-search="the focused founder planner a calm, editorial planning system for founders who want to turn big ambitions into focused quarterly, monthly and weekly action. annual vision &amp; goals quarterly strategy monthly focus weekly sprint daily focus decision log monthly review">
+  <div class="planner-cover planner-cover--focused-founder" aria-label="The Focused Founder Planner cover preview">
+    <span class="planner-cover-kicker">CAREERPILOT / PLANNER 01</span>
+    <span class="planner-cover-edition">UNDATED PDF</span>
+    <strong>THE FOCUSED<br>FOUNDER<br>PLANNER</strong>
+    <span class="planner-cover-tagline">Plan smarter. Protect your focus. Build with intention.</span>
+    <span class="planner-cover-footer">7 WORKSHEETS <i></i> PRINT OR ANNOTATE</span>
+  </div>
+  <div class="planner-card-body">
+    <span class="planner-category">Strategy &amp; leadership</span>
+    <h3>The Focused Founder Planner</h3>
+    <p>A calm, editorial planning system for founders who want to turn big ambitions into focused quarterly, monthly and weekly action.</p>
+    <details class="planner-preview">
+      <summary>Explore the 7 included worksheets</summary>
+      <ol><li>Annual Vision &amp; Goals</li><li>Quarterly Strategy</li><li>Monthly Focus</li><li>Weekly Sprint</li><li>Daily Focus</li><li>Decision Log</li><li>Monthly Review</li></ol>
+    </details>
+    <a class="planner-download" href="/downloads/planners/the-focused-founder-planner.pdf" download="the-focused-founder-planner.pdf">
+      <span>Download free planner</span><span aria-hidden="true">↓</span>
+    </a>
+    <span class="planner-file-meta">PDF · 8 pages · No account required</span>
+  </div>
+</article>
+
+<article class="digital-planner-card" data-category="business" data-search="ceo command center a decisive command centre for leadership priorities, meetings, delegation, performance indicators and strategic decisions. executive dashboard weekly priorities meeting agenda delegation tracker kpi scorecard project roadmap decision log">
+  <div class="planner-cover planner-cover--ceo-command-center" aria-label="CEO Command Center cover preview">
+    <span class="planner-cover-kicker">CAREERPILOT / PLANNER 02</span>
+    <span class="planner-cover-edition">UNDATED PDF</span>
+    <strong>CEO<br>COMMAND<br>CENTER</strong>
+    <span class="planner-cover-tagline">Plan. Lead. Delegate. Execute.</span>
+    <span class="planner-cover-footer">7 WORKSHEETS <i></i> PRINT OR ANNOTATE</span>
+  </div>
+  <div class="planner-card-body">
+    <span class="planner-category">Executive operations</span>
+    <h3>CEO Command Center</h3>
+    <p>A decisive command centre for leadership priorities, meetings, delegation, performance indicators and strategic decisions.</p>
+    <details class="planner-preview">
+      <summary>Explore the 7 included worksheets</summary>
+      <ol><li>Executive Dashboard</li><li>Weekly Priorities</li><li>Meeting Agenda</li><li>Delegation Tracker</li><li>KPI Scorecard</li><li>Project Roadmap</li><li>Decision Log</li></ol>
+    </details>
+    <a class="planner-download" href="/downloads/planners/ceo-command-center.pdf" download="ceo-command-center.pdf">
+      <span>Download free planner</span><span aria-hidden="true">↓</span>
+    </a>
+    <span class="planner-file-meta">PDF · 8 pages · No account required</span>
+  </div>
+</article>
+
+<article class="digital-planner-card" data-category="marketing" data-search="content &amp; social media planner a warm creative studio for brand direction, content pillars, publishing calendars, campaigns, captions and analytics. brand direction content pillars monthly content calendar weekly publishing workflow caption &amp; hook bank campaign planner analytics review">
+  <div class="planner-cover planner-cover--content-social-media" aria-label="Content &amp; Social Media Planner cover preview">
+    <span class="planner-cover-kicker">CAREERPILOT / PLANNER 03</span>
+    <span class="planner-cover-edition">UNDATED PDF</span>
+    <strong>CONTENT &amp; SOCIAL<br>MEDIA<br>PLANNER</strong>
+    <span class="planner-cover-tagline">Plan. Create. Publish. Learn. Grow.</span>
+    <span class="planner-cover-footer">7 WORKSHEETS <i></i> PRINT OR ANNOTATE</span>
+  </div>
+  <div class="planner-card-body">
+    <span class="planner-category">Marketing &amp; content</span>
+    <h3>Content &amp; Social Media Planner</h3>
+    <p>A warm creative studio for brand direction, content pillars, publishing calendars, campaigns, captions and analytics.</p>
+    <details class="planner-preview">
+      <summary>Explore the 7 included worksheets</summary>
+      <ol><li>Brand Direction</li><li>Content Pillars</li><li>Monthly Content Calendar</li><li>Weekly Publishing Workflow</li><li>Caption &amp; Hook Bank</li><li>Campaign Planner</li><li>Analytics Review</li></ol>
+    </details>
+    <a class="planner-download" href="/downloads/planners/content-social-media-planner.pdf" download="content-social-media-planner.pdf">
+      <span>Download free planner</span><span aria-hidden="true">↓</span>
+    </a>
+    <span class="planner-file-meta">PDF · 8 pages · No account required</span>
+  </div>
+</article>
+
+<article class="digital-planner-card" data-category="business" data-search="luxe dark mode executive planner a dark, premium planning set for focused leadership, financial oversight, meeting notes and strategic initiatives. annual goals monthly strategy daily executive planner meeting notes finance tracker strategic initiative quarterly review">
+  <div class="planner-cover planner-cover--luxe-dark-executive" aria-label="Luxe Dark Mode Executive Planner cover preview">
+    <span class="planner-cover-kicker">CAREERPILOT / PLANNER 04</span>
+    <span class="planner-cover-edition">UNDATED PDF</span>
+    <strong>LUXE DARK MODE<br>EXECUTIVE<br>PLANNER</strong>
+    <span class="planner-cover-tagline">Strategy. Discipline. Results.</span>
+    <span class="planner-cover-footer">7 WORKSHEETS <i></i> PRINT OR ANNOTATE</span>
+  </div>
+  <div class="planner-card-body">
+    <span class="planner-category">Executive planning</span>
+    <h3>Luxe Dark Mode Executive Planner</h3>
+    <p>A dark, premium planning set for focused leadership, financial oversight, meeting notes and strategic initiatives.</p>
+    <details class="planner-preview">
+      <summary>Explore the 7 included worksheets</summary>
+      <ol><li>Annual Goals</li><li>Monthly Strategy</li><li>Daily Executive Planner</li><li>Meeting Notes</li><li>Finance Tracker</li><li>Strategic Initiative</li><li>Quarterly Review</li></ol>
+    </details>
+    <a class="planner-download" href="/downloads/planners/luxe-dark-mode-executive-planner.pdf" download="luxe-dark-mode-executive-planner.pdf">
+      <span>Download free planner</span><span aria-hidden="true">↓</span>
+    </a>
+    <span class="planner-file-meta">PDF · 8 pages · No account required</span>
+  </div>
+</article>
+
+<article class="digital-planner-card" data-category="business" data-search="startup launch planner a practical launch roadmap that takes an early idea through customer validation, mvp planning, budgeting and go-to-market execution. business idea canvas customer validation mvp roadmap launch checklist ideal customer profile launch budget go-to-market plan">
+  <div class="planner-cover planner-cover--startup-launch" aria-label="Startup Launch Planner cover preview">
+    <span class="planner-cover-kicker">CAREERPILOT / PLANNER 05</span>
+    <span class="planner-cover-edition">UNDATED PDF</span>
+    <strong>STARTUP<br>LAUNCH<br>PLANNER</strong>
+    <span class="planner-cover-tagline">Validate the idea. Build the right thing. Launch with purpose.</span>
+    <span class="planner-cover-footer">7 WORKSHEETS <i></i> PRINT OR ANNOTATE</span>
+  </div>
+  <div class="planner-card-body">
+    <span class="planner-category">Startup &amp; launch</span>
+    <h3>Startup Launch Planner</h3>
+    <p>A practical launch roadmap that takes an early idea through customer validation, MVP planning, budgeting and go-to-market execution.</p>
+    <details class="planner-preview">
+      <summary>Explore the 7 included worksheets</summary>
+      <ol><li>Business Idea Canvas</li><li>Customer Validation</li><li>MVP Roadmap</li><li>Launch Checklist</li><li>Ideal Customer Profile</li><li>Launch Budget</li><li>Go-to-Market Plan</li></ol>
+    </details>
+    <a class="planner-download" href="/downloads/planners/startup-launch-planner.pdf" download="startup-launch-planner.pdf">
+      <span>Download free planner</span><span aria-hidden="true">↓</span>
+    </a>
+    <span class="planner-file-meta">PDF · 8 pages · No account required</span>
+  </div>
+</article>
+
+<article class="digital-planner-card" data-category="finance" data-search="earthy small business finance planner an earthy, practical finance pack for small-business owners to organise budgets, income, expenses, invoices, bills and cash flow. monthly budget income tracker expense log invoice register bill payment checklist tax preparation cash flow review">
+  <div class="planner-cover planner-cover--small-business-finance" aria-label="Earthy Small Business Finance Planner cover preview">
+    <span class="planner-cover-kicker">CAREERPILOT / PLANNER 06</span>
+    <span class="planner-cover-edition">UNDATED PDF</span>
+    <strong>SMALL BUSINESS<br>FINANCE<br>PLANNER</strong>
+    <span class="planner-cover-tagline">Know your numbers. Make calm, informed decisions.</span>
+    <span class="planner-cover-footer">7 WORKSHEETS <i></i> PRINT OR ANNOTATE</span>
+  </div>
+  <div class="planner-card-body">
+    <span class="planner-category">Finance &amp; cash flow</span>
+    <h3>Earthy Small Business Finance Planner</h3>
+    <p>An earthy, practical finance pack for small-business owners to organise budgets, income, expenses, invoices, bills and cash flow.</p>
+    <details class="planner-preview">
+      <summary>Explore the 7 included worksheets</summary>
+      <ol><li>Monthly Budget</li><li>Income Tracker</li><li>Expense Log</li><li>Invoice Register</li><li>Bill Payment Checklist</li><li>Tax Preparation</li><li>Cash Flow Review</li></ol>
+    </details>
+    <a class="planner-download" href="/downloads/planners/earthy-small-business-finance-planner.pdf" download="earthy-small-business-finance-planner.pdf">
+      <span>Download free planner</span><span aria-hidden="true">↓</span>
+    </a>
+    <span class="planner-file-meta">PDF · 8 pages · No account required</span>
+  </div>
+</article>
+
+<article class="digital-planner-card" data-category="projects" data-search="project &amp; meeting planner a clean, monochrome operating system for project briefs, timelines, meeting agendas, action ownership and project reviews. project charter project timeline meeting agenda action items task breakdown follow-up log project review">
+  <div class="planner-cover planner-cover--project-meeting" aria-label="Project &amp; Meeting Planner cover preview">
+    <span class="planner-cover-kicker">CAREERPILOT / PLANNER 07</span>
+    <span class="planner-cover-edition">UNDATED PDF</span>
+    <strong>PROJECT &amp;<br>MEETING<br>PLANNER</strong>
+    <span class="planner-cover-tagline">Plan projects. Run better meetings. Keep progress visible.</span>
+    <span class="planner-cover-footer">7 WORKSHEETS <i></i> PRINT OR ANNOTATE</span>
+  </div>
+  <div class="planner-card-body">
+    <span class="planner-category">Projects &amp; meetings</span>
+    <h3>Project &amp; Meeting Planner</h3>
+    <p>A clean, monochrome operating system for project briefs, timelines, meeting agendas, action ownership and project reviews.</p>
+    <details class="planner-preview">
+      <summary>Explore the 7 included worksheets</summary>
+      <ol><li>Project Charter</li><li>Project Timeline</li><li>Meeting Agenda</li><li>Action Items</li><li>Task Breakdown</li><li>Follow-up Log</li><li>Project Review</li></ol>
+    </details>
+    <a class="planner-download" href="/downloads/planners/project-meeting-planner.pdf" download="project-meeting-planner.pdf">
+      <span>Download free planner</span><span aria-hidden="true">↓</span>
+    </a>
+    <span class="planner-file-meta">PDF · 8 pages · No account required</span>
+  </div>
+</article>
+
+<article class="digital-planner-card" data-category="business" data-search="freelancer workflow planner a colourful, flexible workspace for independent professionals managing leads, client projects, weekly delivery, invoices and capacity. client pipeline project tracker weekly workflow invoice tracker availability planner content &amp; outreach business admin">
+  <div class="planner-cover planner-cover--freelancer-workflow" aria-label="Freelancer Workflow Planner cover preview">
+    <span class="planner-cover-kicker">CAREERPILOT / PLANNER 08</span>
+    <span class="planner-cover-edition">UNDATED PDF</span>
+    <strong>FREELANCER<br>WORKFLOW<br>PLANNER</strong>
+    <span class="planner-cover-tagline">Clients. Projects. Finances. A freelance business that works.</span>
+    <span class="planner-cover-footer">7 WORKSHEETS <i></i> PRINT OR ANNOTATE</span>
+  </div>
+  <div class="planner-card-body">
+    <span class="planner-category">Freelance business</span>
+    <h3>Freelancer Workflow Planner</h3>
+    <p>A colourful, flexible workspace for independent professionals managing leads, client projects, weekly delivery, invoices and capacity.</p>
+    <details class="planner-preview">
+      <summary>Explore the 7 included worksheets</summary>
+      <ol><li>Client Pipeline</li><li>Project Tracker</li><li>Weekly Workflow</li><li>Invoice Tracker</li><li>Availability Planner</li><li>Content &amp; Outreach</li><li>Business Admin</li></ol>
+    </details>
+    <a class="planner-download" href="/downloads/planners/freelancer-workflow-planner.pdf" download="freelancer-workflow-planner.pdf">
+      <span>Download free planner</span><span aria-hidden="true">↓</span>
+    </a>
+    <span class="planner-file-meta">PDF · 8 pages · No account required</span>
+  </div>
+</article>
+
+<article class="digital-planner-card" data-category="projects" data-search="client onboarding &amp; service planner a polished service-delivery toolkit for turning enquiries into clear scopes, organised onboarding, confident delivery and thoughtful closeout. inquiry tracker discovery call notes client profile scope of work deliverables timeline communication log onboarding &amp; offboarding">
+  <div class="planner-cover planner-cover--client-onboarding-service" aria-label="Client Onboarding &amp; Service Planner cover preview">
+    <span class="planner-cover-kicker">CAREERPILOT / PLANNER 09</span>
+    <span class="planner-cover-edition">UNDATED PDF</span>
+    <strong>CLIENT ONBOARDING<br>&amp; SERVICE<br>PLANNER</strong>
+    <span class="planner-cover-tagline">Streamline. Impress. Deliver. Build lasting relationships.</span>
+    <span class="planner-cover-footer">7 WORKSHEETS <i></i> PRINT OR ANNOTATE</span>
+  </div>
+  <div class="planner-card-body">
+    <span class="planner-category">Client experience</span>
+    <h3>Client Onboarding &amp; Service Planner</h3>
+    <p>A polished service-delivery toolkit for turning enquiries into clear scopes, organised onboarding, confident delivery and thoughtful closeout.</p>
+    <details class="planner-preview">
+      <summary>Explore the 7 included worksheets</summary>
+      <ol><li>Inquiry Tracker</li><li>Discovery Call Notes</li><li>Client Profile</li><li>Scope of Work</li><li>Deliverables Timeline</li><li>Communication Log</li><li>Onboarding &amp; Offboarding</li></ol>
+    </details>
+    <a class="planner-download" href="/downloads/planners/client-onboarding-service-planner.pdf" download="client-onboarding-service-planner.pdf">
+      <span>Download free planner</span><span aria-hidden="true">↓</span>
+    </a>
+    <span class="planner-file-meta">PDF · 8 pages · No account required</span>
+  </div>
+</article>
+
+<article class="digital-planner-card" data-category="personal" data-search="work-life balance planner a gentle, nature-inspired planner for entrepreneurs balancing meaningful work with energy, habits, meals, rest and personal priorities. weekly balance plan habit tracker focus planner self-care check-in meal &amp; energy plan daily schedule monthly reflection">
+  <div class="planner-cover planner-cover--work-life-balance" aria-label="Work-Life Balance Planner cover preview">
+    <span class="planner-cover-kicker">CAREERPILOT / PLANNER 10</span>
+    <span class="planner-cover-edition">UNDATED PDF</span>
+    <strong>WORK-LIFE<br>BALANCE<br>PLANNER</strong>
+    <span class="planner-cover-tagline">Plan boldly. Live fully. Build a life you enjoy.</span>
+    <span class="planner-cover-footer">7 WORKSHEETS <i></i> PRINT OR ANNOTATE</span>
+  </div>
+  <div class="planner-card-body">
+    <span class="planner-category">Wellbeing &amp; balance</span>
+    <h3>Work-Life Balance Planner</h3>
+    <p>A gentle, nature-inspired planner for entrepreneurs balancing meaningful work with energy, habits, meals, rest and personal priorities.</p>
+    <details class="planner-preview">
+      <summary>Explore the 7 included worksheets</summary>
+      <ol><li>Weekly Balance Plan</li><li>Habit Tracker</li><li>Focus Planner</li><li>Self-Care Check-in</li><li>Meal &amp; Energy Plan</li><li>Daily Schedule</li><li>Monthly Reflection</li></ol>
+    </details>
+    <a class="planner-download" href="/downloads/planners/work-life-balance-planner.pdf" download="work-life-balance-planner.pdf">
+      <span>Download free planner</span><span aria-hidden="true">↓</span>
+    </a>
+    <span class="planner-file-meta">PDF · 8 pages · No account required</span>
+  </div>
+</article>
+  </div>
+  <p class="planner-no-results" id="planner-no-results" hidden>No planners match that search. Try another keyword or choose "All planners".</p>
+  <div class="planner-library-note"><strong>Made to be useful.</strong> Every planner is undated and includes structured prompts, checklists and tracking tables. Download the PDF, print the pages you need or write on them in your preferred PDF annotation app.</div>
+</section>
+<section class="tool-section" id="email-assistant"><div class="tool-heading"><span class="eyebrow">06 / Communication</span><h2>Professional Email Writer</h2><p>Draft clear, professional emails from your instructions. Edit the result before sending; nothing is sent automatically.</p></div><div class="tool-panel"><div class="tool-form-grid"><label>Message type<select id="email-type"><option value="followup">Follow-up email</option><option value="meeting">Meeting request</option><option value="thankyou">Thank-you note</option><option value="client">Client update</option><option value="application">Job application email</option></select></label><label>Tone<select id="email-tone"><option value="warm">Warm and professional</option><option value="formal">Formal</option><option value="concise">Concise and direct</option></select></label><label>Recipient<input id="email-recipient" placeholder="Name"></label><label>Your name<input id="email-sender" placeholder="Your name"></label><label class="span-two">Key details<textarea id="email-details" rows="4" placeholder="What should the email communicate?"></textarea></label></div><button class="btn" id="draft-email" data-work-action="email" type="button">Draft my email</button><p class="work-status" id="email-work-status" aria-live="polite">Your draft will appear below.</p><label class="email-draft-label" for="email-draft">Editable draft</label><textarea id="email-draft" rows="12" placeholder="Your draft will appear here."></textarea><button class="btn btn-light" id="copy-email" type="button">Copy draft</button><p class="tool-privacy">Review facts, names and sensitive information before sending. Nothing is sent automatically.</p></div></section><section class="band"><div class="band-inner"><div><span class="eyebrow">Want expert support?</span><h2>Turn your next step into a clear plan.</h2></div><div><p>Use these tools independently or speak with CareerPilot about tailored business or career support.</p><a class="btn" href="/contact">Talk to CareerPilot</a></div></div></section></div></main><footer class="footer"><div class="wrap"><div class="footer-top"><div><a class="brand" href="/">career<span>pilot</span></a><p class="footer-copy">Professional virtual assistance, career support, LinkedIn optimisation and business productivity for businesses and ambitious professionals.</p></div><div class="footer-links"><a href="/services">All services</a><a href="/virtual-assistant-services">Virtual assistance</a><a href="/job-search-support">Job search</a><a href="/services">Productivity support</a><a href="/linkedin-optimisation">LinkedIn</a><a href="/who-we-help">Who we help</a><a href="/how-we-work">How we work</a><a href="/results-testimonials">Results</a><a href="/resources">Resources</a><a href="/free-tools">Free resources</a><a href="/faqs">FAQs</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div><div class="footer-bottom"><span>© 2026 CareerPilot. All rights reserved.</span><span>Your time is valuable. Your next move should be strategic.</span></div></div></footer></body></html>
 <!-- Redeploy trigger: retry Vercel deployment from GitHub. -->
 
 <!-- Deployment retry: 2026-10-31 -->
