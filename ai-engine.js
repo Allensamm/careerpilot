@@ -56,14 +56,18 @@
    const webllm=await import(MODEL_MODULE);
    worker=new Worker(new URL("/ai-worker.js",location.origin),{type:"module",name:"careerpilot-local-ai"});
    worker.addEventListener("error",event=>setStatus("The local AI worker failed to start: "+(event.message||"unknown worker error"),"error"));
-   const loaded=await webllm.CreateWebWorkerMLCEngine(worker,selectedModel,{
+   const workerFailure=new Promise((resolve,reject)=>{
+    worker.addEventListener("error",event=>reject(new Error(event.message||"The AI worker failed to start.")),{once:true});
+    worker.addEventListener("message",event=>{if(event.data&&event.data.type==="careerpilot-ai-worker-error")reject(new Error(event.data.message||"The AI worker could not load WebLLM."));});
+   });
+   const loaded=await Promise.race([webllm.CreateWebWorkerMLCEngine(worker,selectedModel,{
     initProgressCallback:report=>{
      const fraction=Number(report&&report.progress)||0;
      const label=(report&&report.text)||"Downloading and preparing model files…";
      setProgress(fraction*100,label);
      setStatus("Setting up CareerPilot AI on this device…","loading");
     }
-   });
+   }),workerFailure]);
    engine=loaded;
    setProgress(100,"Model loaded. Your browser can reuse its local cache on future visits.");
    setStatus("CareerPilot AI is ready on this device.","ready");
