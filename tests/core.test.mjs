@@ -17,3 +17,19 @@ test('free tools page includes all six tool action controls',()=>{
   assert.match(html,new RegExp('id="'+id+'"'));
  }
 });
+
+test('on-device AI engine and worker scripts parse',()=>{
+ for(const path of ['../ai-engine.js','../ai-worker.js']){
+  const source=readFileSync(new URL(path,import.meta.url),'utf8');
+  assert.doesNotThrow(()=>new vm.Script(source,{filename:path}));
+ }
+});
+test('all free-tool generation buttons are wired to the on-device AI agent',()=>{
+ const html=readFileSync(new URL('../free-tools.html',import.meta.url),'utf8');
+ for(const [id,action] of [['cv-analyse','cv'],['li-generate','linkedin'],['calculate-time','time'],['check-readiness','readiness'],['ai-plan-tasks','tasks'],['draft-email','email']]){
+  assert.match(html,new RegExp('id="'+id+'"[^>]*data-ai-action="'+action+'"'));
+ }
+ assert.match(html,/ai-engine\.js/);
+ assert.match(html,/ai-worker\.js/);
+ assert.match(html,/https:\/\/esm\.run/);
+});
