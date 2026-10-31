@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="same-origin">
+<title>Owner Dashboard | CareerPilot</title><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/dashboard.css"><script defer src="/dashboard.js"></script>
+</head>
+<body class="dashboard-body">
+<main class="dashboard-shell">
+<section id="login-screen" class="login-screen">
+  <a class="dash-brand" href="/" aria-label="CareerPilot home">career<span>pilot</span><small>OWNER ACCESS</small></a>
+  <div class="login-card">
+    <span class="dash-eyebrow">PRIVATE AGENCY AREA</span><h1>Welcome back.</h1>
+    <p>Enter your private access code to view CareerPilot website activity and performance.</p>
+    <form id="login-form"><label for="access-code">Owner access code</label><input id="access-code" name="code" type="password" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="one-time-code" placeholder="Enter 6-digit code" required><button type="submit" class="dash-primary" id="login-button">Unlock dashboard</button><p id="login-status" class="dash-status" role="status" aria-live="polite"></p></form>
+    <a class="back-link" href="/">← Back to CareerPilot</a>
+  </div>
+  <p class="login-footnote">Private analytics · Anonymous visitor activity · No form contents collected</p>
+</section>
+<section id="dashboard-app" hidden>
+  <header class="dash-header"><div><a class="dash-brand" href="/">career<span>pilot</span><small>OWNER DASHBOARD</small></a></div><div class="dash-header-actions"><span class="secure-label"><i></i> Private session</span><button id="refresh-button" class="dash-ghost">Refresh data</button><button id="export-button" class="dash-ghost">Export CSV</button><button id="logout-button" class="dash-logout">Lock dashboard</button></div></header>
+  <div class="dash-intro"><div><span class="dash-eyebrow">WEBSITE INTELLIGENCE</span><h1>Your website, understood.</h1><p>See how visitors discover CareerPilot, what they explore and which tools create the most engagement.</p></div><label class="range-control">Reporting period<select id="range-filter"><option value="7">Last 7 days</option><option value="30" selected>Last 30 days</option><option value="90">Last 90 days</option></select></label></div>
+  <div id="dashboard-status" class="dashboard-status" role="status" aria-live="polite">Loading website activity…</div>
+  <section class="stat-grid" aria-label="Website overview">
+    <article class="stat-card"><span>Unique visitors</span><strong id="stat-visitors">—</strong><small>Anonymous browsers</small></article>
+    <article class="stat-card"><span>Sessions</span><strong id="stat-sessions">—</strong><small>Website visits</small></article>
+    <article class="stat-card"><span>Page views</span><strong id="stat-views">—</strong><small>Pages opened</small></article>
+    <article class="stat-card"><span>Average engaged time</span><strong id="stat-time">—</strong><small>Per session</small></article>
+    <article class="stat-card"><span>Returning visitors</span><strong id="stat-returning">—</strong><small>Browsers with repeat visits</small></article>
+  </section>
+  <section class="dash-grid dash-grid-main">
+    <article class="dash-panel"><div class="panel-heading"><div><span class="dash-eyebrow">TRAFFIC</span><h2>Visitor activity</h2></div><span class="panel-note">Page views by day</span></div><div id="traffic-chart" class="traffic-chart"></div></article>
+    <article class="dash-panel"><div class="panel-heading"><div><span class="dash-eyebrow">DISCOVERY</span><h2>Where visitors come from</h2></div></div><div id="sources-list" class="rank-list"></div></article>
+  </section>
+  <section class="dash-grid">
+    <article class="dash-panel"><div class="panel-heading"><div><span class="dash-eyebrow">CONTENT</span><h2>Most visited pages</h2></div></div><div id="pages-list" class="rank-list"></div></article>
+    <article class="dash-panel"><div class="panel-heading"><div><span class="dash-eyebrow">FREE RESOURCES</span><h2>Tools people use</h2></div></div><div id="tools-list" class="rank-list"></div></article>
+  </section>
+  <section class="dash-grid">
+    <article class="dash-panel"><div class="panel-heading"><div><span class="dash-eyebrow">TECHNOLOGY</span><h2>Devices & browsers</h2></div></div><div class="tech-columns"><div><h3>Devices</h3><div id="devices-list" class="rank-list"></div></div><div><h3>Browsers</h3><div id="browsers-list" class="rank-list"></div></div></div></article>
+    <article class="dash-panel"><div class="panel-heading"><div><span class="dash-eyebrow">ENGAGEMENT</span><h2>What visitors do</h2></div></div><div id="actions-list" class="rank-list"></div></article>
+  </section>
+  <section class="dash-panel session-panel"><div class="panel-heading"><div><span class="dash-eyebrow">VISITOR JOURNEYS</span><h2>Recent anonymous sessions</h2><p class="panel-subtitle">Open a visit to see the pages and interactions in sequence. No names, CV contents or form answers are recorded.</p></div><span class="panel-note">Latest first</span></div><div id="sessions-list" class="sessions-list"></div></section>
+  <footer class="dash-footer"><span>CareerPilot private analytics</span><span>Analytics are collected only when a visitor accepts the analytics notice.</span><a href="/privacy">Privacy notice</a></footer>
+</section>
+</main>
+</body>
+</html>
