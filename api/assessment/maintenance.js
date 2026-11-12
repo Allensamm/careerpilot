@@ -3,7 +3,7 @@ import {deliverOutbox} from "../../lib/assessment-email.js";
 const days=(d)=>d*86400000;
 
 async function privacyMaintenance(){
-  const rows=await db("/rest/v1/assessment_orders?select=*&order=created_at.asc&limit=250");
+  const rows=await db("/rest/v1/assessment_orders?select=*&deleted_at=is.null&order=created_at.asc&limit=250");
   const now=Date.now();
   const result={documents_deleted:0,profiles_scrubbed:0,errors:0};
   for(const order of rows||[]){
