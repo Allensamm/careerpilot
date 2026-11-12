@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#101827"><title>Private Assessment Operations | CareerPilot</title>
+<link rel="icon" href="/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assessment.css"><script defer src="/assessment-admin.js"></script>
+</head><body>
+<a href="#staff-main" class="skip">Skip to staff dashboard</a>
+<header class="a-header"><div class="a-container a-header-inner"><a href="/" class="a-brand">career<span>pilot</span></a><span class="a-kicker">AUTHORISED STAFF ONLY</span></div></header>
+<main class="a-container admin-main" id="staff-main">
+<span class="a-kicker">CAREERPILOT / OPERATIONS</span><h1>Assessment management.</h1>
+<p id="admin-status" role="status" aria-live="polite">Checking staff session…</p>
+<section class="admin-login" id="admin-login" hidden aria-labelledby="admin-login-title"><h2 id="admin-login-title">Staff sign in</h2><p>Access is limited to authorised team members with verified accounts.</p>
+<form id="staff-login-form"><label>Work email<input name="email" type="email" autocomplete="username" required></label><label>Password<input name="password" type="password" autocomplete="current-password" required minlength="8"></label><button type="submit" class="a-button">Sign in securely ↗</button></form></section>
+<section class="admin-dash" id="admin-dashboard" hidden aria-labelledby="admin-orders-title">
+<div class="admin-top"><div><h2 id="admin-orders-title">Recent assessments</h2><span id="staff-email" class="a-kicker"></span></div><div class="admin-controls"><button id="refresh" type="button">Refresh</button><button id="logout" type="button">Sign out</button></div></div>
+<div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Created</th><th>Customer</th><th>Payment</th><th>Status</th><th>CV</th><th>Action</th></tr></thead><tbody id="orders-body"><tr><td colspan="6">Loading…</td></tr></tbody></table></div>
+<section class="admin-details" id="order-details" hidden aria-labelledby="order-details-title">
+<h2 id="order-details-title">Assessment details</h2>
+<div id="order-detail-fields"></div>
+<div class="admin-actions"><button type="button" id="download-cv">Download private CV</button><button type="button" id="progress-order">Advance assessment status</button><button type="button" id="delete-order" class="is-danger">Delete profile and document</button></div>
+<p id="action-status" role="status" aria-live="polite"></p>
+</section>
+</section>
+</main><footer class="a-footer"><div class="a-container"><span>© 2026 CareerPilot</span><span>Private staff area · Access logged by provider</span></div></footer>
+</body></html>
