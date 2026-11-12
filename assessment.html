@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#101827">
+<meta name="description" content="Request your $50 CareerPilot Professional Assessment using secure document intake and Stripe-hosted checkout when available.">
+<link rel="canonical" href="https://careerpilot-inky.vercel.app/assessment">
+<link rel="icon" href="/favicon.svg"><title>Professional Assessment — $50 | CareerPilot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assessment.css"><script defer src="/assessment.js"></script>
+</head>
+<body class="assessment-page">
+<a class="skip" href="#content">Skip to application</a>
+<header class="a-header"><div class="a-container a-header-inner"><a class="a-brand" href="/">career<span>pilot</span><small>®</small></a><a href="/" class="a-back">← Back to CareerPilot</a></div></header>
+<main id="content" class="a-container a-main">
+<section class="a-intro"><span class="a-kicker">CAREERPILOT / PROFESSIONAL ASSESSMENT</span><h1>Better positioning starts with <em>understanding your story.</em></h1><p>Share your career goals and professional background. Once secure intake is available, you can upload your CV and complete a one-time $50 USD payment through Stripe Checkout.</p></section>
+<div class="a-layout">
+<section class="a-form-pane" aria-labelledby="application-title">
+<div class="a-pane-head"><div><span class="a-kicker">01 / ASSESSMENT REQUEST</span><h2 id="application-title">Your career profile</h2></div><span class="a-private">PRIVATE INTAKE</span></div>
+<div class="a-status" id="availability" role="status" aria-live="polite"><span class="a-spinner" aria-hidden="true"></span> Checking secure application availability…</div>
+<form id="assessment-form" novalidate hidden>
+<div class="a-field-row"><label>Full name <span aria-hidden="true">*</span><input id="full-name" name="fullName" autocomplete="name" maxlength="150" required placeholder="Your full name"></label><label>Email address <span aria-hidden="true">*</span><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="you@example.com"></label></div>
+<label>Current CV <span aria-hidden="true">*</span><span class="a-field-help">PDF or DOCX, up to 2 MB. Scanned and stored privately.</span><input type="file" id="cv" name="cv" required accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
+<label>LinkedIn profile URL <span class="a-optional">(optional)</span><input type="url" name="linkedinUrl" id="linkedin-url" maxlength="520" placeholder="https://www.linkedin.com/in/your-name" inputmode="url"></label>
+<label>Short professional bio <span aria-hidden="true">*</span><span class="a-field-help">Tell us about your professional background in your own words.</span><textarea id="bio" name="bio" minlength="25" maxlength="3500" required rows="5" placeholder="Your experience, area of expertise and relevant background…"></textarea></label>
+<label>Career goals <span aria-hidden="true">*</span><span class="a-field-help">Which roles or directions are you interested in?</span><textarea id="goals" name="goals" minlength="15" maxlength="3500" required rows="4" placeholder="The next career move you're working towards…"></textarea></label>
+<div class="a-consents"><label class="a-checkbox"><input type="checkbox" id="consent" required><span>I consent to CareerPilot processing my submitted professional information for the requested assessment, as described in the <a href="/privacy" target="_blank" rel="noopener">privacy notice</a>. <strong>Required.</strong></span></label><label class="a-checkbox"><input type="checkbox" id="terms" required><span>I have read and agree to the <a href="/terms" target="_blank" rel="noopener">terms of service</a>. <strong>Required.</strong></span></label></div>
+<div class="a-submit-wrap"><button class="a-button" type="submit" id="submit-assessment">Continue to secure checkout — $50 <span aria-hidden="true">↗</span></button><p id="form-status" class="a-field-help" role="status" aria-live="polite">Your application is submitted only after you select Continue. Payment is handled by Stripe, not CareerPilot.</p></div>
+</form>
+<div class="a-disabled" id="unavailable" hidden><h3>Secure applications are being prepared.</h3><p>CareerPilot isn't accepting CV uploads or payments on this page until private storage, file scanning and payment processing are verified. Please don't send your CV through a public file-sharing link.</p><a class="a-button a-button-alt" href="/contact">Contact CareerPilot instead ↗</a></div>
+</section>
+<aside class="a-summary" aria-label="Order summary"><div class="a-summary-card"><span class="a-kicker">YOUR ASSESSMENT</span><h2>Professional Assessment</h2><p>One considered review. Practical next steps.</p><div class="a-price">$50 <span>USD / ONE TIME</span></div><div class="a-rule"></div><ul><li>CV assessment</li><li>LinkedIn recommendations</li><li>Professional bio review</li><li>Career positioning report</li><li>Personalised recommendations</li></ul><p class="a-note">No software subscription or automatic job applications. We never guarantee interview invitations or job offers.</p></div><div class="a-help"><strong>Questions?</strong><p>Contact <a href="mailto:bazalel@bazaleldesign.com">bazalel@bazaleldesign.com</a>. Avoid emailing sensitive documents before a private transfer channel is arranged.</p></div></aside>
+</div>
+</main>
+<footer class="a-footer"><div class="a-container"><span>© 2026 CareerPilot</span><span>Personal information handled for your requested assessment</span><div><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div></footer>
+</body></html>
