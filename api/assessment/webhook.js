@@ -12,10 +12,14 @@ export default async function handler(req,res){
     if(!uuid(id) || session.client_reference_id!==id || session.amount_total!==PRICE_CENTS ||
        session.currency!=="usd" || session.mode!=="payment" || session.payment_status!=="paid")return send(res,200,{received:true,ignored:true});
     const order=await one("assessment_orders","id=eq."+id);
-    if(!order || order.stripe_session_id!==session.id || !order.cv_storage_key)return send(res,200,{received:true,ignored:true});
+    if(!order || !order.cv_storage_key)return send(res,200,{received:true,ignored:true});
+    // A payment webhook can arrive before the Checkout Session ID is persisted.
+    // Return a retryable response instead of acknowledging an unrecorded payment.
+    if(!order.stripe_session_id)throw Object.assign(new Error("Checkout order is not yet linked; retry"),{status:503});
+    if(order.stripe_session_id!==session.id)return send(res,200,{received:true,ignored:true});
     if(order.payment_status==="unpaid"){
       const updated=await patch("assessment_orders","id=eq."+id+"&payment_status=eq.unpaid",{
-        payment_status:"paid",status:"received",paid_at:new Date().toISOString(),
+        payment_status:"paid",status:order.deletion_requested_at?"deletion_requested":"received",paid_at:new Date().toISOString(),
         stripe_payment_intent_id:String(session.payment_intent||""),last_updated_at:new Date().toISOString()
       });
       if(updated?.length){
