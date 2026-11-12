@@ -4,6 +4,14 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/api/assessment/staff/:action",
+      "destination": "/api/assessment/router?handler=staff-:action"
+    },
+    {
+      "source": "/api/assessment/:action",
+      "destination": "/api/assessment/router?handler=:action"
+    },
+    {
       "source": "/api/jobs/:path*",
       "destination": "https://careerpilot-g9pv.onrender.com/api/jobs/:path*"
     },

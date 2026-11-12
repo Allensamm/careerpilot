@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {readFileSync,existsSync} from "node:fs";
+import {readFileSync,existsSync,readdirSync} from "node:fs";
 import crypto from "node:crypto";
 import {spawnSync} from "node:child_process";
 import {
@@ -11,7 +11,7 @@ import {
 test("checkout has one fixed $50 USD product",()=>{
  assert.equal(PRICE_CENTS,5000);
  assert.equal(PRODUCT_NAME,"CareerPilot Professional Assessment");
- const checkout=readFileSync(new URL("../api/assessment/checkout.js",import.meta.url),"utf8");
+ const checkout=readFileSync(new URL("../api/_assessment/checkout.js",import.meta.url),"utf8");
  assert.match(checkout,/client_reference_id:order\.id/);
  assert.match(checkout,/unit_amount/);
  assert.match(checkout,/stripePost/);
@@ -83,12 +83,12 @@ test("sensitive workflow files and endpoints exist",()=>{
  "assessment.html","assessment.js","assessment.css","assessment-confirmation.html","assessment-confirmation.js",
  "admin.html","assessment-admin.js","assessment-schema.sql","ASSESSMENT_DEPLOYMENT.md",
  "lib/assessment.js","lib/assessment-email.js",
- "api/assessment/status.js","api/assessment/create.js","api/assessment/upload.js",
- "api/assessment/checkout.js","api/assessment/webhook.js","api/assessment/confirmation.js",
- "api/assessment/maintenance.js","api/assessment/delete-request.js",
- "api/assessment/staff/login.js","api/assessment/staff/logout.js","api/assessment/staff/me.js",
- "api/assessment/staff/orders.js","api/assessment/staff/document.js",
- "api/assessment/staff/progress.js","api/assessment/staff/delete.js"
+ "api/_assessment/status.js","api/_assessment/create.js","api/_assessment/upload.js",
+ "api/_assessment/checkout.js","api/_assessment/webhook.js","api/_assessment/confirmation.js",
+ "api/_assessment/maintenance.js","api/_assessment/delete-request.js",
+ "api/_assessment/staff/login.js","api/_assessment/staff/logout.js","api/_assessment/staff/me.js",
+ "api/_assessment/staff/orders.js","api/_assessment/staff/document.js",
+ "api/_assessment/staff/progress.js","api/_assessment/staff/delete.js"
  ];
  for(const file of paths){
    const u=new URL("../"+file,import.meta.url);
@@ -110,4 +110,30 @@ test("public form never embeds private secrets or card-number fields",()=>{
  assert.match(script,/stripe/);
  assert.doesNotMatch(html+script,/SUPABASE_SERVICE_ROLE_KEY|STRIPE_SECRET_KEY|RESEND_API_KEY|sk_live_|whsec_/);
  assert.doesNotMatch(html,/name="cardNumber"|name="cv_url"/);
+});
+
+test("Vercel Hobby deployment contains no more than 12 entrypoint functions",()=>{
+ const api=new URL("../api/",import.meta.url);
+ const count=(url)=>readdirSync(url,{withFileTypes:true}).reduce((n,item)=>{
+   if(item.name.startsWith("_") || item.name.startsWith("."))return n;
+   if(item.isDirectory())return n+count(new URL(item.name+"/",url));
+   return n+(item.name.endsWith(".js")?1:0);
+ },0);
+ assert.ok(count(api)<=12,"Too many Vercel Function entrypoints: "+count(api));
+ const vercel=JSON.parse(readFileSync(new URL("../vercel.json",import.meta.url),"utf8"));
+ assert.ok(vercel.rewrites.some(x=>x.source==="/api/assessment/:action" && x.destination.includes("handler=:action")));
+ assert.ok(vercel.rewrites.some(x=>x.source==="/api/assessment/staff/:action" && x.destination.includes("handler=staff-:action")));
+});
+
+
+
+test("assessment router imports every existing secured handler",async()=>{
+ const dispatcher=await import("../api/assessment/router.js");
+ const req={query:{handler:"not-a-real-route"}};
+ const headers={};
+ const res={setHeader:(k,v)=>{headers[k]=v;},status:(code)=>{res.code=code;return res;},json:(body)=>{res.body=body;return res;}};
+ await dispatcher.default(req,res);
+ assert.equal(res.code,404);
+ assert.equal(res.body.error,"Not found");
+ assert.equal(headers["Cache-Control"],"no-store");
 });
