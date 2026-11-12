@@ -15,5 +15,11 @@
       "source": "/api/cloud/:path*",
       "destination": "https://careerpilot-g9pv.onrender.com/api/cloud/:path*"
     }
+  ],
+  "crons": [
+    {
+      "path": "/api/assessment/maintenance",
+      "schedule": "0 4 * * *"
+    }
   ]
 }
