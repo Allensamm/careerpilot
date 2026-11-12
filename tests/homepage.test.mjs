@@ -10,7 +10,7 @@ test('professional service positioning is accurate',()=>{
  assert.match(html,/Your experience deserves to be/);
  assert.match(html,/seen differently/);
  assert.match(html,/proprietary AI technology/);
- assert.match(html,/internally by the CareerPilot team/);
+ assert.match(html,/operated internally by our team/);
  assert.match(html,/\$50/);
  assert.match(html,/No customer software login/);
  assert.match(html,/No automatic job applications/);
