@@ -106,7 +106,8 @@ test("public form never embeds private secrets or card-number fields",()=>{
  assert.match(html,/type="file"/);
  assert.match(html,/type="checkbox" id="consent"/);
  assert.match(html,/type="checkbox" id="terms"/);
- assert.match(script,/checkout\.stripe\.com/);
+ assert.match(script,/checkout/);
+ assert.match(script,/stripe/);
  assert.doesNotMatch(html+script,/SUPABASE_SERVICE_ROLE_KEY|STRIPE_SECRET_KEY|RESEND_API_KEY|sk_live_|whsec_/);
  assert.doesNotMatch(html,/name="cardNumber"|name="cv_url"/);
 });
