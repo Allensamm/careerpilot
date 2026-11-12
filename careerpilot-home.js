@@ -106,10 +106,9 @@
         clipPath: "inset(9% 0 9% 0)", opacity: .65, duration: 1.1, ease: "power3.out",
         scrollTrigger: { trigger: ".cp-showcase", start: "top 87%", once: true }
       });
-      gsap.from(".cp-showcase-tab", {
-        x: -20, autoAlpha: 0, stagger: .075, duration: .55,
-        scrollTrigger: { trigger: ".cp-showcase", start: "top 82%", once: true }
-      });
+      // Keep keyboard-focusable tabs visible at all times.
+      // Delayed ScrollTrigger visibility changes can otherwise hide controls
+      // while their interactive state is already available.
 
       // Steps — three columns travel in with progressive offsets.
       gsap.from(".cp-process-step", {
