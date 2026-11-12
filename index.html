@@ -1,206 +1,200 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#101827">
-<meta name="description" content="CareerPilot Professional Assessment: a $50 personalised career optimisation service using proprietary AI-informed analysis to strengthen CVs, LinkedIn profiles, bios and professional positioning.">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="description" content="CareerPilot Professional Assessment: a $50 career optimisation service with CV assessment, LinkedIn recommendations, professional bio review and personalised career positioning insights.">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://careerpilot-inky.vercel.app/">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<meta property="og:type" content="website"><meta property="og:site_name" content="CareerPilot">
-<meta property="og:title" content="CareerPilot — Your Experience Deserves to Be Seen Differently">
-<meta property="og:description" content="A new perspective on your professional story. AI-informed analysis, human-led guidance, and a personalised career optimisation assessment for $50.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CareerPilot | Your Experience Deserves to Be Seen Differently">
+<meta property="og:description" content="AI-informed, professionally delivered CV, LinkedIn and career positioning assessment. One-time $50 service.">
 <meta property="og:url" content="https://careerpilot-inky.vercel.app/">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="CareerPilot — Professional Career Optimisation">
-<meta name="twitter:description" content="Strengthen your CV, LinkedIn profile and career positioning with a personalised professional assessment.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/careerpilot-home.css"><link rel="stylesheet" href="/analytics.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"CareerPilot","url":"https://careerpilot-inky.vercel.app/","description":"Professional career optimisation using proprietary AI-informed analysis and human support."},{"@type":"Service","serviceType":"Professional career optimisation assessment","name":"CareerPilot Professional Assessment","provider":{"@type":"Organization","name":"CareerPilot"},"description":"One-time personalised CV, LinkedIn, professional bio and career positioning assessment with recommendations.","offers":{"@type":"Offer","price":"50.00","priceCurrency":"USD","url":"https://careerpilot-inky.vercel.app/assessment"}}]}</script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.1/gsap.min.js" crossorigin="anonymous"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.1/ScrollTrigger.min.js" crossorigin="anonymous"></script>
-<script defer src="/careerpilot-home.js"></script>
-<script type="module" src="/careerpilot-orbit.js"></script>
+<meta property="og:site_name" content="CareerPilot">
+<meta name="twitter:card" content="summary">
+<title>CareerPilot | $50 Professional Career Assessment &amp; CV Review</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/careerpilot-motion.css">
+<link rel="stylesheet" href="/analytics.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"CareerPilot","url":"https://careerpilot-inky.vercel.app/"},{"@type":"Service","name":"CareerPilot Professional Assessment","serviceType":"Career optimisation and professional profile assessment","provider":{"@type":"Organization","name":"CareerPilot"},"description":"Professional service providing CV assessment, LinkedIn recommendations, professional bio review, career positioning report and personalised recommendations.","offers":{"@type":"Offer","price":"50","priceCurrency":"USD","availability":"https://schema.org/PreOrder","description":"Assessment request and payment arrangements subject to confirmation."}}]}
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.min.js"></script>
+<script defer src="/careerpilot-motion.js"></script>
 <script defer src="/analytics.js"></script>
-<title>CareerPilot | AI-Informed Career Optimisation &amp; CV Review — $50</title>
 </head>
 <body>
-<a class="skip-link" href="#content">Skip to content</a>
-<div class="microbar"><div class="cp-shell"><span><span class="microbar-square" aria-hidden="true"></span>Clarity for what comes next.</span><span class="microbar-right">PROFESSIONAL SERVICE / PROPRIETARY TECHNOLOGY</span></div></div>
-<header class="cp-header" id="site-header">
-<div class="cp-shell cp-header-inner">
-<a href="/" class="cp-brand" aria-label="CareerPilot home"><span class="cp-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>career<b>pilot</b></span><sup>®</sup></a>
-<nav class="cp-nav" aria-label="Primary navigation">
-<a href="#home">Home</a><a href="#platform">Platform</a><a href="#how-it-works">How it works</a><a href="#deliverables">What you receive</a><a href="#about">About CareerPilot</a><a href="#faqs">FAQs</a>
+<a href="#main" class="skip">Skip to content</a>
+<div class="topline"><div class="shell"><span class="mono">CareerPilot / Intelligent career optimisation</span><span class="mono">Professional service. Proprietary technology.</span></div></div>
+<header class="header">
+<div class="shell">
+<a href="/" class="brand" aria-label="CareerPilot home"><span class="brand-mark" aria-hidden="true">C</span><span>career<b>pilot</b></span></a>
+<nav class="nav" aria-label="Primary navigation">
+<a href="#problem">The challenge</a><a href="#platform">The platform</a><a href="#how-it-works">How it works</a><a href="#deliverables">What you receive</a><a href="#privacy">Trust</a><a href="#faqs">FAQs</a>
+<a href="#pricing" class="button">Get started <span class="arrow" aria-hidden="true">↗</span></a>
 </nav>
-<a class="cp-header-cta" href="/assessment">Get started <span aria-hidden="true">↗</span></a>
-<button id="menu-toggle" type="button" class="cp-menu" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation"><span>Menu</span><i></i><i></i></button>
+<button class="menu" id="menu-toggle" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">Menu ☰</button>
 </div>
-<nav class="cp-mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-<a href="#home">Home</a><a href="#platform">Platform</a><a href="#how-it-works">How it works</a><a href="#deliverables">What you receive</a><a href="#about">About CareerPilot</a><a href="#faqs">FAQs</a><a href="/assessment">Get started ↗</a>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+<a href="#problem">The challenge</a><a href="#platform">The platform</a><a href="#how-it-works">How it works</a><a href="#deliverables">What you receive</a><a href="#technology">About CareerPilot</a><a href="#privacy">Privacy</a><a href="#faqs">FAQs</a><a href="#pricing">Get started</a>
 </nav>
 </header>
-
-<main id="content">
-<section class="cp-hero cp-shell" id="home" aria-labelledby="hero-title">
-<div class="cp-hero-copy">
-<div class="cp-eyebrow cp-hero-eyebrow"><span class="cp-eyeline"></span>Your next career move starts here</div>
-<h1 id="hero-title">Your experience deserves to be <em>seen differently.</em></h1>
-<p class="cp-hero-sub">Make your professional profile work harder for you.</p>
-<p class="cp-hero-desc">CareerPilot uses proprietary AI technology to help professionals strengthen their CVs, LinkedIn profiles and career positioning — with human-led recommendations rooted in their real experience.</p>
-<div class="cp-hero-actions"><a href="#platform" class="cp-button cp-button-dark">Explore the platform <span aria-hidden="true">↗</span></a><a href="#how-it-works" class="cp-button cp-button-line">See how it works <span aria-hidden="true">↓</span></a></div>
-<p class="cp-hero-note"><span class="cp-note-check">✓</span>Personalised career optimisation. Professional human support. One clear starting point.</p>
+<main id="main">
+<section class="hero dark" id="home" aria-labelledby="hero-title">
+<div class="shell hero-grid">
+<div class="hero-copy">
+<p class="kicker mono orange">Your next career move starts here</p>
+<h1 id="hero-title">Your experience deserves to be <span>seen differently.</span></h1>
+<p>CareerPilot uses proprietary AI technology to help professionals strengthen their CVs, LinkedIn profiles and career positioning — with personalised analysis and human-led service.</p>
+<div class="hero-actions"><a href="#platform" class="button">Explore the platform <span class="arrow" aria-hidden="true">↗</span></a><a href="#how-it-works" class="button secondary">See how it works <span class="arrow" aria-hidden="true">↓</span></a></div>
+<p class="hero-note">Illustrative interface. The platform is operated internally by CareerPilot, not accessed by customers.</p>
 </div>
-<div class="cp-hero-stage">
-<div class="cp-hero-stage-top"><span>THE CAREERPILOT METHOD</span><span><b class="cp-green-dot"></b> ILLUSTRATIVE PREVIEW</span></div>
-<div class="cp-product-window" id="hero-product" aria-label="Illustrative CareerPilot professional assessment report interface, not a live customer report">
-<div class="cp-product-toolbar"><div class="cp-product-dots" aria-hidden="true"><i></i><i></i><i></i></div><strong>CAREER INTELLIGENCE / PROFILE ANALYSIS</strong><span>CP—01</span></div>
-<div class="cp-product-layout">
-<aside class="cp-product-sidebar" aria-hidden="true"><div class="cp-sidebar-logo">C<span>.</span></div><div class="cp-side-icon active">▤</div><div class="cp-side-icon">≡</div><div class="cp-side-icon">◇</div><div class="cp-side-icon">⌁</div><span class="cp-side-bottom">↗</span></aside>
-<div class="cp-product-main">
-<div class="cp-product-header"><div><span class="cp-code-eyebrow">PROFILE REVIEW / EXAMPLE 001</span><h2>Professional assessment</h2><p>A structured view of your career narrative</p></div><span class="cp-preview-tag">DEMO DATA</span></div>
-<div class="cp-report-summary"><div><span class="cp-code-eyebrow">CAREER NARRATIVE</span><h3>Make every detail count.</h3><p>Bring forward the skills, achievements and experience that support your next move.</p></div><div class="cp-report-glyph" aria-hidden="true"><div class="cp-glyph-ring"><span>CP</span></div></div></div>
-<div class="cp-analysis-list" id="hero-analysis">
-<div class="cp-analysis-row"><div class="cp-row-symbol">01</div><div><b>CV assessment</b><small>Clarity, structure &amp; evidence</small></div><span class="cp-analysis-status">REVIEW</span></div>
-<div class="cp-analysis-row"><div class="cp-row-symbol">02</div><div><b>Skills presentation</b><small>Relevant strengths &amp; capabilities</small></div><span class="cp-analysis-status">REFINE</span></div>
-<div class="cp-analysis-row"><div class="cp-row-symbol">03</div><div><b>LinkedIn recommendations</b><small>Headline, summary &amp; experience</small></div><span class="cp-analysis-status">ALIGN</span></div>
-<div class="cp-analysis-row"><div class="cp-row-symbol">04</div><div><b>Career positioning</b><small>Professional bio &amp; next direction</small></div><span class="cp-analysis-status">FOCUS</span></div>
-</div>
-<div class="cp-product-bottom"><span>INPUT → ANALYSIS → RECOMMENDATIONS</span><span>EXAMPLE ONLY</span></div>
-</div>
-</div>
-</div>
-<div class="cp-stage-caption"><span>01 / INTELLIGENCE, WITH A HUMAN POINT OF VIEW</span><span>NO CUSTOMER SOFTWARE ACCESS REQUIRED</span></div>
-</div>
-</section>
-
-<div class="cp-ticker" aria-hidden="true"><div class="cp-shell"><span>PROFILE CLARITY</span><i></i><span>SKILL RELEVANCE</span><i></i><span>PROFESSIONAL NARRATIVE</span><i></i><span>CAREER DIRECTION</span></div></div>
-
-<section class="cp-section cp-problem" id="why" aria-labelledby="problem-title">
-<div class="cp-shell">
-<div class="cp-section-label"><span class="cp-serial">01 / THE PROBLEM</span><span>YOUR EXPERIENCE IS ONLY THE STARTING POINT</span></div>
-<div class="cp-problem-grid"><div><h2 class="cp-display-heading" id="problem-title">Great experience isn't always <em>clearly expressed.</em></h2></div>
-<div class="cp-problem-aside"><span class="cp-orange-line"></span><p>A CV is more than a work history. A LinkedIn profile is more than a list of roles. The way you organise and explain your achievements shapes how others understand your potential.</p><a href="#examples" class="cp-inline-link">See the difference <span aria-hidden="true">↘</span></a></div></div>
-<div class="cp-problem-rail" aria-label="Three principles of professional positioning">
-<article><span class="cp-mono">01 / CLARITY</span><h3>Make your story understandable.</h3><p>Present experience with purpose, not unnecessary complexity.</p></article>
-<article><span class="cp-mono">02 / RELEVANCE</span><h3>Connect experience to opportunity.</h3><p>Focus attention on the capabilities that matter for your direction.</p></article>
-<article><span class="cp-mono">03 / EVIDENCE</span><h3>Show the work behind the words.</h3><p>Explain responsibilities and achievements accurately and confidently.</p></article>
-</div>
-</div>
-</section>
-
-<section class="cp-section cp-platform" id="platform" aria-labelledby="platform-title">
-<div class="cp-shell">
-<div class="cp-section-label cp-section-label-light"><span class="cp-serial">02 / INTRODUCING CAREERPILOT</span><span>PROPRIETARY TECHNOLOGY / HUMAN-LED SERVICE</span></div>
-<div class="cp-platform-heading"><div><span class="cp-eyebrow cp-eyebrow-orange">The intelligence behind your next move</span><h2 class="cp-display-heading" id="platform-title">A sharper way to <em>understand your professional story.</em></h2></div><p>Our internal platform brings your career information into focus. CareerPilot's team uses its analysis to develop personalised recommendations — you receive the service and results, not a software login.</p></div>
-<div class="cp-showcase">
-<div class="cp-showcase-tabs" role="tablist" aria-label="Explore illustrative assessment categories">
-<button class="cp-showcase-tab active" type="button" role="tab" id="tab-cv" aria-controls="panel-cv" aria-selected="true" data-panel="cv"><span>01</span> CV analysis</button>
-<button class="cp-showcase-tab" type="button" role="tab" id="tab-linkedin" aria-controls="panel-linkedin" aria-selected="false" data-panel="linkedin"><span>02</span> LinkedIn</button>
-<button class="cp-showcase-tab" type="button" role="tab" id="tab-skills" aria-controls="panel-skills" aria-selected="false" data-panel="skills"><span>03</span> Skills</button>
-<button class="cp-showcase-tab" type="button" role="tab" id="tab-bio" aria-controls="panel-bio" aria-selected="false" data-panel="bio"><span>04</span> Professional bio</button>
-<button class="cp-showcase-tab" type="button" role="tab" id="tab-positioning" aria-controls="panel-positioning" aria-selected="false" data-panel="positioning"><span>05</span> Positioning</button>
-</div>
-<div class="cp-showcase-panel-wrap">
-<div class="cp-showcase-panel" role="tabpanel" id="panel-cv" aria-labelledby="tab-cv"><div class="cp-panel-head"><span>CV ASSESSMENT / DEMO</span><span>01 — 05</span></div><h3>Lead with the experience that matters.</h3><p>Understand where responsibilities can become clearer, where evidence is missing and how your experience aligns with a target role.</p><div class="cp-panel-data"><div><small>STRUCTURE</small><b>Clarify the career summary</b><span>Make the opening more focused on your relevant experience.</span></div><div><small>IMPACT</small><b>Highlight measurable contributions</b><span>Use verified details to explain results — never invented figures.</span></div><div><small>RELEVANCE</small><b>Prioritise the most applicable skills</b><span>Organise information around the opportunities you're pursuing.</span></div></div></div>
-<div class="cp-showcase-panel" role="tabpanel" id="panel-linkedin" aria-labelledby="tab-linkedin" hidden><div class="cp-panel-head"><span>LINKEDIN PROFILE / DEMO</span><span>02 — 05</span></div><h3>Make your profile tell a coherent story.</h3><p>Understand how your headline, About section and role descriptions work together to communicate value.</p><div class="cp-panel-data"><div><small>HEADLINE</small><b>Communicate professional identity</b><span>A role-focused introduction rather than a list of buzzwords.</span></div><div><small>ABOUT</small><b>Describe your contribution</b><span>Connect expertise, strengths and professional direction.</span></div><div><small>EXPERIENCE</small><b>Present real achievements</b><span>Move from vague responsibilities to specific verified work.</span></div></div></div>
-<div class="cp-showcase-panel" role="tabpanel" id="panel-skills" aria-labelledby="tab-skills" hidden><div class="cp-panel-head"><span>SKILLS PRESENTATION / DEMO</span><span>03 — 05</span></div><h3>Give your strengths a clearer context.</h3><p>Skills have more meaning when readers can connect them to actual experience.</p><div class="cp-skill-clusters"><div class="cp-skill-cluster"><small>CAPABILITIES</small><b>Project coordination</b><span>Illustrate with real delivery experience</span></div><div class="cp-skill-cluster"><small>COLLABORATION</small><b>Stakeholder communication</b><span>Show how you work with others</span></div><div class="cp-skill-cluster"><small>ANALYTICAL</small><b>Reporting &amp; insight</b><span>Connect skills with relevant outputs</span></div></div></div>
-<div class="cp-showcase-panel" role="tabpanel" id="panel-bio" aria-labelledby="tab-bio" hidden><div class="cp-panel-head"><span>PROFESSIONAL BIO / DEMO</span><span>04 — 05</span></div><h3>Introduce the person behind the qualifications.</h3><p>Build a concise, accurate professional biography that communicates experience, expertise and direction in your own voice.</p><div class="cp-quote-example"><span>ILLUSTRATIVE COPY FRAMEWORK</span><p>“I bring [relevant expertise] to [professional area], with experience in [verified responsibilities]. My focus is [career direction].”</p></div></div>
-<div class="cp-showcase-panel" role="tabpanel" id="panel-positioning" aria-labelledby="tab-positioning" hidden><div class="cp-panel-head"><span>CAREER POSITIONING / DEMO</span><span>05 — 05</span></div><h3>Make your next direction feel intentional.</h3><p>Identify a clear positioning statement and priority improvements to support your career goals.</p><div class="cp-panel-data"><div><small>IDENTITY</small><b>Who you are professionally</b><span>Ground your introduction in the work you actually do.</span></div><div><small>CONTRIBUTION</small><b>What you bring</b><span>Emphasise strengths supported by evidence.</span></div><div><small>DIRECTION</small><b>Where you're heading</b><span>Connect your profile to realistic target roles.</span></div></div></div>
-</div>
-<div class="cp-showcase-bottom"><span>ILLUSTRATIVE INTERFACE — NOT A LIVE CUSTOMER REPORT</span><a href="#how-it-works">Understand the process ↗</a></div>
-</div>
-</div>
-</section>
-
-<section class="cp-section cp-process" id="how-it-works" aria-labelledby="process-title">
-<div class="cp-shell">
-<div class="cp-section-label"><span class="cp-serial">03 / HOW IT WORKS</span><span>THREE STEPS / ONE CLEAR OUTCOME</span></div>
-<div class="cp-process-top"><h2 class="cp-display-heading" id="process-title">A considered process, <em>from profile to perspective.</em></h2><p>You share what matters. Our team uses the platform internally. You receive actionable recommendations that reflect your goals.</p></div>
-<div class="cp-process-steps">
-<article class="cp-process-step"><div class="cp-step-number">01 <span>↗</span></div><h3>Share your profile.</h3><p>Submit your current CV, LinkedIn profile and a short professional bio. These provide the information needed to understand your professional background.</p><div class="cp-step-graphic cp-step-graphic-file" aria-hidden="true"><span>CAREER PROFILE</span><i>CV</i><i>IN</i><small>INFORMATION / RECEIVED</small></div></article>
-<article class="cp-process-step"><div class="cp-step-number">02 <span>↗</span></div><h3>CareerPilot analysis.</h3><p>Our team uses proprietary AI-powered technology to assess your professional presentation, identify areas for improvement and develop personalised recommendations.</p><div class="cp-step-graphic cp-step-graphic-matrix" aria-hidden="true"><span>STRUCTURED REVIEW</span><div><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>INTERNAL PROCESS</small></div></article>
-<article class="cp-process-step"><div class="cp-step-number">03 <span>↗</span></div><h3>Receive your results.</h3><p>Receive your career optimisation report, including recommendations for strengthening your CV, LinkedIn profile and professional positioning.</p><div class="cp-step-graphic cp-step-graphic-result" aria-hidden="true"><span>REPORT / SUMMARY</span><div><i></i><i></i><i></i></div><small>PERSONALISED RECOMMENDATIONS</small></div></article>
-</div>
-<a class="cp-button cp-button-dark" href="/assessment">Start your career optimisation <span aria-hidden="true">↗</span></a>
-</div>
-</section>
-
-<section class="cp-section cp-example" id="examples" aria-labelledby="examples-title">
-<div class="cp-shell">
-<div class="cp-section-label"><span class="cp-serial">04 / THE DIFFERENCE</span><span>EDUCATIONAL EXAMPLES / NO FABRICATED RESULTS</span></div>
-<div class="cp-example-head"><h2 class="cp-display-heading" id="examples-title">Same experience. <em>Better introduction.</em></h2><p>Good positioning isn't about inflating credentials. It's about making the work you already do more understandable.</p></div>
-<div class="cp-example-comparison">
-<div class="cp-example-col"><span class="cp-tag">BEFORE / GENERIC</span><blockquote>“Responsible for reports and communicating with different teams.”</blockquote><p>A broad description that leaves the reader guessing about the actual work.</p></div>
-<div class="cp-example-arrow" aria-hidden="true">→</div>
-<div class="cp-example-col cp-example-after"><span class="cp-tag">AFTER / MORE SPECIFIC</span><blockquote>“Prepared weekly progress reports and coordinated updates across internal teams.”</blockquote><p>Clearer scope and language, provided these details accurately reflect the candidate's experience.</p></div>
-</div>
-<p class="cp-example-disclaimer">Fictional educational example. No client, recruiter or hiring outcome is represented.</p>
-</div>
-</section>
-
-<section class="cp-section cp-deliverables" id="deliverables" aria-labelledby="deliverables-title">
-<div class="cp-shell">
-<div class="cp-section-label"><span class="cp-serial">05 / WHAT YOU RECEIVE</span><span>PRACTICAL, PERSONALISED DIRECTION</span></div>
-<div class="cp-deliverables-grid">
-<div><h2 class="cp-display-heading" id="deliverables-title">Not another dashboard. <em>A clearer way forward.</em></h2><p class="cp-lead">Your assessment brings together the most useful findings from your profile, presented in a report you can understand and apply.</p><a class="cp-inline-link" href="/assessment">Request your assessment <span aria-hidden="true">↗</span></a></div>
-<div class="cp-deliverables-list">
-<div class="cp-deliverable"><span>01</span><div><h3>CV assessment</h3><p>Review of clarity, structure, relevance and professional impact.</p></div><b aria-hidden="true">↗</b></div>
-<div class="cp-deliverable"><span>02</span><div><h3>LinkedIn recommendations</h3><p>Practical direction for your headline, summary and experience sections.</p></div><b aria-hidden="true">↗</b></div>
-<div class="cp-deliverable"><span>03</span><div><h3>Professional bio review</h3><p>Guidance to make your introduction concise and authentic.</p></div><b aria-hidden="true">↗</b></div>
-<div class="cp-deliverable"><span>04</span><div><h3>Career positioning report</h3><p>A clearer view of strengths and how to communicate your target direction.</p></div><b aria-hidden="true">↗</b></div>
-<div class="cp-deliverable"><span>05</span><div><h3>Personalised recommendations</h3><p>Prioritised improvement opportunities rooted in your actual experience.</p></div><b aria-hidden="true">↗</b></div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="cp-section cp-technology" id="about" aria-labelledby="tech-title">
-<div class="cp-shell cp-tech-grid">
-<div class="cp-tech-text"><div class="cp-section-label cp-section-label-light"><span class="cp-serial">06 / THE TECHNOLOGY</span></div><span class="cp-eyebrow cp-eyebrow-orange">A thoughtful use of AI</span><h2 class="cp-display-heading" id="tech-title">Intelligence in the process. <em>Human judgement in the result.</em></h2><p>CareerPilot's proprietary platform supports structured review of career information. Our team interprets findings in context and prepares recommendations you can actually use.</p><p>The platform is an internal working tool. We do not offer customer software accounts, automatic job applications or recruiter outreach.</p><a class="cp-inline-link cp-inline-light" href="#trust">How we handle information <span aria-hidden="true">↗</span></a></div>
-<div class="cp-tech-visual" id="tech-visual" aria-label="Decorative illustration of connected career information becoming structured insight">
-<div class="cp-tech-canvas" id="tech-canvas" aria-hidden="true"><svg viewBox="0 0 400 340" focusable="false"><circle cx="200" cy="167" r="112" fill="none" stroke="#566779" stroke-dasharray="4 9"/><circle cx="200" cy="167" r="60" fill="none" stroke="#F07845" opacity=".7"/><path d="M68 160 L200 85 324 185 200 260 68 160M200 85V260M68 160L324 185" fill="none" stroke="#738499" opacity=".6"/><circle cx="68" cy="160" r="7" fill="#F07845"/><circle cx="200" cy="85" r="7" fill="#8291A3"/><circle cx="324" cy="185" r="7" fill="#F07845"/><circle cx="200" cy="260" r="7" fill="#8291A3"/></svg></div>
-<div class="cp-tech-visual-overlay"><span>CAREERPILOT / INTELLIGENCE LAYER</span><strong>Career information → Structured insight</strong><small>Conceptual visualisation. Not a view of internal algorithms or customer data.</small></div>
-</div>
-</div>
-</section>
-
-<section class="cp-section cp-trust" id="trust" aria-labelledby="trust-title">
-<div class="cp-shell">
-<div class="cp-section-label"><span class="cp-serial">07 / PRIVACY &amp; TRUST</span><span>YOUR PROFESSIONAL HISTORY IS PERSONAL</span></div>
-<div class="cp-trust-grid">
-<div><h2 class="cp-display-heading" id="trust-title">Your career information deserves to be <em>handled with care.</em></h2><p>We understand that your CV and professional history contain personal information. CareerPilot uses information you provide to deliver the career optimisation service you request.</p><p>Our proprietary technology is operated internally by our team. Customers do not receive access to the underlying platform.</p><p>Before submitting anything, please review our <a href="/privacy">privacy policy</a> to understand how information is collected, processed, stored and protected.</p></div>
-<div class="cp-trust-panel"><span class="cp-mono">INFORMATION HANDLING / OUR STANDARD</span><ul><li>Clear explanations of how information is used</li><li>Restricted access to submitted documents</li><li>Defined retention and deletion procedures</li><li>Payment through a hosted payment provider</li><li>No publication of CVs or profiles without permission</li></ul><p class="cp-trust-foot">Document intake activates only when secure storage and payment services are configured. No public CV links.</p></div>
-</div>
-</div>
-</section>
-
-<section class="cp-section cp-pricing" id="pricing" aria-labelledby="pricing-title">
-<div class="cp-shell cp-pricing-grid">
-<div><div class="cp-section-label"><span class="cp-serial">08 / ONE CLEAR OFFER</span></div><h2 class="cp-display-heading" id="pricing-title">A professional assessment. <em>One straightforward price.</em></h2><p>Know what you're investing in before you begin. CareerPilot's professional assessment is a one-time service, not a software subscription.</p></div>
-<div class="cp-price-card"><div class="cp-price-top"><span>CAREERPILOT / PROFESSIONAL ASSESSMENT</span><span>ONE TIME</span></div><div class="cp-price-line"><span class="cp-dollar">$50</span><span class="cp-usd">USD<br>ONE-TIME</span></div><p>Designed for professionals who want a clearer, stronger presentation of their experience.</p><ul><li>CV assessment</li><li>LinkedIn recommendations</li><li>Professional bio review</li><li>Career positioning report</li><li>Personalised recommendations</li></ul><a href="/assessment" class="cp-button cp-button-orange">Get your career profile reviewed <span aria-hidden="true">↗</span></a><small>Secure checkout with Stripe where available. No automatic renewals. Payment availability depends on configuration.</small></div>
-</div>
-</section>
-
-<section class="cp-section cp-faq" id="faqs" aria-labelledby="faq-title">
-<div class="cp-shell cp-faq-grid"><div><div class="cp-section-label"><span class="cp-serial">09 / GOOD QUESTIONS</span></div><h2 class="cp-display-heading" id="faq-title">Straight answers. <em>No guesswork.</em></h2><p>Understanding the service is as important as understanding what you'll receive.</p></div>
-<div class="cp-faq-list">
-<details><summary>Am I buying access to CareerPilot's software?</summary><p>No. CareerPilot uses its proprietary AI-powered platform internally. You purchase a professional career optimisation service and receive your assessment results, not software credentials.</p></details>
-<details><summary>What is included in the $50 assessment?</summary><p>A CV assessment, LinkedIn recommendations, professional bio review, career positioning report and personalised improvement guidance, based on the materials you provide.</p></details>
-<details><summary>Does CareerPilot submit job applications or contact recruiters?</summary><p>No. The professional assessment does not apply for jobs, contact recruiters or make hiring decisions. It focuses on the accuracy, clarity and relevance of your professional presentation.</p></details>
-<details><summary>Is an interview or job offer guaranteed?</summary><p>No. CareerPilot cannot guarantee interview invitations, recruiter responses, employment or any hiring outcome. The service focuses on actionable career presentation improvements.</p></details>
-<details><summary>How do I provide my CV and LinkedIn profile?</summary><p>Start with the secure assessment request page. When private document storage and payment are configured, you can submit your materials and complete a hosted checkout. Otherwise, contact CareerPilot before sharing sensitive files.</p></details>
-<details><summary>How is my information handled?</summary><p>Your documents are intended only for your assessment, with access restricted to authorised staff. Review the privacy notice for current storage, retention, deletion and third-party processing information before submitting.</p></details>
+<div class="hero-visual">
+<div class="dashboard" role="img" aria-label="Illustrative CareerPilot assessment interface showing CV review, skills presentation, LinkedIn recommendations and career positioning">
+<div class="dashboard-top"><span class="mono">CareerPilot / Profile intelligence</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+<div class="dash-content">
+<aside class="dash-side"><p class="mono">Review areas</p><span class="active">Overview</span><span>CV review</span><span>Skills</span><span>LinkedIn</span><span>Positioning</span></aside>
+<div class="dash-main"><span class="mono orange">Illustrative report / demo</span><h3>Professional profile assessment</h3>
+<div class="dash-grid">
+<div class="dash-card"><span class="mono">CV clarity</span><strong>Structure &amp; impact</strong><p>Strengthen the way achievements are described.</p><div class="meter"><b data-width="72%"></b></div></div>
+<div class="dash-card"><span class="mono">LinkedIn</span><strong>Profile narrative</strong><p>Refine headline and About section.</p><div class="meter"><b data-width="84%"></b></div></div>
+<div class="dash-card wide"><span class="mono">Skills presentation</span><div class="tags"><span>Communication</span><span>Operations</span><span>Project delivery</span><span>Collaboration</span></div><p style="margin-top:10px">Example categories only — no customer data.</p></div>
+<div class="dash-card wide"><span class="mono">Career positioning insight</span><strong>Lead with relevant evidence</strong><p>Prioritise verified accomplishments that connect with the roles you want.</p></div>
 </div></div>
+</div>
+</div><span class="report-label">DEMONSTRATION ONLY / NOT A LIVE REPORT</span>
+</div>
+</div>
+<div class="shell hero-floor"><span class="mono">01 / Understand your professional value</span><strong>ANALYSIS → CLARITY → DIRECTION</strong></div>
 </section>
 
-<section class="cp-final" aria-labelledby="final-title"><div class="cp-shell cp-final-content"><span class="cp-eyebrow cp-eyebrow-orange">YOUR NEXT MOVE STARTS WITH CLARITY</span><h2 id="final-title">Your story is already there.<br><em>Let's help it land.</em></h2><p>Make the experience, skills and accomplishments you've earned easier to understand — with AI-informed analysis and personal, professional guidance.</p><div class="cp-final-actions"><a class="cp-button cp-button-orange" href="/assessment">Start your career optimisation <span aria-hidden="true">↗</span></a><a class="cp-inline-link cp-inline-light" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a></div></div></section>
-</main>
-<footer class="cp-footer">
-<div class="cp-shell">
-<div class="cp-footer-top"><div><a href="/" class="cp-brand cp-footer-brand"><span class="cp-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>career<b>pilot</b></span><sup>®</sup></a><p>Technology-informed career optimisation with a human point of view.</p></div><div class="cp-footer-links"><div><strong>Explore</strong><a href="#platform">Platform</a><a href="#how-it-works">How it works</a><a href="#deliverables">What you receive</a></div><div><strong>Company</strong><a href="#about">About CareerPilot</a><a href="/contact">Contact</a><a href="/resources">Resources</a></div><div><strong>Legal</strong><a href="/privacy">Privacy policy</a><a href="/terms">Terms</a><a href="/assessment">Get started</a></div></div></div>
-<div class="cp-footer-bottom"><span>© 2026 CareerPilot. All rights reserved.</span><span>Career assessment, not recruiting or job placement.</span></div>
+<section class="section white" id="problem" aria-labelledby="problem-title">
+<div class="shell">
+<div class="section-header"><div><span class="kicker mono orange">01 / The positioning gap</span><h2 id="problem-title">A strong career doesn't always tell a <span class="orange">clear story.</span></h2></div><p>Your CV, LinkedIn profile and professional bio may describe the same experience in very different ways. That inconsistency can make it harder to understand what you bring to a role.</p></div>
+<div class="problem-grid">
+<div class="problem-quote">It's not about inventing a better background. It's about communicating the value of the one you've earned.</div>
+<div class="problem-points">
+<article><span class="mono orange">01</span><h3>Scattered detail</h3><p>Relevant experience gets buried under routine responsibilities.</p></article>
+<article><span class="mono orange">02</span><h3>Unclear strengths</h3><p>Skills are listed without context or evidence.</p></article>
+<article><span class="mono orange">03</span><h3>Weak alignment</h3><p>Your profile doesn't clearly connect to your next move.</p></article>
+</div></div>
+</div></section>
+
+<section class="section dark" id="platform" aria-labelledby="platform-title">
+<div class="shell platform-stage">
+<div class="platform-window" aria-label="Illustrative internal profile analysis workflow">
+<div class="platform-top"><span class="mono">CareerPilot / Assessment workflow</span><span class="mono orange">Preview</span></div>
+<div class="platform-line"><i aria-hidden="true"></i><div><strong>CV assessment</strong><small>Structure, language, verified achievements</small></div><span class="mono">01</span></div>
+<div class="platform-line"><i aria-hidden="true"></i><div><strong>LinkedIn recommendations</strong><small>Headline, About, experience presentation</small></div><span class="mono">02</span></div>
+<div class="platform-line"><i aria-hidden="true"></i><div><strong>Professional bio analysis</strong><small>Coherent positioning and narrative</small></div><span class="mono">03</span></div>
+<div class="platform-canvas"><span class="mono">Conceptual relationship map / illustrative</span><canvas id="platform-canvas" aria-hidden="true"></canvas></div>
 </div>
-</footer>
-</body>
-</html>
+<div class="platform-copy">
+<span class="kicker mono orange">02 / The platform behind the service</span>
+<h2 id="platform-title">Intelligent analysis. <span class="orange">Personalised direction.</span></h2>
+<p>Our proprietary AI-powered technology supports structured analysis of professional profiles and helps our team prepare recommendations grounded in your real experience.</p>
+<p>The software stays behind the scenes. You purchase a professional assessment, not an account or a software subscription.</p>
+<a class="button secondary" href="#technology">How our approach works <span class="arrow" aria-hidden="true">↗</span></a>
+</div></div></section>
+
+<section class="section" id="how-it-works" aria-labelledby="steps-title">
+<div class="shell"><div class="section-header"><div><span class="kicker mono orange">03 / Simple by design</span><h2 id="steps-title">Three steps to a clearer professional profile.</h2></div><p>Our process keeps the technology in the background and your career goals at the centre.</p></div>
+<div class="steps">
+<article class="step"><span class="mono">STEP 01 / SHARE YOUR PROFILE</span><h3>Start with your experience.</h3><p>Tell us about your career goals. Once secure document intake is available, you'll be able to submit your CV, LinkedIn profile and professional bio through an approved private channel.</p></article>
+<article class="step"><span class="mono">STEP 02 / CAREERPILOT ANALYSIS</span><h3>We assess the details.</h3><p>Our team uses proprietary AI-powered technology to evaluate professional presentation, identify improvements and prepare personalised recommendations.</p></article>
+<article class="step"><span class="mono">STEP 03 / RECEIVE YOUR RESULTS</span><h3>Know what to improve.</h3><p>Receive your agreed career optimisation report covering your CV, LinkedIn presence, professional bio and overall career positioning.</p></article>
+</div><p style="font-size:12px;margin-top:22px">Secure document submission and online checkout are being prepared. Please do not send confidential CVs through public file links or general website forms.</p>
+<a href="#pricing" class="button light">Start your career optimisation <span class="arrow" aria-hidden="true">↗</span></a>
+</div></section>
+
+<section class="section dark" id="examples" aria-labelledby="examples-title">
+<div class="shell examples">
+<div><span class="kicker mono orange">04 / See the difference</span><h2 id="examples-title" class="big-title">Better positioning starts with <span class="orange">better language.</span></h2><p>Explore how a generic statement can become more specific and relevant — without fabricating experience.</p>
+<div class="example-controls" role="tablist" aria-label="Example type">
+<button type="button" role="tab" data-example="cv" aria-selected="true" aria-controls="example-panel">CV</button>
+<button type="button" role="tab" data-example="linkedin" aria-selected="false" aria-controls="example-panel">LinkedIn</button>
+<button type="button" role="tab" data-example="bio" aria-selected="false" aria-controls="example-panel">Professional bio</button>
+</div><p class="example-note" id="example-note">Illustrative wording only. Specific achievements should be verified with the client.</p>
+</div>
+<div class="example-cards" id="example-panel" role="tabpanel" aria-live="polite">
+<article class="example-card"><span class="mono">Before / generic</span><p id="example-before">Responsible for customer enquiries, reports and daily operational tasks.</p></article>
+<article class="example-card after"><span class="mono">After / clearer</span><p id="example-after">Coordinated customer enquiries, maintained operational reporting and supported daily service delivery across the team.</p></article>
+</div>
+</div></section>
+
+<section class="section white" id="deliverables" aria-labelledby="deliverables-title">
+<div class="shell"><div class="section-header"><div><span class="kicker mono orange">05 / What you receive</span><h2 id="deliverables-title">A practical assessment. <span class="orange">Not another dashboard login.</span></h2></div><p>Your CareerPilot Professional Assessment is designed to make your career presentation more understandable, relevant and actionable.</p></div>
+<div class="deliverables">
+<article class="deliverable"><span class="mono">01 / CV</span><h3>CV assessment</h3><p>Structure, clarity, relevant experience and opportunities to strengthen impact.</p></article>
+<article class="deliverable"><span class="mono">02 / LINKEDIN</span><h3>Profile recommendations</h3><p>Suggestions for your headline, About section and experience descriptions.</p></article>
+<article class="deliverable"><span class="mono">03 / BIO</span><h3>Professional bio review</h3><p>A clearer introduction to your professional background and strengths.</p></article>
+<article class="deliverable"><span class="mono">04 / DIRECTION</span><h3>Positioning report</h3><p>Insights on how your experience connects to your target career direction.</p></article>
+<article class="deliverable"><span class="mono">05 / ACTION</span><h3>Personalised next steps</h3><p>Practical recommendations to guide your updates and decisions.</p></article>
+</div></div></section>
+
+<section class="section blue dark" id="technology" aria-labelledby="technology-title">
+<div class="shell tech-grid">
+<div><span class="kicker mono orange">06 / About CareerPilot</span><h2 class="big-title" id="technology-title">A proprietary system. <span class="orange">A human-centred service.</span></h2><p>Our internal technology helps the CareerPilot team organise information and develop structured recommendations. The team reviews the context you provide, and recommendations are intended to reflect your real background.</p><p>No customer software login. No automatic job applications. No promises of recruiter responses or employment outcomes.</p><a class="button secondary" href="#faqs">Frequently asked questions <span class="arrow" aria-hidden="true">↗</span></a></div>
+<div class="tech-map" aria-label="Illustrative process flow: professional materials, internal analysis, professional review, personalised report">
+<div class="tech-node"><span>Professional materials</span><span class="mono orange">INPUT</span></div><div class="tech-connector">↓</div>
+<div class="tech-node"><span>Proprietary AI-assisted analysis</span><span class="mono orange">INTERNAL</span></div><div class="tech-connector">↓</div>
+<div class="tech-node"><span>Team-led contextual review</span><span class="mono orange">REVIEW</span></div><div class="tech-connector">↓</div>
+<div class="tech-node"><span>Personalised assessment report</span><span class="mono orange">OUTPUT</span></div>
+<p style="font-size:11px;margin:17px 0 0">Conceptual diagram only. Does not expose actual system architecture.</p>
+</div></div></section>
+
+<section class="section white" id="privacy" aria-labelledby="privacy-title">
+<div class="shell trust-grid">
+<div><span class="kicker mono orange">07 / Privacy &amp; trust</span><h2 class="big-title" id="privacy-title">Your career information deserves to be <span class="orange">handled with care.</span></h2><p>Your CV and professional history contain personal information. CareerPilot intends to use information you provide for the career optimisation service you request.</p><p>The proprietary platform is operated internally by our team. Customers do not receive direct access to it.</p><p>Before sharing sensitive documents, review our <a href="/privacy" style="text-decoration:underline;text-decoration-color:var(--orange)">privacy notice</a> for the current policy and outstanding details.</p></div>
+<div><ul class="trust-list">
+<li>Clear explanation of how submitted information is used.</li>
+<li>Restricted staff access is required for any future document intake.</li>
+<li>Retention and deletion procedures must be defined before uploads are enabled.</li>
+<li>Payment must use a secure hosted provider; no card details collected on this page.</li>
+<li>Customer CVs and profiles will not be published without permission.</li>
+</ul>
+<div class="trust-note"><strong>Current availability:</strong> Secure document submission, paid checkout, and verified retention/deletion controls are not yet active on this landing page. Do not submit confidential documents until these processes are configured and their policies are published.</div></div>
+</div></section>
+
+<section class="section dark" id="pricing" aria-labelledby="pricing-title">
+<div class="shell price-grid">
+<div><span class="kicker mono orange">08 / Clear, one-time pricing</span><h2 class="big-title" id="pricing-title">One assessment. <span class="orange">A clearer next step.</span></h2><p>The CareerPilot Professional Assessment brings your career documents and professional positioning into one structured review.</p><p>There is no customer-facing AI software subscription. Your purchase is for a personalised professional service.</p><p style="font-size:12px">Online payment and secure upload will be enabled only after the payment processor, access controls and data-handling policies are configured and verified.</p></div>
+<div class="price-card">
+<span class="mono orange">CareerPilot Professional Assessment</span>
+<div class="price-amount">$50 <small>USD / one time</small></div>
+<p>Professional assessment and recommendations</p>
+<ul><li>CV assessment</li><li>LinkedIn recommendations</li><li>Professional bio review</li><li>Career positioning report</li><li>Personalised recommendations</li></ul>
+<a href="/get-started" class="button">Request your assessment <span class="arrow" aria-hidden="true">↗</span></a>
+<span class="mono">Enquiry first · No payment collected on this page</span>
+</div></div></section>
+
+<section class="section white" id="faqs" aria-labelledby="faqs-title">
+<div class="shell faq-grid">
+<div><span class="kicker mono orange">09 / Questions answered</span><h2 class="big-title" id="faqs-title">Clarity before you commit.</h2><p>Understand what you're buying, how our technology is used and what happens next.</p></div>
+<div class="faq-list">
+<details><summary>Do I get access to the CareerPilot AI platform?</summary><p>No. The technology is proprietary and used internally by the CareerPilot team. You purchase a personalised professional assessment, not a software account.</p></details>
+<details><summary>What does the $50 assessment include?</summary><p>CV assessment, LinkedIn recommendations, professional bio review, career positioning report and personalised recommendations, subject to the agreed service scope.</p></details>
+<details><summary>Can I upload my CV and pay now?</summary><p>Not yet through this landing page. Secure document submission and hosted payment must be configured and verified before launch. You can begin by submitting a non-sensitive enquiry through Get Started.</p></details>
+<details><summary>Will CareerPilot apply for jobs or contact recruiters for me?</summary><p>No. This service is focused on improving how your professional experience is presented. It does not automatically apply for jobs or contact recruiters.</p></details>
+<details><summary>Are interviews or job offers guaranteed?</summary><p>No. Hiring decisions depend on employers and many factors outside CareerPilot's control. We focus on the quality and clarity of your professional presentation.</p></details>
+<details><summary>How is my personal information handled?</summary><p>Review the current <a href="/privacy" style="text-decoration:underline">privacy notice</a>. Secure document intake will not be enabled until access, retention, deletion and any third-party processing arrangements have been defined.</p></details>
+</div></div></section>
+
+<section class="section final dark" id="final" aria-labelledby="final-title">
+<div class="shell"><span class="kicker mono orange">10 / The next chapter</span><h2 id="final-title">Your experience is already yours. <span class="orange">Let's communicate it better.</span></h2><p>Start with a professional assessment request. We'll discuss the next steps before asking you to share sensitive career documents.</p><a href="/get-started" class="button">Request your $50 assessment <span class="arrow" aria-hidden="true">↗</span></a></div>
+</section>
+</main>
+<footer class="footer">
+<div class="shell">
+<div class="footer-main"><div><a href="/" class="brand"><span class="brand-mark" aria-hidden="true">C</span><span>career<b>pilot</b></span></a><p>Professional career optimisation, informed by proprietary AI analysis and delivered with human support.</p></div>
+<nav class="footer-links" aria-label="Footer links"><a href="#home">Home</a><a href="#how-it-works">How it works</a><a href="#deliverables">What you receive</a><a href="#technology">About CareerPilot</a><a href="#faqs">FAQs</a><a href="/get-started">Get started</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></nav>
+</div>
+<div class="footer-bottom"><span>© 2026 CareerPilot. All rights reserved.</span><span>Professional service. Proprietary technology. No guaranteed hiring outcomes.</span></div>
+</div></footer>
+</body></html>
