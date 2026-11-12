@@ -1,7 +1,7 @@
 /* CareerPilot conceptual information graph — lightweight Three.js enhancement.
  * Decoration only. Never represents real customer data or proprietary processing.
  */
-import * as THREE from "three";
+let THREE = null;
 
 const holder = document.getElementById("tech-canvas");
 const media = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -106,7 +106,7 @@ if (holder && !media.matches && !mobile.matches && webglSupported) {
   }
 
   const gate=new IntersectionObserver(entries=>{
-    if(entries[0]?.isIntersecting){gate.disconnect();setup();}
+    if(entries[0]?.isIntersecting){gate.disconnect();import("https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js").then(mod=>{THREE=mod;if(!media.matches&&!mobile.matches)setup();}).catch(()=>{/* SVG fallback is already visible. */});}
   },{rootMargin:"100px 0px"});
   gate.observe(holder);
   window.addEventListener("pagehide",cleanup,{once:true});
