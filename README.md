@@ -12,8 +12,12 @@ Business & Strategy; Productivity & Planning; Marketing & Content; Finance & Mon
 ## Structure
 
 - `index.html` - storefront and product discovery experience.
-- `store.css` / `store.js` - responsive design, search, filters, previews and downloads.
+- `store.css` / `store.js` - responsive design, search, filters, an in-browser PDF reader, local companion notes and downloads.
 - `products/catalog.json` - product metadata for all 210 downloads.
+
+## Browser reading experience
+
+Visitors can open each product in an in-browser PDF reader before downloading. The reader uses the browser's built-in PDF controls for page navigation, zoom and search, with a separate link to open the PDF in a new tab. A companion notes panel lets visitors write while reading; notes are saved locally in that browser and can be downloaded as a text file. The original PDFs remain read-only in the preview and are available as separate downloads.
 - `downloads/planners/` - the 10 original planner PDFs.
 - `downloads/products/` - 200 new six-page PDFs, each with a designed cover, instructions, framework, guided worksheet, reusable tracker/template and 30-day implementation plan.
 
