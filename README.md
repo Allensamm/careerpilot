@@ -1,41 +1,36 @@
 # CareerPilot Digital
 
-CareerPilot Digital is a static digital-resource storefront featuring **310 original downloads** across nine collections.
+CareerPilot Digital is a static digital-product marketplace with **345 products across 13 collections**.
 
-- 10 original CareerPilot planners retained from the earlier site.
-- 200 individually titled six-page PDF products already in the library.
-- 100 additional Etsy-market-inspired planners, trackers, journals, workbooks, event kits and creator resources, written and designed as original CareerPilot editions.
+## Product mix
+- Existing business, productivity, finance, marketing, freelance, career, personal and operations resources.
+- **15 substantial planner bundles**, ranging from 48 to 76 pages, including life planning, wedding planning, ADHD-friendly focus, business, finance, study, creator, home, travel, wellness, freelance, meal planning, teacher, real estate and Etsy shop systems.
+- **20 original digital-art and creative collections**, including clipart, SVG graphics, sticker assets, seamless patterns, printable wall art, social layouts, invitation stationery, sublimation designs, coloring pages and icon packs.
 
-## Market research and originality
+## Content depth and product formats
+- Standard planners, workbooks, guides, playbooks, trackers, journals, kits and templates now have product-specific page plans and varied page counts; they are no longer forced into a six-page shell.
+- Planner bundles have 48–76 pages and section-specific layouts.
+- Digital-art downloads are generated as ZIP bundles with individual editable SVG files and transparent PNG exports where supported.
+- Coloring-book and printable event kits are multi-page PDFs.
+- Each product has a visual preview that shows an actual interior worksheet page or a contact sheet of artwork included in the download.
+- PDF previews open in the browser before download; artwork collections show the contact sheet, formats and included contents before ZIP download.
+- The companion notes panel remains available for PDF resources.
 
-The new collection was informed by broad Etsy digital-download categories such as undated digital planners, wedding and event binders, travel organisers, meal planners, budgeting trackers, savings tools, creator resources and seller templates. CareerPilot does not copy Etsy seller PDFs, listing images, branding or proprietary layouts.
+## Marketplace research and originality
+Creative Fabrica's public marketplace and category guide were used to understand the breadth of digital-product formats: bundles, illustrations, clipart, SVG, patterns, backgrounds, icons, graphic templates, coloring pages, KDP interiors and craft assets. Etsy and Creative Fabrica are research references only. CareerPilot's product text, planner structures and vector artwork are original; no seller files, preview images, trademarks or proprietary layouts are copied.
 
-## Product experience
-
-- Visitors can preview each product in the browser before downloading.
-- The 100 new editions have individual interior-page SVG previews showing actual worksheet prompts from the product.
-- Each new edition contains six pages: cover, start-here guide, product-specific method, guided worksheet, reusable tracker and 30-day action plan.
-- New PDF files are generated in the browser from the same product-specific content used by the preview and can be downloaded as PDFs.
-- Existing PDF products continue to use their original downloadable files.
-- The reader includes a separate companion notes panel. Notes are saved locally in the visitor's browser and can be exported as a text file.
-
-## Structure
-
-- `index.html` - storefront and product discovery experience.
-- `store.css` / `store.js` - responsive design, search, filters, online reader, PDF generation, local notes and downloads.
-- `products/catalog.json` - product metadata and structured content for all 310 products.
-- `previews/etsy-inspired/` - 100 product-specific interior worksheet previews.
-- `downloads/planners/` - 10 original planner PDFs.
-- `downloads/products/` - 200 existing six-page PDFs.
+## Technical structure
+- `index.html` - storefront and collection discovery.
+- `store.css` / `store.js` - responsive UI, product filtering, PDF generation, SVG/PNG asset generation, ZIP creation and browser previews.
+- `products/catalog.json` - structured metadata and product-specific content for all 345 products.
+- `previews/` - 345 actual product-page or art-sheet previews.
+- `downloads/` - retained legacy source PDFs; the live product experience now generates expanded editions from the updated product records.
 
 ## Deployment
-
-This is a static site. Deploy the repository root on Vercel with no build command or serverless functions required. The new PDF editions are generated client-side when a visitor opens or downloads them.
+Static Vercel deployment from the repository root. No build command is required. New PDF editions and artwork ZIPs are assembled in the visitor's browser at download time.
 
 ## Commercial status
-
-All products are marked as free launch downloads in this release. No payment provider or paid checkout is configured. Add secure checkout and protected file delivery before changing products to paid downloads.
+All resources are currently free launch downloads. Paid checkout and protected file delivery are not configured. Add secure checkout and delivery controls before selling paid downloads.
 
 ## Content note
-
-Resources are educational planning tools. They do not replace legal, tax, investment, medical or other specialist advice.
+Educational and organisational resources are not a substitute for qualified legal, tax, investment, medical or other specialist advice.
