@@ -34,3 +34,11 @@ All resources are currently free launch downloads. Paid checkout and protected f
 
 ## Content note
 Educational and organisational resources are not a substitute for qualified legal, tax, investment, medical or other specialist advice.
+
+
+## Wedding invitation collection
+- Adds 10 original editable invitation designs in the Wedding Invitations collection.
+- Styles: black-tie editorial, blush Art Deco, emerald botanical, lavender floral, terracotta destination, celestial midnight, burgundy heirloom, onyx and champagne, sage garden, and peacock emerald.
+- Four are single-page invitations; six are two-page suites with matching details and RSVP pages.
+- Browser editor supports editing the couple names, wedding date, time, venue, address, city, RSVP deadline, email, phone, dress code and wedding website.
+- Downloads contain editable SVG vector pages and high-resolution PNG exports in a ZIP kit.

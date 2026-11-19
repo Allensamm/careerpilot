@@ -84,3 +84,31 @@
 .art-download-wide{width:100%;margin-top:18px}
 @media(max-width:760px){.art-reader-layout{grid-template-columns:1fr}.art-reader-shell{padding:16px}.art-reader-details{padding:0 4px}}
 @media(max-width:620px){.product-page-preview{min-height:220px}.product-page-preview img{height:220px}}
+
+/* Editable wedding invitation studio */
+.wedding-reader-shell{padding:22px 26px 28px}
+.wedding-editor-grid{display:grid;grid-template-columns:minmax(270px,.78fr) minmax(360px,1.22fr);gap:26px;margin-top:24px;align-items:start}
+.wedding-fields-panel{border:1px solid var(--line);background:#fbfaf7;padding:20px}
+.wedding-panel-heading h3{font:700 23px var(--display);margin:8px 0 6px;color:var(--ink)}
+.wedding-panel-heading>p:last-child{font-size:13px;color:var(--muted);line-height:1.65;margin:0 0 18px}
+.wedding-field-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.wedding-field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.wedding-field span{font:600 9px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#6f7d89}
+.wedding-field input{width:100%;min-width:0;border:1px solid #dce1e5;background:#fff;border-radius:3px;padding:11px 10px;font:13px var(--body);color:var(--ink);outline:none}
+.wedding-field input:focus{border-color:#b67d55;box-shadow:0 0 0 2px #b67d5522}
+.wedding-edit-note{margin-top:16px;padding-top:13px;border-top:1px solid var(--line);font-size:11px;line-height:1.6;color:var(--muted)}
+.wedding-preview-panel{min-width:0}
+.wedding-preview-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:12px}
+.wedding-preview-heading strong{display:block;font:700 15px var(--display);color:var(--ink);margin-top:6px}
+.wedding-page-tabs{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.wedding-page-tabs button{border:1px solid var(--line);background:#fff;color:var(--muted);font:600 9px var(--mono);padding:8px 10px;cursor:pointer}
+.wedding-page-tabs button.active{background:var(--ink);border-color:var(--ink);color:#fff}
+.wedding-page-tabs span{font:600 9px var(--mono);letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+.wedding-preview-stage{background:#ecebe7;border:1px solid var(--line);padding:18px;display:flex;justify-content:center;align-items:flex-start;max-height:820px;overflow:auto}
+.wedding-preview-frame{width:min(100%,470px);background:#fff;box-shadow:0 10px 34px #172a431f;line-height:0}
+.wedding-preview-frame svg{display:block;width:100%;height:auto}
+.wedding-preview-footer{display:flex;justify-content:space-between;gap:12px;padding:10px 2px;color:#84909a;font:600 8px var(--mono);letter-spacing:.08em}
+.wedding-download-bottom{width:100%;margin-top:10px}
+.wedding-card-preview img{aspect-ratio:5/7;object-fit:contain;background:#f8f6f1}
+@media(max-width:900px){.wedding-editor-grid{grid-template-columns:1fr}.wedding-preview-frame{width:min(100%,520px)}}
+@media(max-width:620px){.wedding-reader-shell{padding:15px}.wedding-field-grid{grid-template-columns:1fr}.wedding-preview-heading{align-items:flex-start;flex-direction:column}.wedding-page-tabs{justify-content:flex-start}.wedding-preview-stage{padding:9px}.wedding-preview-footer{font-size:7px}}
