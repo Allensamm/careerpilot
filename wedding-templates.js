@@ -52,6 +52,7 @@ function render(p,page,values){
   a.push(L(180,y2+35,420,y2+35,s.g,1),T(300,y2+90,f.date,17,s.ink),T(300,y2+125,'AT '+f.time,13,s.ink),T(300,y2+185,f.venue,20,s.ink),T(300,y2+215,f.address+' · '+f.city,13,s.ink),T(300,y2+265,f.reception,14,s.a,'middle','cursive','font-style="italic"'));
   if(p.pages===1)a.push(T(300,790,'KINDLY RSVP BY '+f.rsvpDeadline.toUpperCase(),11,s.g,'middle','Arial,sans-serif','letter-spacing="1"'),T(300,812,f.email+' · '+f.phone,9,s.g,'middle','Arial,sans-serif'));
  }else{
+  a.push(T(300,105,'WEDDING DETAILS',15,s.g,'middle','Arial,sans-serif','letter-spacing="4"'));
   if(k==='celestial-midnight')a.push(star(300,155,10,s.g));
   if(k==='terracotta-destination')a.push(C(300,175,42,'#d88c5f'));
   if(k==='lavender-floral')a.push(C(300,165,38,'#d8c8e9'),C(330,155,22,'#b6a0d0'));
