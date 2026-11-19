@@ -50,7 +50,7 @@ function render(p,page,values){
   const y2=y1+85;
   a.push(T(300,y1,f.bride,k==='onyx-champagne'?27:40,s.ink,'middle',k==='onyx-champagne'?'Georgia,serif':'cursive','font-style="italic"'),T(300,y1+43,'&',25,s.g),T(300,y2,f.groom,k==='onyx-champagne'?27:40,s.ink,'middle',k==='onyx-champagne'?'Georgia,serif':'cursive','font-style="italic"'));
   a.push(L(180,y2+35,420,y2+35,s.g,1),T(300,y2+90,f.date,17,s.ink),T(300,y2+125,'AT '+f.time,13,s.ink),T(300,y2+185,f.venue,20,s.ink),T(300,y2+215,f.address+' · '+f.city,13,s.ink),T(300,y2+265,f.reception,14,s.a,'middle','cursive','font-style="italic"'));
-  if(p.pages===1)a.push(T(300,790,'KINDLY RSVP BY '+f.rsvpDeadline.toUpperCase(),11,s.g,'middle','Arial,sans-serif','letter-spacing="1"'));
+  if(p.pages===1)a.push(T(300,790,'KINDLY RSVP BY '+f.rsvpDeadline.toUpperCase(),11,s.g,'middle','Arial,sans-serif','letter-spacing="1"'),T(300,812,f.email+' · '+f.phone,9,s.g,'middle','Arial,sans-serif'));
  }else{
   if(k==='celestial-midnight')a.push(star(300,155,10,s.g));
   if(k==='terracotta-destination')a.push(C(300,175,42,'#d88c5f'));
