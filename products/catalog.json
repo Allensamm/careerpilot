@@ -1,0 +1,3846 @@
+{
+  "brand": "CareerPilot Digital",
+  "totalProducts": 210,
+  "newProducts": 200,
+  "originalPlanners": 10,
+  "access": "Free launch downloads",
+  "categories": [
+    {
+      "key": "business",
+      "label": "Business & Strategy",
+      "count": 28
+    },
+    {
+      "key": "productivity",
+      "label": "Productivity & Planning",
+      "count": 27
+    },
+    {
+      "key": "marketing",
+      "label": "Marketing & Content",
+      "count": 26
+    },
+    {
+      "key": "finance",
+      "label": "Finance & Money",
+      "count": 26
+    },
+    {
+      "key": "freelance",
+      "label": "Freelance & Client Work",
+      "count": 22
+    },
+    {
+      "key": "career",
+      "label": "Career & Professional Growth",
+      "count": 20
+    },
+    {
+      "key": "personal",
+      "label": "Personal Growth & Wellbeing",
+      "count": 21
+    },
+    {
+      "key": "creator",
+      "label": "Creator & Digital Products",
+      "count": 20
+    },
+    {
+      "key": "operations",
+      "label": "Small Business Operations",
+      "count": 20
+    }
+  ],
+  "products": [
+    {
+      "id": "CP-P01",
+      "title": "The Focused Founder Planner",
+      "slug": "the-focused-founder-planner",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Planner",
+      "description": "A calm planning system for founders: annual vision, quarterly strategy, weekly sprint, daily focus and review.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/planners/the-focused-founder-planner.pdf",
+      "pages": 8,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Planner",
+        "Original collection"
+      ],
+      "original": true
+    },
+    {
+      "id": "CP-P02",
+      "title": "CEO Command Center",
+      "slug": "ceo-command-center",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Planner",
+      "description": "A leadership command centre for priorities, meetings, delegation, KPI review and decisions.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/planners/ceo-command-center.pdf",
+      "pages": 8,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Planner",
+        "Original collection"
+      ],
+      "original": true
+    },
+    {
+      "id": "CP-P03",
+      "title": "Startup Launch Planner",
+      "slug": "startup-launch-planner",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Planner",
+      "description": "A structured launch planner for milestones, validation, marketing and early operations.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/planners/startup-launch-planner.pdf",
+      "pages": 8,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Planner",
+        "Original collection"
+      ],
+      "original": true
+    },
+    {
+      "id": "CP-P04",
+      "title": "Freelancer Workflow Planner",
+      "slug": "freelancer-workflow-planner",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Planner",
+      "description": "Plan client work, project stages, weekly capacity and delivery routines.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/planners/freelancer-workflow-planner.pdf",
+      "pages": 8,
+      "featured": true,
+      "tags": [
+        "Freelance & Client Work",
+        "Planner",
+        "Original collection"
+      ],
+      "original": true
+    },
+    {
+      "id": "CP-P05",
+      "title": "Client Onboarding Service Planner",
+      "slug": "client-onboarding-service-planner",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Planner",
+      "description": "A practical client onboarding workflow for information, kickoff, expectations and handover.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/planners/client-onboarding-service-planner.pdf",
+      "pages": 8,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Planner",
+        "Original collection"
+      ],
+      "original": true
+    },
+    {
+      "id": "CP-P06",
+      "title": "Project Meeting Planner",
+      "slug": "project-meeting-planner",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Planner",
+      "description": "Prepare meetings, capture decisions, assign actions and follow up on project commitments.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/planners/project-meeting-planner.pdf",
+      "pages": 8,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Planner",
+        "Original collection"
+      ],
+      "original": true
+    },
+    {
+      "id": "CP-P07",
+      "title": "Content & Social Media Planner",
+      "slug": "content-social-media-planner",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Planner",
+      "description": "Plan content themes, publishing schedules, campaigns and performance reviews.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/planners/content-social-media-planner.pdf",
+      "pages": 8,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Planner",
+        "Original collection"
+      ],
+      "original": true
+    },
+    {
+      "id": "CP-P08",
+      "title": "Small Business Finance Planner",
+      "slug": "earthy-small-business-finance-planner",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Planner",
+      "description": "Organise small business income, expenses, cash flow and financial reviews.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/planners/earthy-small-business-finance-planner.pdf",
+      "pages": 8,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Planner",
+        "Original collection"
+      ],
+      "original": true
+    },
+    {
+      "id": "CP-P09",
+      "title": "Executive Planner",
+      "slug": "luxe-dark-mode-executive-planner",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Planner",
+      "description": "An executive planning system for strategic priorities, meetings and decisions.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/planners/luxe-dark-mode-executive-planner.pdf",
+      "pages": 8,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Planner",
+        "Original collection"
+      ],
+      "original": true
+    },
+    {
+      "id": "CP-P10",
+      "title": "Work-Life Balance Planner",
+      "slug": "work-life-balance-planner",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Planner",
+      "description": "A gentle planner for personal priorities, boundaries, energy and weekly reflection.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/planners/work-life-balance-planner.pdf",
+      "pages": 8,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Planner",
+        "Original collection"
+      ],
+      "original": true
+    },
+    {
+      "id": "CP-001",
+      "title": "Business Model Canvas Workbook",
+      "slug": "business-model-canvas-workbook",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Workbook",
+      "description": "A practical workbook for founders, owners and small teams. Use business model canvas workbook to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/business-model-canvas-workbook.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Workbook",
+        "Business"
+      ]
+    },
+    {
+      "id": "CP-002",
+      "title": "One-Page Business Plan Kit",
+      "slug": "one-page-business-plan-kit",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Template kit",
+      "description": "A practical template kit for founders, owners and small teams. Use one-page business plan kit to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/one-page-business-plan-kit.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Template kit",
+        "One-Page"
+      ]
+    },
+    {
+      "id": "CP-003",
+      "title": "Lean Startup Experiment Workbook",
+      "slug": "lean-startup-experiment-workbook",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Workbook",
+      "description": "A practical workbook for founders, owners and small teams. Use lean startup experiment workbook to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/lean-startup-experiment-workbook.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Workbook",
+        "Lean"
+      ]
+    },
+    {
+      "id": "CP-004",
+      "title": "Market Research Field Guide",
+      "slug": "market-research-field-guide",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Guide",
+      "description": "A practical guide for founders, owners and small teams. Use market research field guide to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/market-research-field-guide.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Guide",
+        "Market"
+      ]
+    },
+    {
+      "id": "CP-005",
+      "title": "Competitor Analysis Toolkit",
+      "slug": "competitor-analysis-toolkit",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Template kit",
+      "description": "A practical template kit for founders, owners and small teams. Use competitor analysis toolkit to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/competitor-analysis-toolkit.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Template kit",
+        "Competitor"
+      ]
+    },
+    {
+      "id": "CP-006",
+      "title": "Customer Persona Builder",
+      "slug": "customer-persona-builder",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Workbook",
+      "description": "A practical workbook for founders, owners and small teams. Use customer persona builder to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/customer-persona-builder.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Workbook",
+        "Customer"
+      ]
+    },
+    {
+      "id": "CP-007",
+      "title": "Value Proposition Workbook",
+      "slug": "value-proposition-workbook",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Workbook",
+      "description": "A practical workbook for founders, owners and small teams. Use value proposition workbook to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/value-proposition-workbook.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Workbook",
+        "Value"
+      ]
+    },
+    {
+      "id": "CP-008",
+      "title": "Strategic Planning Playbook",
+      "slug": "strategic-planning-playbook",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Playbook",
+      "description": "A practical playbook for founders, owners and small teams. Use strategic planning playbook to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/strategic-planning-playbook.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Playbook",
+        "Strategic"
+      ]
+    },
+    {
+      "id": "CP-009",
+      "title": "Quarterly OKR Planner",
+      "slug": "quarterly-okr-planner",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Planner",
+      "description": "A practical planner for founders, owners and small teams. Use quarterly okr planner to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/quarterly-okr-planner.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Planner",
+        "Quarterly"
+      ]
+    },
+    {
+      "id": "CP-010",
+      "title": "Annual Business Review Kit",
+      "slug": "annual-business-review-kit",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Template kit",
+      "description": "A practical template kit for founders, owners and small teams. Use annual business review kit to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/annual-business-review-kit.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Template kit",
+        "Annual"
+      ]
+    },
+    {
+      "id": "CP-011",
+      "title": "SWOT Analysis Workbook",
+      "slug": "swot-analysis-workbook",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Workbook",
+      "description": "A practical workbook for founders, owners and small teams. Use swot analysis workbook to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/swot-analysis-workbook.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Workbook",
+        "SWOT"
+      ]
+    },
+    {
+      "id": "CP-012",
+      "title": "Decision-Making Framework Cards",
+      "slug": "decision-making-framework-cards",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Template kit",
+      "description": "A practical template kit for founders, owners and small teams. Use decision-making framework cards to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/decision-making-framework-cards.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Template kit",
+        "Decision-Making"
+      ]
+    },
+    {
+      "id": "CP-013",
+      "title": "Business Growth Roadmap",
+      "slug": "business-growth-roadmap",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Workbook",
+      "description": "A practical workbook for founders, owners and small teams. Use business growth roadmap to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/business-growth-roadmap.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Workbook",
+        "Business"
+      ]
+    },
+    {
+      "id": "CP-014",
+      "title": "Operations Manual Starter Kit",
+      "slug": "operations-manual-starter-kit",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Template kit",
+      "description": "A practical template kit for founders, owners and small teams. Use operations manual starter kit to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/operations-manual-starter-kit.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Template kit",
+        "Operations"
+      ]
+    },
+    {
+      "id": "CP-015",
+      "title": "SOP Builder Workbook",
+      "slug": "sop-builder-workbook",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Workbook",
+      "description": "A practical workbook for founders, owners and small teams. Use sop builder workbook to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/sop-builder-workbook.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Workbook",
+        "SOP"
+      ]
+    },
+    {
+      "id": "CP-016",
+      "title": "Delegation Playbook",
+      "slug": "delegation-playbook",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Playbook",
+      "description": "A practical playbook for founders, owners and small teams. Use delegation playbook to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/delegation-playbook.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Playbook",
+        "Delegation"
+      ]
+    },
+    {
+      "id": "CP-017",
+      "title": "Hiring Scorecard Toolkit",
+      "slug": "hiring-scorecard-toolkit",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Template kit",
+      "description": "A practical template kit for founders, owners and small teams. Use hiring scorecard toolkit to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/hiring-scorecard-toolkit.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Template kit",
+        "Hiring"
+      ]
+    },
+    {
+      "id": "CP-018",
+      "title": "Team Meeting Toolkit",
+      "slug": "team-meeting-toolkit",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Template kit",
+      "description": "A practical template kit for founders, owners and small teams. Use team meeting toolkit to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/team-meeting-toolkit.pdf",
+      "pages": 6,
+      "featured": true,
+      "tags": [
+        "Business & Strategy",
+        "Template kit",
+        "Team"
+      ]
+    },
+    {
+      "id": "CP-019",
+      "title": "Leadership 1:1 Workbook",
+      "slug": "leadership-1-1-workbook",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Workbook",
+      "description": "A practical workbook for founders, owners and small teams. Use leadership 1:1 workbook to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/leadership-1-1-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Business & Strategy",
+        "Workbook",
+        "Leadership"
+      ]
+    },
+    {
+      "id": "CP-020",
+      "title": "Company Culture Playbook",
+      "slug": "company-culture-playbook",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Playbook",
+      "description": "A practical playbook for founders, owners and small teams. Use company culture playbook to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/company-culture-playbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Business & Strategy",
+        "Playbook",
+        "Company"
+      ]
+    },
+    {
+      "id": "CP-021",
+      "title": "Customer Experience Mapping Kit",
+      "slug": "customer-experience-mapping-kit",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Template kit",
+      "description": "A practical template kit for founders, owners and small teams. Use customer experience mapping kit to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/customer-experience-mapping-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Business & Strategy",
+        "Template kit",
+        "Customer"
+      ]
+    },
+    {
+      "id": "CP-022",
+      "title": "Service Quality Audit Checklist",
+      "slug": "service-quality-audit-checklist",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Template kit",
+      "description": "A practical template kit for founders, owners and small teams. Use service quality audit checklist to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/service-quality-audit-checklist.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Business & Strategy",
+        "Template kit",
+        "Service"
+      ]
+    },
+    {
+      "id": "CP-023",
+      "title": "Business Continuity Planner",
+      "slug": "business-continuity-planner",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Planner",
+      "description": "A practical planner for founders, owners and small teams. Use business continuity planner to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/business-continuity-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Business & Strategy",
+        "Planner",
+        "Business"
+      ]
+    },
+    {
+      "id": "CP-024",
+      "title": "Vendor Evaluation Scorecard",
+      "slug": "vendor-evaluation-scorecard",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Workbook",
+      "description": "A practical workbook for founders, owners and small teams. Use vendor evaluation scorecard to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/vendor-evaluation-scorecard.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Business & Strategy",
+        "Workbook",
+        "Vendor"
+      ]
+    },
+    {
+      "id": "CP-025",
+      "title": "Partnership Proposal Template Pack",
+      "slug": "partnership-proposal-template-pack",
+      "category": "Business & Strategy",
+      "categoryKey": "business",
+      "format": "Template kit",
+      "description": "A practical template kit for founders, owners and small teams. Use partnership proposal template pack to turn ideas into clear priorities, documented decisions and measurable operating routines, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/partnership-proposal-template-pack.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Business & Strategy",
+        "Template kit",
+        "Partnership"
+      ]
+    },
+    {
+      "id": "CP-026",
+      "title": "Deep Work Planner",
+      "slug": "deep-work-planner",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Planner",
+      "description": "A practical planner for professionals, students and busy households. Use deep work planner to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/deep-work-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Planner",
+        "Deep"
+      ]
+    },
+    {
+      "id": "CP-027",
+      "title": "Weekly Focus Workbook",
+      "slug": "weekly-focus-workbook",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Workbook",
+      "description": "A practical workbook for professionals, students and busy households. Use weekly focus workbook to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/weekly-focus-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Workbook",
+        "Weekly"
+      ]
+    },
+    {
+      "id": "CP-028",
+      "title": "Daily Priority Planner",
+      "slug": "daily-priority-planner",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Planner",
+      "description": "A practical planner for professionals, students and busy households. Use daily priority planner to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/daily-priority-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Planner",
+        "Daily"
+      ]
+    },
+    {
+      "id": "CP-029",
+      "title": "Time Audit Workbook",
+      "slug": "time-audit-workbook",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Workbook",
+      "description": "A practical workbook for professionals, students and busy households. Use time audit workbook to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/time-audit-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Workbook",
+        "Time"
+      ]
+    },
+    {
+      "id": "CP-030",
+      "title": "Habit Design Tracker",
+      "slug": "habit-design-tracker",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Tracker",
+      "description": "A practical tracker for professionals, students and busy households. Use habit design tracker to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/habit-design-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Tracker",
+        "Habit"
+      ]
+    },
+    {
+      "id": "CP-031",
+      "title": "Goal Setting Workbook",
+      "slug": "goal-setting-workbook",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Workbook",
+      "description": "A practical workbook for professionals, students and busy households. Use goal setting workbook to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/goal-setting-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Workbook",
+        "Goal"
+      ]
+    },
+    {
+      "id": "CP-032",
+      "title": "90-Day Action Planner",
+      "slug": "90-day-action-planner",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Planner",
+      "description": "A practical planner for professionals, students and busy households. Use 90-day action planner to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/90-day-action-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Planner",
+        "90-Day"
+      ]
+    },
+    {
+      "id": "CP-033",
+      "title": "Project Breakdown Toolkit",
+      "slug": "project-breakdown-toolkit",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Template kit",
+      "description": "A practical template kit for professionals, students and busy households. Use project breakdown toolkit to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/project-breakdown-toolkit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Template kit",
+        "Project"
+      ]
+    },
+    {
+      "id": "CP-034",
+      "title": "Personal Knowledge Management Guide",
+      "slug": "personal-knowledge-management-guide",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Guide",
+      "description": "A practical guide for professionals, students and busy households. Use personal knowledge management guide to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/personal-knowledge-management-guide.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Guide",
+        "Personal"
+      ]
+    },
+    {
+      "id": "CP-035",
+      "title": "Meeting Notes & Action Log",
+      "slug": "meeting-notes-action-log",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Tracker",
+      "description": "A practical tracker for professionals, students and busy households. Use meeting notes & action log to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/meeting-notes-action-log.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Tracker",
+        "Meeting"
+      ]
+    },
+    {
+      "id": "CP-036",
+      "title": "Decision Journal",
+      "slug": "decision-journal",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Workbook",
+      "description": "A practical workbook for professionals, students and busy households. Use decision journal to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/decision-journal.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Workbook",
+        "Decision"
+      ]
+    },
+    {
+      "id": "CP-037",
+      "title": "Distraction Reset Workbook",
+      "slug": "distraction-reset-workbook",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Workbook",
+      "description": "A practical workbook for professionals, students and busy households. Use distraction reset workbook to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/distraction-reset-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Workbook",
+        "Distraction"
+      ]
+    },
+    {
+      "id": "CP-038",
+      "title": "Digital Declutter Challenge",
+      "slug": "digital-declutter-challenge",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Guide",
+      "description": "A practical guide for professionals, students and busy households. Use digital declutter challenge to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/digital-declutter-challenge.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Guide",
+        "Digital"
+      ]
+    },
+    {
+      "id": "CP-039",
+      "title": "Routine Builder Planner",
+      "slug": "routine-builder-planner",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Planner",
+      "description": "A practical planner for professionals, students and busy households. Use routine builder planner to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/routine-builder-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Planner",
+        "Routine"
+      ]
+    },
+    {
+      "id": "CP-040",
+      "title": "Energy Management Tracker",
+      "slug": "energy-management-tracker",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Tracker",
+      "description": "A practical tracker for professionals, students and busy households. Use energy management tracker to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/energy-management-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Tracker",
+        "Energy"
+      ]
+    },
+    {
+      "id": "CP-041",
+      "title": "Study Sprint Planner",
+      "slug": "study-sprint-planner",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Planner",
+      "description": "A practical planner for professionals, students and busy households. Use study sprint planner to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/study-sprint-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Planner",
+        "Study"
+      ]
+    },
+    {
+      "id": "CP-042",
+      "title": "Reading Notes Workbook",
+      "slug": "reading-notes-workbook",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Workbook",
+      "description": "A practical workbook for professionals, students and busy households. Use reading notes workbook to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/reading-notes-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Workbook",
+        "Reading"
+      ]
+    },
+    {
+      "id": "CP-043",
+      "title": "Learning Roadmap Planner",
+      "slug": "learning-roadmap-planner",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Planner",
+      "description": "A practical planner for professionals, students and busy households. Use learning roadmap planner to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/learning-roadmap-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Planner",
+        "Learning"
+      ]
+    },
+    {
+      "id": "CP-044",
+      "title": "Task Prioritisation Matrix Kit",
+      "slug": "task-prioritisation-matrix-kit",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Template kit",
+      "description": "A practical template kit for professionals, students and busy households. Use task prioritisation matrix kit to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/task-prioritisation-matrix-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Template kit",
+        "Task"
+      ]
+    },
+    {
+      "id": "CP-045",
+      "title": "Deadline Countdown Tracker",
+      "slug": "deadline-countdown-tracker",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Tracker",
+      "description": "A practical tracker for professionals, students and busy households. Use deadline countdown tracker to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/deadline-countdown-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Tracker",
+        "Deadline"
+      ]
+    },
+    {
+      "id": "CP-046",
+      "title": "Home Admin Planner",
+      "slug": "home-admin-planner",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Planner",
+      "description": "A practical planner for professionals, students and busy households. Use home admin planner to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/home-admin-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Planner",
+        "Home"
+      ]
+    },
+    {
+      "id": "CP-047",
+      "title": "Family Command Center",
+      "slug": "family-command-center",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Workbook",
+      "description": "A practical workbook for professionals, students and busy households. Use family command center to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/family-command-center.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Workbook",
+        "Family"
+      ]
+    },
+    {
+      "id": "CP-048",
+      "title": "Travel Planning Workbook",
+      "slug": "travel-planning-workbook",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Workbook",
+      "description": "A practical workbook for professionals, students and busy households. Use travel planning workbook to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/travel-planning-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Workbook",
+        "Travel"
+      ]
+    },
+    {
+      "id": "CP-049",
+      "title": "Event Planning Toolkit",
+      "slug": "event-planning-toolkit",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Template kit",
+      "description": "A practical template kit for professionals, students and busy households. Use event planning toolkit to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/event-planning-toolkit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Template kit",
+        "Event"
+      ]
+    },
+    {
+      "id": "CP-050",
+      "title": "Minimalist Life Planner",
+      "slug": "minimalist-life-planner",
+      "category": "Productivity & Planning",
+      "categoryKey": "productivity",
+      "format": "Planner",
+      "description": "A practical planner for professionals, students and busy households. Use minimalist life planner to turn open loops into realistic priorities, focused time blocks and consistent follow-through, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/minimalist-life-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Productivity & Planning",
+        "Planner",
+        "Minimalist"
+      ]
+    },
+    {
+      "id": "CP-051",
+      "title": "Brand Strategy Workbook",
+      "slug": "brand-strategy-workbook",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Workbook",
+      "description": "A practical workbook for small brands, solo marketers and growing creator teams. Use brand strategy workbook to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/brand-strategy-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Workbook",
+        "Brand"
+      ]
+    },
+    {
+      "id": "CP-052",
+      "title": "Brand Voice Guide",
+      "slug": "brand-voice-guide",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Guide",
+      "description": "A practical guide for small brands, solo marketers and growing creator teams. Use brand voice guide to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/brand-voice-guide.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Guide",
+        "Brand"
+      ]
+    },
+    {
+      "id": "CP-053",
+      "title": "Messaging Framework Kit",
+      "slug": "messaging-framework-kit",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Template kit",
+      "description": "A practical template kit for small brands, solo marketers and growing creator teams. Use messaging framework kit to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/messaging-framework-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Template kit",
+        "Messaging"
+      ]
+    },
+    {
+      "id": "CP-054",
+      "title": "Content Strategy Planner",
+      "slug": "content-strategy-planner",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Planner",
+      "description": "A practical planner for small brands, solo marketers and growing creator teams. Use content strategy planner to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/content-strategy-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Planner",
+        "Content"
+      ]
+    },
+    {
+      "id": "CP-055",
+      "title": "30-Day Content Calendar",
+      "slug": "30-day-content-calendar",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Planner",
+      "description": "A practical planner for small brands, solo marketers and growing creator teams. Use 30-day content calendar to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/30-day-content-calendar.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Planner",
+        "30-Day"
+      ]
+    },
+    {
+      "id": "CP-056",
+      "title": "Social Media Campaign Planner",
+      "slug": "social-media-campaign-planner",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Planner",
+      "description": "A practical planner for small brands, solo marketers and growing creator teams. Use social media campaign planner to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/social-media-campaign-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Planner",
+        "Social"
+      ]
+    },
+    {
+      "id": "CP-057",
+      "title": "Instagram Content Workbook",
+      "slug": "instagram-content-workbook",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Workbook",
+      "description": "A practical workbook for small brands, solo marketers and growing creator teams. Use instagram content workbook to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/instagram-content-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Workbook",
+        "Instagram"
+      ]
+    },
+    {
+      "id": "CP-058",
+      "title": "LinkedIn Content Planner",
+      "slug": "linkedin-content-planner",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Planner",
+      "description": "A practical planner for small brands, solo marketers and growing creator teams. Use linkedin content planner to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/linkedin-content-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Planner",
+        "LinkedIn"
+      ]
+    },
+    {
+      "id": "CP-059",
+      "title": "Email Newsletter Starter Kit",
+      "slug": "email-newsletter-starter-kit",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Template kit",
+      "description": "A practical template kit for small brands, solo marketers and growing creator teams. Use email newsletter starter kit to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/email-newsletter-starter-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Template kit",
+        "Email"
+      ]
+    },
+    {
+      "id": "CP-060",
+      "title": "Email Welcome Sequence Templates",
+      "slug": "email-welcome-sequence-templates",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Template kit",
+      "description": "A practical template kit for small brands, solo marketers and growing creator teams. Use email welcome sequence templates to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/email-welcome-sequence-templates.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Template kit",
+        "Email"
+      ]
+    },
+    {
+      "id": "CP-061",
+      "title": "Lead Magnet Planner",
+      "slug": "lead-magnet-planner",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Planner",
+      "description": "A practical planner for small brands, solo marketers and growing creator teams. Use lead magnet planner to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/lead-magnet-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Planner",
+        "Lead"
+      ]
+    },
+    {
+      "id": "CP-062",
+      "title": "Landing Page Copy Workbook",
+      "slug": "landing-page-copy-workbook",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Workbook",
+      "description": "A practical workbook for small brands, solo marketers and growing creator teams. Use landing page copy workbook to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/landing-page-copy-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Workbook",
+        "Landing"
+      ]
+    },
+    {
+      "id": "CP-063",
+      "title": "Sales Page Framework Kit",
+      "slug": "sales-page-framework-kit",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Template kit",
+      "description": "A practical template kit for small brands, solo marketers and growing creator teams. Use sales page framework kit to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/sales-page-framework-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Template kit",
+        "Sales"
+      ]
+    },
+    {
+      "id": "CP-064",
+      "title": "SEO Content Brief Template Pack",
+      "slug": "seo-content-brief-template-pack",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Template kit",
+      "description": "A practical template kit for small brands, solo marketers and growing creator teams. Use seo content brief template pack to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/seo-content-brief-template-pack.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Template kit",
+        "SEO"
+      ]
+    },
+    {
+      "id": "CP-065",
+      "title": "Keyword Research Tracker",
+      "slug": "keyword-research-tracker",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Tracker",
+      "description": "A practical tracker for small brands, solo marketers and growing creator teams. Use keyword research tracker to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/keyword-research-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Tracker",
+        "Keyword"
+      ]
+    },
+    {
+      "id": "CP-066",
+      "title": "Blog Editorial Calendar",
+      "slug": "blog-editorial-calendar",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Planner",
+      "description": "A practical planner for small brands, solo marketers and growing creator teams. Use blog editorial calendar to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/blog-editorial-calendar.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Planner",
+        "Blog"
+      ]
+    },
+    {
+      "id": "CP-067",
+      "title": "Podcast Launch Planner",
+      "slug": "podcast-launch-planner",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Planner",
+      "description": "A practical planner for small brands, solo marketers and growing creator teams. Use podcast launch planner to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/podcast-launch-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Planner",
+        "Podcast"
+      ]
+    },
+    {
+      "id": "CP-068",
+      "title": "YouTube Channel Strategy Workbook",
+      "slug": "youtube-channel-strategy-workbook",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Workbook",
+      "description": "A practical workbook for small brands, solo marketers and growing creator teams. Use youtube channel strategy workbook to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/youtube-channel-strategy-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Workbook",
+        "YouTube"
+      ]
+    },
+    {
+      "id": "CP-069",
+      "title": "Video Script Template Pack",
+      "slug": "video-script-template-pack",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Template kit",
+      "description": "A practical template kit for small brands, solo marketers and growing creator teams. Use video script template pack to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/video-script-template-pack.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Template kit",
+        "Video"
+      ]
+    },
+    {
+      "id": "CP-070",
+      "title": "Webinar Planning Kit",
+      "slug": "webinar-planning-kit",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Template kit",
+      "description": "A practical template kit for small brands, solo marketers and growing creator teams. Use webinar planning kit to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/webinar-planning-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Template kit",
+        "Webinar"
+      ]
+    },
+    {
+      "id": "CP-071",
+      "title": "Launch Campaign Calendar",
+      "slug": "launch-campaign-calendar",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Planner",
+      "description": "A practical planner for small brands, solo marketers and growing creator teams. Use launch campaign calendar to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/launch-campaign-calendar.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Planner",
+        "Launch"
+      ]
+    },
+    {
+      "id": "CP-072",
+      "title": "Customer Testimonial Request Kit",
+      "slug": "customer-testimonial-request-kit",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Template kit",
+      "description": "A practical template kit for small brands, solo marketers and growing creator teams. Use customer testimonial request kit to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/customer-testimonial-request-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Template kit",
+        "Customer"
+      ]
+    },
+    {
+      "id": "CP-073",
+      "title": "Referral Marketing Planner",
+      "slug": "referral-marketing-planner",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Planner",
+      "description": "A practical planner for small brands, solo marketers and growing creator teams. Use referral marketing planner to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/referral-marketing-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Planner",
+        "Referral"
+      ]
+    },
+    {
+      "id": "CP-074",
+      "title": "Influencer Collaboration Brief",
+      "slug": "influencer-collaboration-brief",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Workbook",
+      "description": "A practical workbook for small brands, solo marketers and growing creator teams. Use influencer collaboration brief to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/influencer-collaboration-brief.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Workbook",
+        "Influencer"
+      ]
+    },
+    {
+      "id": "CP-075",
+      "title": "Marketing Metrics Dashboard",
+      "slug": "marketing-metrics-dashboard",
+      "category": "Marketing & Content",
+      "categoryKey": "marketing",
+      "format": "Tracker",
+      "description": "A practical tracker for small brands, solo marketers and growing creator teams. Use marketing metrics dashboard to connect a defined audience with a clear message, useful offer and measurable campaign, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/marketing-metrics-dashboard.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Marketing & Content",
+        "Tracker",
+        "Marketing"
+      ]
+    },
+    {
+      "id": "CP-076",
+      "title": "Personal Budget Workbook",
+      "slug": "personal-budget-workbook",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Workbook",
+      "description": "A practical workbook for individuals, freelancers and small business owners. Use personal budget workbook to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/personal-budget-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Workbook",
+        "Personal"
+      ]
+    },
+    {
+      "id": "CP-077",
+      "title": "Monthly Expense Tracker",
+      "slug": "monthly-expense-tracker",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Tracker",
+      "description": "A practical tracker for individuals, freelancers and small business owners. Use monthly expense tracker to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/monthly-expense-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Tracker",
+        "Monthly"
+      ]
+    },
+    {
+      "id": "CP-078",
+      "title": "Debt Payoff Planner",
+      "slug": "debt-payoff-planner",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Planner",
+      "description": "A practical planner for individuals, freelancers and small business owners. Use debt payoff planner to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/debt-payoff-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Planner",
+        "Debt"
+      ]
+    },
+    {
+      "id": "CP-079",
+      "title": "Savings Goal Tracker",
+      "slug": "savings-goal-tracker",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Tracker",
+      "description": "A practical tracker for individuals, freelancers and small business owners. Use savings goal tracker to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/savings-goal-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Tracker",
+        "Savings"
+      ]
+    },
+    {
+      "id": "CP-080",
+      "title": "Emergency Fund Builder",
+      "slug": "emergency-fund-builder",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Workbook",
+      "description": "A practical workbook for individuals, freelancers and small business owners. Use emergency fund builder to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/emergency-fund-builder.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Workbook",
+        "Emergency"
+      ]
+    },
+    {
+      "id": "CP-081",
+      "title": "Cash Flow Planner",
+      "slug": "cash-flow-planner",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Planner",
+      "description": "A practical planner for individuals, freelancers and small business owners. Use cash flow planner to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/cash-flow-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Planner",
+        "Cash"
+      ]
+    },
+    {
+      "id": "CP-082",
+      "title": "Small Business Budget Kit",
+      "slug": "small-business-budget-kit",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Template kit",
+      "description": "A practical template kit for individuals, freelancers and small business owners. Use small business budget kit to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/small-business-budget-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Template kit",
+        "Small"
+      ]
+    },
+    {
+      "id": "CP-083",
+      "title": "Profit Margin Calculator Workbook",
+      "slug": "profit-margin-calculator-workbook",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Workbook",
+      "description": "A practical workbook for individuals, freelancers and small business owners. Use profit margin calculator workbook to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/profit-margin-calculator-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Workbook",
+        "Profit"
+      ]
+    },
+    {
+      "id": "CP-084",
+      "title": "Pricing Strategy Workbook",
+      "slug": "pricing-strategy-workbook",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Workbook",
+      "description": "A practical workbook for individuals, freelancers and small business owners. Use pricing strategy workbook to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/pricing-strategy-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Workbook",
+        "Pricing"
+      ]
+    },
+    {
+      "id": "CP-085",
+      "title": "Invoice & Payment Tracker",
+      "slug": "invoice-payment-tracker",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Tracker",
+      "description": "A practical tracker for individuals, freelancers and small business owners. Use invoice & payment tracker to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/invoice-payment-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Tracker",
+        "Invoice"
+      ]
+    },
+    {
+      "id": "CP-086",
+      "title": "Subscription Audit Planner",
+      "slug": "subscription-audit-planner",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Planner",
+      "description": "A practical planner for individuals, freelancers and small business owners. Use subscription audit planner to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/subscription-audit-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Planner",
+        "Subscription"
+      ]
+    },
+    {
+      "id": "CP-087",
+      "title": "Financial Year-End Checklist",
+      "slug": "financial-year-end-checklist",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Template kit",
+      "description": "A practical template kit for individuals, freelancers and small business owners. Use financial year-end checklist to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/financial-year-end-checklist.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Template kit",
+        "Financial"
+      ]
+    },
+    {
+      "id": "CP-088",
+      "title": "Tax Preparation Organizer",
+      "slug": "tax-preparation-organizer",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Guide",
+      "description": "A practical guide for individuals, freelancers and small business owners. Use tax preparation organizer to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/tax-preparation-organizer.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Guide",
+        "Tax"
+      ]
+    },
+    {
+      "id": "CP-089",
+      "title": "Freelancer Income Tracker",
+      "slug": "freelancer-income-tracker",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Tracker",
+      "description": "A practical tracker for individuals, freelancers and small business owners. Use freelancer income tracker to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/freelancer-income-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Tracker",
+        "Freelancer"
+      ]
+    },
+    {
+      "id": "CP-090",
+      "title": "Revenue Forecast Workbook",
+      "slug": "revenue-forecast-workbook",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Workbook",
+      "description": "A practical workbook for individuals, freelancers and small business owners. Use revenue forecast workbook to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/revenue-forecast-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Workbook",
+        "Revenue"
+      ]
+    },
+    {
+      "id": "CP-091",
+      "title": "Break-Even Analysis Kit",
+      "slug": "break-even-analysis-kit",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Template kit",
+      "description": "A practical template kit for individuals, freelancers and small business owners. Use break-even analysis kit to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/break-even-analysis-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Template kit",
+        "Break-Even"
+      ]
+    },
+    {
+      "id": "CP-092",
+      "title": "Purchase Decision Worksheet",
+      "slug": "purchase-decision-worksheet",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Workbook",
+      "description": "A practical workbook for individuals, freelancers and small business owners. Use purchase decision worksheet to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/purchase-decision-worksheet.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Workbook",
+        "Purchase"
+      ]
+    },
+    {
+      "id": "CP-093",
+      "title": "Financial Habit Tracker",
+      "slug": "financial-habit-tracker",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Tracker",
+      "description": "A practical tracker for individuals, freelancers and small business owners. Use financial habit tracker to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/financial-habit-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Tracker",
+        "Financial"
+      ]
+    },
+    {
+      "id": "CP-094",
+      "title": "Net Worth Tracker",
+      "slug": "net-worth-tracker",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Tracker",
+      "description": "A practical tracker for individuals, freelancers and small business owners. Use net worth tracker to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/net-worth-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Tracker",
+        "Net"
+      ]
+    },
+    {
+      "id": "CP-095",
+      "title": "Sinking Funds Planner",
+      "slug": "sinking-funds-planner",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Planner",
+      "description": "A practical planner for individuals, freelancers and small business owners. Use sinking funds planner to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/sinking-funds-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Planner",
+        "Sinking"
+      ]
+    },
+    {
+      "id": "CP-096",
+      "title": "Investment Research Journal",
+      "slug": "investment-research-journal",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Workbook",
+      "description": "A practical workbook for individuals, freelancers and small business owners. Use investment research journal to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/investment-research-journal.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Workbook",
+        "Investment"
+      ]
+    },
+    {
+      "id": "CP-097",
+      "title": "Side Hustle Profit Tracker",
+      "slug": "side-hustle-profit-tracker",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Tracker",
+      "description": "A practical tracker for individuals, freelancers and small business owners. Use side hustle profit tracker to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/side-hustle-profit-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Tracker",
+        "Side"
+      ]
+    },
+    {
+      "id": "CP-098",
+      "title": "Business Expense Log",
+      "slug": "business-expense-log",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Tracker",
+      "description": "A practical tracker for individuals, freelancers and small business owners. Use business expense log to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/business-expense-log.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Tracker",
+        "Business"
+      ]
+    },
+    {
+      "id": "CP-099",
+      "title": "Accounts Receivable Tracker",
+      "slug": "accounts-receivable-tracker",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Tracker",
+      "description": "A practical tracker for individuals, freelancers and small business owners. Use accounts receivable tracker to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/accounts-receivable-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Tracker",
+        "Accounts"
+      ]
+    },
+    {
+      "id": "CP-100",
+      "title": "Financial Goals Workbook",
+      "slug": "financial-goals-workbook",
+      "category": "Finance & Money",
+      "categoryKey": "finance",
+      "format": "Workbook",
+      "description": "A practical workbook for individuals, freelancers and small business owners. Use financial goals workbook to make clearer money decisions using a reliable baseline, explicit assumptions and regular reviews, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/financial-goals-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Finance & Money",
+        "Workbook",
+        "Financial"
+      ]
+    },
+    {
+      "id": "CP-101",
+      "title": "Freelance Business Starter Kit",
+      "slug": "freelance-business-starter-kit",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Template kit",
+      "description": "A practical template kit for freelancers, consultants, virtual assistants and service providers. Use freelance business starter kit to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/freelance-business-starter-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Template kit",
+        "Freelance"
+      ]
+    },
+    {
+      "id": "CP-102",
+      "title": "Client Discovery Questionnaire Pack",
+      "slug": "client-discovery-questionnaire-pack",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Workbook",
+      "description": "A practical workbook for freelancers, consultants, virtual assistants and service providers. Use client discovery questionnaire pack to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/client-discovery-questionnaire-pack.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Workbook",
+        "Client"
+      ]
+    },
+    {
+      "id": "CP-103",
+      "title": "Proposal & Scope of Work Templates",
+      "slug": "proposal-scope-of-work-templates",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Template kit",
+      "description": "A practical template kit for freelancers, consultants, virtual assistants and service providers. Use proposal & scope of work templates to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/proposal-scope-of-work-templates.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Template kit",
+        "Proposal"
+      ]
+    },
+    {
+      "id": "CP-104",
+      "title": "Client Onboarding Kit",
+      "slug": "client-onboarding-kit",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Template kit",
+      "description": "A practical template kit for freelancers, consultants, virtual assistants and service providers. Use client onboarding kit to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/client-onboarding-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Template kit",
+        "Client"
+      ]
+    },
+    {
+      "id": "CP-105",
+      "title": "Project Kickoff Workbook",
+      "slug": "project-kickoff-workbook",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Workbook",
+      "description": "A practical workbook for freelancers, consultants, virtual assistants and service providers. Use project kickoff workbook to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/project-kickoff-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Workbook",
+        "Project"
+      ]
+    },
+    {
+      "id": "CP-106",
+      "title": "Client Communication Templates",
+      "slug": "client-communication-templates",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Template kit",
+      "description": "A practical template kit for freelancers, consultants, virtual assistants and service providers. Use client communication templates to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/client-communication-templates.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Template kit",
+        "Client"
+      ]
+    },
+    {
+      "id": "CP-107",
+      "title": "Service Package Builder",
+      "slug": "service-package-builder",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Workbook",
+      "description": "A practical workbook for freelancers, consultants, virtual assistants and service providers. Use service package builder to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/service-package-builder.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Workbook",
+        "Service"
+      ]
+    },
+    {
+      "id": "CP-108",
+      "title": "Freelance Rate Calculator Workbook",
+      "slug": "freelance-rate-calculator-workbook",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Workbook",
+      "description": "A practical workbook for freelancers, consultants, virtual assistants and service providers. Use freelance rate calculator workbook to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/freelance-rate-calculator-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Workbook",
+        "Freelance"
+      ]
+    },
+    {
+      "id": "CP-109",
+      "title": "Contract Preparation Checklist",
+      "slug": "contract-preparation-checklist",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Template kit",
+      "description": "A practical template kit for freelancers, consultants, virtual assistants and service providers. Use contract preparation checklist to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/contract-preparation-checklist.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Template kit",
+        "Contract"
+      ]
+    },
+    {
+      "id": "CP-110",
+      "title": "Project Handover Kit",
+      "slug": "project-handover-kit",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Template kit",
+      "description": "A practical template kit for freelancers, consultants, virtual assistants and service providers. Use project handover kit to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/project-handover-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Template kit",
+        "Project"
+      ]
+    },
+    {
+      "id": "CP-111",
+      "title": "Revision & Feedback Tracker",
+      "slug": "revision-feedback-tracker",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Tracker",
+      "description": "A practical tracker for freelancers, consultants, virtual assistants and service providers. Use revision & feedback tracker to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/revision-feedback-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Tracker",
+        "Revision"
+      ]
+    },
+    {
+      "id": "CP-112",
+      "title": "Client Relationship Tracker",
+      "slug": "client-relationship-tracker",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Tracker",
+      "description": "A practical tracker for freelancers, consultants, virtual assistants and service providers. Use client relationship tracker to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/client-relationship-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Tracker",
+        "Client"
+      ]
+    },
+    {
+      "id": "CP-113",
+      "title": "Portfolio Case Study Workbook",
+      "slug": "portfolio-case-study-workbook",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Workbook",
+      "description": "A practical workbook for freelancers, consultants, virtual assistants and service providers. Use portfolio case study workbook to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/portfolio-case-study-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Workbook",
+        "Portfolio"
+      ]
+    },
+    {
+      "id": "CP-114",
+      "title": "Testimonial & Referral Request Kit",
+      "slug": "testimonial-referral-request-kit",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Template kit",
+      "description": "A practical template kit for freelancers, consultants, virtual assistants and service providers. Use testimonial & referral request kit to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/testimonial-referral-request-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Template kit",
+        "Testimonial"
+      ]
+    },
+    {
+      "id": "CP-115",
+      "title": "Retainer Management Planner",
+      "slug": "retainer-management-planner",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Planner",
+      "description": "A practical planner for freelancers, consultants, virtual assistants and service providers. Use retainer management planner to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/retainer-management-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Planner",
+        "Retainer"
+      ]
+    },
+    {
+      "id": "CP-116",
+      "title": "Freelancer Weekly Ops Planner",
+      "slug": "freelancer-weekly-ops-planner",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Planner",
+      "description": "A practical planner for freelancers, consultants, virtual assistants and service providers. Use freelancer weekly ops planner to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/freelancer-weekly-ops-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Planner",
+        "Freelancer"
+      ]
+    },
+    {
+      "id": "CP-117",
+      "title": "Virtual Assistant Service Toolkit",
+      "slug": "virtual-assistant-service-toolkit",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Template kit",
+      "description": "A practical template kit for freelancers, consultants, virtual assistants and service providers. Use virtual assistant service toolkit to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/virtual-assistant-service-toolkit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Template kit",
+        "Virtual"
+      ]
+    },
+    {
+      "id": "CP-118",
+      "title": "Consulting Engagement Workbook",
+      "slug": "consulting-engagement-workbook",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Workbook",
+      "description": "A practical workbook for freelancers, consultants, virtual assistants and service providers. Use consulting engagement workbook to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/consulting-engagement-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Workbook",
+        "Consulting"
+      ]
+    },
+    {
+      "id": "CP-119",
+      "title": "Creative Brief Template Pack",
+      "slug": "creative-brief-template-pack",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Template kit",
+      "description": "A practical template kit for freelancers, consultants, virtual assistants and service providers. Use creative brief template pack to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/creative-brief-template-pack.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Template kit",
+        "Creative"
+      ]
+    },
+    {
+      "id": "CP-120",
+      "title": "Client Offboarding Checklist",
+      "slug": "client-offboarding-checklist",
+      "category": "Freelance & Client Work",
+      "categoryKey": "freelance",
+      "format": "Template kit",
+      "description": "A practical template kit for freelancers, consultants, virtual assistants and service providers. Use client offboarding checklist to create a clear client journey from qualification and scope through delivery, handover and follow-up, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/client-offboarding-checklist.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Freelance & Client Work",
+        "Template kit",
+        "Client"
+      ]
+    },
+    {
+      "id": "CP-121",
+      "title": "Career Clarity Workbook",
+      "slug": "career-clarity-workbook",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use career clarity workbook to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/career-clarity-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "Career"
+      ]
+    },
+    {
+      "id": "CP-122",
+      "title": "Skills Inventory Workbook",
+      "slug": "skills-inventory-workbook",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use skills inventory workbook to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/skills-inventory-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "Skills"
+      ]
+    },
+    {
+      "id": "CP-123",
+      "title": "CV Achievement Builder",
+      "slug": "cv-achievement-builder",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use cv achievement builder to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/cv-achievement-builder.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "CV"
+      ]
+    },
+    {
+      "id": "CP-124",
+      "title": "LinkedIn Profile Workbook",
+      "slug": "linkedin-profile-workbook",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use linkedin profile workbook to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/linkedin-profile-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "LinkedIn"
+      ]
+    },
+    {
+      "id": "CP-125",
+      "title": "Professional Bio Builder",
+      "slug": "professional-bio-builder",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use professional bio builder to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/professional-bio-builder.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "Professional"
+      ]
+    },
+    {
+      "id": "CP-126",
+      "title": "Interview Preparation Workbook",
+      "slug": "interview-preparation-workbook",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use interview preparation workbook to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/interview-preparation-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "Interview"
+      ]
+    },
+    {
+      "id": "CP-127",
+      "title": "STAR Story Bank",
+      "slug": "star-story-bank",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use star story bank to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/star-story-bank.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "STAR"
+      ]
+    },
+    {
+      "id": "CP-128",
+      "title": "Job Search Tracker",
+      "slug": "job-search-tracker",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Tracker",
+      "description": "A practical tracker for job seekers, employees, graduates and career changers. Use job search tracker to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/job-search-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Tracker",
+        "Job"
+      ]
+    },
+    {
+      "id": "CP-129",
+      "title": "Networking Conversation Planner",
+      "slug": "networking-conversation-planner",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Planner",
+      "description": "A practical planner for job seekers, employees, graduates and career changers. Use networking conversation planner to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/networking-conversation-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Planner",
+        "Networking"
+      ]
+    },
+    {
+      "id": "CP-130",
+      "title": "Career Change Roadmap",
+      "slug": "career-change-roadmap",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use career change roadmap to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/career-change-roadmap.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "Career"
+      ]
+    },
+    {
+      "id": "CP-131",
+      "title": "Personal Brand Workbook",
+      "slug": "personal-brand-workbook",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use personal brand workbook to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/personal-brand-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "Personal"
+      ]
+    },
+    {
+      "id": "CP-132",
+      "title": "Salary Conversation Prep Guide",
+      "slug": "salary-conversation-prep-guide",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Guide",
+      "description": "A practical guide for job seekers, employees, graduates and career changers. Use salary conversation prep guide to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/salary-conversation-prep-guide.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Guide",
+        "Salary"
+      ]
+    },
+    {
+      "id": "CP-133",
+      "title": "Performance Review Prep Kit",
+      "slug": "performance-review-prep-kit",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Template kit",
+      "description": "A practical template kit for job seekers, employees, graduates and career changers. Use performance review prep kit to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/performance-review-prep-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Template kit",
+        "Performance"
+      ]
+    },
+    {
+      "id": "CP-134",
+      "title": "Promotion Case Builder",
+      "slug": "promotion-case-builder",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use promotion case builder to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/promotion-case-builder.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "Promotion"
+      ]
+    },
+    {
+      "id": "CP-135",
+      "title": "First 90 Days at Work Planner",
+      "slug": "first-90-days-at-work-planner",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Planner",
+      "description": "A practical planner for job seekers, employees, graduates and career changers. Use first 90 days at work planner to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/first-90-days-at-work-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Planner",
+        "First"
+      ]
+    },
+    {
+      "id": "CP-136",
+      "title": "Graduate Job Search Kit",
+      "slug": "graduate-job-search-kit",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Template kit",
+      "description": "A practical template kit for job seekers, employees, graduates and career changers. Use graduate job search kit to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/graduate-job-search-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Template kit",
+        "Graduate"
+      ]
+    },
+    {
+      "id": "CP-137",
+      "title": "Remote Work Readiness Workbook",
+      "slug": "remote-work-readiness-workbook",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use remote work readiness workbook to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/remote-work-readiness-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "Remote"
+      ]
+    },
+    {
+      "id": "CP-138",
+      "title": "Portfolio Project Planner",
+      "slug": "portfolio-project-planner",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Planner",
+      "description": "A practical planner for job seekers, employees, graduates and career changers. Use portfolio project planner to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/portfolio-project-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Planner",
+        "Portfolio"
+      ]
+    },
+    {
+      "id": "CP-139",
+      "title": "Professional Development Plan",
+      "slug": "professional-development-plan",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Workbook",
+      "description": "A practical workbook for job seekers, employees, graduates and career changers. Use professional development plan to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/professional-development-plan.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Workbook",
+        "Professional"
+      ]
+    },
+    {
+      "id": "CP-140",
+      "title": "Workplace Communication Toolkit",
+      "slug": "workplace-communication-toolkit",
+      "category": "Career & Professional Growth",
+      "categoryKey": "career",
+      "format": "Template kit",
+      "description": "A practical template kit for job seekers, employees, graduates and career changers. Use workplace communication toolkit to translate real experience into credible evidence, a focused professional story and practical next steps, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/workplace-communication-toolkit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Career & Professional Growth",
+        "Template kit",
+        "Workplace"
+      ]
+    },
+    {
+      "id": "CP-141",
+      "title": "Self Reflection Journal",
+      "slug": "self-reflection-journal",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use self reflection journal to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/self-reflection-journal.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Self"
+      ]
+    },
+    {
+      "id": "CP-142",
+      "title": "Confidence Building Workbook",
+      "slug": "confidence-building-workbook",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use confidence building workbook to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/confidence-building-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Confidence"
+      ]
+    },
+    {
+      "id": "CP-143",
+      "title": "Stress Reset Planner",
+      "slug": "stress-reset-planner",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Planner",
+      "description": "A practical planner for people building more intentional routines and sustainable personal habits. Use stress reset planner to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/stress-reset-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Planner",
+        "Stress"
+      ]
+    },
+    {
+      "id": "CP-144",
+      "title": "Mindful Morning Journal",
+      "slug": "mindful-morning-journal",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use mindful morning journal to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/mindful-morning-journal.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Mindful"
+      ]
+    },
+    {
+      "id": "CP-145",
+      "title": "Evening Reflection Workbook",
+      "slug": "evening-reflection-workbook",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use evening reflection workbook to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/evening-reflection-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Evening"
+      ]
+    },
+    {
+      "id": "CP-146",
+      "title": "Boundary Setting Workbook",
+      "slug": "boundary-setting-workbook",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use boundary setting workbook to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/boundary-setting-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Boundary"
+      ]
+    },
+    {
+      "id": "CP-147",
+      "title": "Values Discovery Workbook",
+      "slug": "values-discovery-workbook",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use values discovery workbook to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/values-discovery-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Values"
+      ]
+    },
+    {
+      "id": "CP-148",
+      "title": "Life Vision Planner",
+      "slug": "life-vision-planner",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Planner",
+      "description": "A practical planner for people building more intentional routines and sustainable personal habits. Use life vision planner to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/life-vision-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Planner",
+        "Life"
+      ]
+    },
+    {
+      "id": "CP-149",
+      "title": "Wellness Habit Tracker",
+      "slug": "wellness-habit-tracker",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Tracker",
+      "description": "A practical tracker for people building more intentional routines and sustainable personal habits. Use wellness habit tracker to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/wellness-habit-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Tracker",
+        "Wellness"
+      ]
+    },
+    {
+      "id": "CP-150",
+      "title": "Sleep Routine Journal",
+      "slug": "sleep-routine-journal",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use sleep routine journal to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/sleep-routine-journal.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Sleep"
+      ]
+    },
+    {
+      "id": "CP-151",
+      "title": "Gratitude Practice Journal",
+      "slug": "gratitude-practice-journal",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use gratitude practice journal to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/gratitude-practice-journal.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Gratitude"
+      ]
+    },
+    {
+      "id": "CP-152",
+      "title": "Resilience Workbook",
+      "slug": "resilience-workbook",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use resilience workbook to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/resilience-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Resilience"
+      ]
+    },
+    {
+      "id": "CP-153",
+      "title": "Personal Reset 30-Day Guide",
+      "slug": "personal-reset-30-day-guide",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Guide",
+      "description": "A practical guide for people building more intentional routines and sustainable personal habits. Use personal reset 30-day guide to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/personal-reset-30-day-guide.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Guide",
+        "Personal"
+      ]
+    },
+    {
+      "id": "CP-154",
+      "title": "Digital Wellbeing Tracker",
+      "slug": "digital-wellbeing-tracker",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Tracker",
+      "description": "A practical tracker for people building more intentional routines and sustainable personal habits. Use digital wellbeing tracker to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/digital-wellbeing-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Tracker",
+        "Digital"
+      ]
+    },
+    {
+      "id": "CP-155",
+      "title": "Relationship Check-In Journal",
+      "slug": "relationship-check-in-journal",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use relationship check-in journal to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/relationship-check-in-journal.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Relationship"
+      ]
+    },
+    {
+      "id": "CP-156",
+      "title": "Family Goal Planner",
+      "slug": "family-goal-planner",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Planner",
+      "description": "A practical planner for people building more intentional routines and sustainable personal habits. Use family goal planner to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/family-goal-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Planner",
+        "Family"
+      ]
+    },
+    {
+      "id": "CP-157",
+      "title": "Meal Planning Workbook",
+      "slug": "meal-planning-workbook",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use meal planning workbook to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/meal-planning-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Meal"
+      ]
+    },
+    {
+      "id": "CP-158",
+      "title": "Fitness Progress Tracker",
+      "slug": "fitness-progress-tracker",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Tracker",
+      "description": "A practical tracker for people building more intentional routines and sustainable personal habits. Use fitness progress tracker to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/fitness-progress-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Tracker",
+        "Fitness"
+      ]
+    },
+    {
+      "id": "CP-159",
+      "title": "Self-Care Planning Kit",
+      "slug": "self-care-planning-kit",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Template kit",
+      "description": "A practical template kit for people building more intentional routines and sustainable personal habits. Use self-care planning kit to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/self-care-planning-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Template kit",
+        "Self-Care"
+      ]
+    },
+    {
+      "id": "CP-160",
+      "title": "Mindful Decision Journal",
+      "slug": "mindful-decision-journal",
+      "category": "Personal Growth & Wellbeing",
+      "categoryKey": "personal",
+      "format": "Workbook",
+      "description": "A practical workbook for people building more intentional routines and sustainable personal habits. Use mindful decision journal to turn reflection into small, repeatable actions that respect energy, boundaries and real-life constraints, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/mindful-decision-journal.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Personal Growth & Wellbeing",
+        "Workbook",
+        "Mindful"
+      ]
+    },
+    {
+      "id": "CP-161",
+      "title": "Digital Product Idea Workbook",
+      "slug": "digital-product-idea-workbook",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Workbook",
+      "description": "A practical workbook for independent creators, educators and digital product makers. Use digital product idea workbook to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/digital-product-idea-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Workbook",
+        "Digital"
+      ]
+    },
+    {
+      "id": "CP-162",
+      "title": "Digital Product Validation Kit",
+      "slug": "digital-product-validation-kit",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Template kit",
+      "description": "A practical template kit for independent creators, educators and digital product makers. Use digital product validation kit to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/digital-product-validation-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Template kit",
+        "Digital"
+      ]
+    },
+    {
+      "id": "CP-163",
+      "title": "Ebook Writing Planner",
+      "slug": "ebook-writing-planner",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Planner",
+      "description": "A practical planner for independent creators, educators and digital product makers. Use ebook writing planner to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/ebook-writing-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Planner",
+        "Ebook"
+      ]
+    },
+    {
+      "id": "CP-164",
+      "title": "Online Course Outline Workbook",
+      "slug": "online-course-outline-workbook",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Workbook",
+      "description": "A practical workbook for independent creators, educators and digital product makers. Use online course outline workbook to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/online-course-outline-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Workbook",
+        "Online"
+      ]
+    },
+    {
+      "id": "CP-165",
+      "title": "Course Launch Planner",
+      "slug": "course-launch-planner",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Planner",
+      "description": "A practical planner for independent creators, educators and digital product makers. Use course launch planner to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/course-launch-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Planner",
+        "Course"
+      ]
+    },
+    {
+      "id": "CP-166",
+      "title": "Template Shop Starter Kit",
+      "slug": "template-shop-starter-kit",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Template kit",
+      "description": "A practical template kit for independent creators, educators and digital product makers. Use template shop starter kit to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/template-shop-starter-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Template kit",
+        "Template"
+      ]
+    },
+    {
+      "id": "CP-167",
+      "title": "Etsy Shop Launch Workbook",
+      "slug": "etsy-shop-launch-workbook",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Workbook",
+      "description": "A practical workbook for independent creators, educators and digital product makers. Use etsy shop launch workbook to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/etsy-shop-launch-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Workbook",
+        "Etsy"
+      ]
+    },
+    {
+      "id": "CP-168",
+      "title": "Digital Product Page Copy Kit",
+      "slug": "digital-product-page-copy-kit",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Template kit",
+      "description": "A practical template kit for independent creators, educators and digital product makers. Use digital product page copy kit to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/digital-product-page-copy-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Template kit",
+        "Digital"
+      ]
+    },
+    {
+      "id": "CP-169",
+      "title": "Digital Download Quality Checklist",
+      "slug": "digital-download-quality-checklist",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Template kit",
+      "description": "A practical template kit for independent creators, educators and digital product makers. Use digital download quality checklist to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/digital-download-quality-checklist.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Template kit",
+        "Digital"
+      ]
+    },
+    {
+      "id": "CP-170",
+      "title": "Customer Support Response Templates",
+      "slug": "customer-support-response-templates",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Template kit",
+      "description": "A practical template kit for independent creators, educators and digital product makers. Use customer support response templates to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/customer-support-response-templates.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Template kit",
+        "Customer"
+      ]
+    },
+    {
+      "id": "CP-171",
+      "title": "Creator Revenue Tracker",
+      "slug": "creator-revenue-tracker",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Tracker",
+      "description": "A practical tracker for independent creators, educators and digital product makers. Use creator revenue tracker to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/creator-revenue-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Tracker",
+        "Creator"
+      ]
+    },
+    {
+      "id": "CP-172",
+      "title": "Affiliate Content Planner",
+      "slug": "affiliate-content-planner",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Planner",
+      "description": "A practical planner for independent creators, educators and digital product makers. Use affiliate content planner to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/affiliate-content-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Planner",
+        "Affiliate"
+      ]
+    },
+    {
+      "id": "CP-173",
+      "title": "Newsletter Creator Workbook",
+      "slug": "newsletter-creator-workbook",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Workbook",
+      "description": "A practical workbook for independent creators, educators and digital product makers. Use newsletter creator workbook to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/newsletter-creator-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Workbook",
+        "Newsletter"
+      ]
+    },
+    {
+      "id": "CP-174",
+      "title": "Membership Community Planner",
+      "slug": "membership-community-planner",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Planner",
+      "description": "A practical planner for independent creators, educators and digital product makers. Use membership community planner to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/membership-community-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Planner",
+        "Membership"
+      ]
+    },
+    {
+      "id": "CP-175",
+      "title": "Online Workshop Workbook",
+      "slug": "online-workshop-workbook",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Workbook",
+      "description": "A practical workbook for independent creators, educators and digital product makers. Use online workshop workbook to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/online-workshop-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Workbook",
+        "Online"
+      ]
+    },
+    {
+      "id": "CP-176",
+      "title": "Creative Portfolio Planner",
+      "slug": "creative-portfolio-planner",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Planner",
+      "description": "A practical planner for independent creators, educators and digital product makers. Use creative portfolio planner to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/creative-portfolio-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Planner",
+        "Creative"
+      ]
+    },
+    {
+      "id": "CP-177",
+      "title": "Brand Partnership Pitch Kit",
+      "slug": "brand-partnership-pitch-kit",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Template kit",
+      "description": "A practical template kit for independent creators, educators and digital product makers. Use brand partnership pitch kit to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/brand-partnership-pitch-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Template kit",
+        "Brand"
+      ]
+    },
+    {
+      "id": "CP-178",
+      "title": "Digital Asset File Organization Guide",
+      "slug": "digital-asset-file-organization-guide",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Guide",
+      "description": "A practical guide for independent creators, educators and digital product makers. Use digital asset file organization guide to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/digital-asset-file-organization-guide.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Guide",
+        "Digital"
+      ]
+    },
+    {
+      "id": "CP-179",
+      "title": "Product Update & Version Log",
+      "slug": "product-update-version-log",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Tracker",
+      "description": "A practical tracker for independent creators, educators and digital product makers. Use product update & version log to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/product-update-version-log.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Tracker",
+        "Product"
+      ]
+    },
+    {
+      "id": "CP-180",
+      "title": "Creator Business Dashboard",
+      "slug": "creator-business-dashboard",
+      "category": "Creator & Digital Products",
+      "categoryKey": "creator",
+      "format": "Tracker",
+      "description": "A practical tracker for independent creators, educators and digital product makers. Use creator business dashboard to shape a useful digital offer, validate demand and build a repeatable creation and improvement process, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/creator-business-dashboard.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Creator & Digital Products",
+        "Tracker",
+        "Creator"
+      ]
+    },
+    {
+      "id": "CP-181",
+      "title": "Retail Inventory Tracker",
+      "slug": "retail-inventory-tracker",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Tracker",
+      "description": "A practical tracker for small business owners, operators and team leads. Use retail inventory tracker to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/retail-inventory-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Tracker",
+        "Retail"
+      ]
+    },
+    {
+      "id": "CP-182",
+      "title": "Order Fulfilment Checklist",
+      "slug": "order-fulfilment-checklist",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Template kit",
+      "description": "A practical template kit for small business owners, operators and team leads. Use order fulfilment checklist to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/order-fulfilment-checklist.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Template kit",
+        "Order"
+      ]
+    },
+    {
+      "id": "CP-183",
+      "title": "Customer Support Ticket Tracker",
+      "slug": "customer-support-ticket-tracker",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Tracker",
+      "description": "A practical tracker for small business owners, operators and team leads. Use customer support ticket tracker to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/customer-support-ticket-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Tracker",
+        "Customer"
+      ]
+    },
+    {
+      "id": "CP-184",
+      "title": "Service Business Capacity Planner",
+      "slug": "service-business-capacity-planner",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Planner",
+      "description": "A practical planner for small business owners, operators and team leads. Use service business capacity planner to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/service-business-capacity-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Planner",
+        "Service"
+      ]
+    },
+    {
+      "id": "CP-185",
+      "title": "Appointment Booking Admin Kit",
+      "slug": "appointment-booking-admin-kit",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Template kit",
+      "description": "A practical template kit for small business owners, operators and team leads. Use appointment booking admin kit to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/appointment-booking-admin-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Template kit",
+        "Appointment"
+      ]
+    },
+    {
+      "id": "CP-186",
+      "title": "Restaurant Operations Checklist",
+      "slug": "restaurant-operations-checklist",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Template kit",
+      "description": "A practical template kit for small business owners, operators and team leads. Use restaurant operations checklist to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/restaurant-operations-checklist.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Template kit",
+        "Restaurant"
+      ]
+    },
+    {
+      "id": "CP-187",
+      "title": "Cleaning Business Operations Kit",
+      "slug": "cleaning-business-operations-kit",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Template kit",
+      "description": "A practical template kit for small business owners, operators and team leads. Use cleaning business operations kit to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/cleaning-business-operations-kit.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Template kit",
+        "Cleaning"
+      ]
+    },
+    {
+      "id": "CP-188",
+      "title": "Salon Client Record Planner",
+      "slug": "salon-client-record-planner",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Planner",
+      "description": "A practical planner for small business owners, operators and team leads. Use salon client record planner to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/salon-client-record-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Planner",
+        "Salon"
+      ]
+    },
+    {
+      "id": "CP-189",
+      "title": "Real Estate Lead Follow-Up Tracker",
+      "slug": "real-estate-lead-follow-up-tracker",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Tracker",
+      "description": "A practical tracker for small business owners, operators and team leads. Use real estate lead follow-up tracker to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/real-estate-lead-follow-up-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Tracker",
+        "Real"
+      ]
+    },
+    {
+      "id": "CP-190",
+      "title": "Property Viewing Checklist",
+      "slug": "property-viewing-checklist",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Template kit",
+      "description": "A practical template kit for small business owners, operators and team leads. Use property viewing checklist to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/property-viewing-checklist.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Template kit",
+        "Property"
+      ]
+    },
+    {
+      "id": "CP-191",
+      "title": "Construction Project Site Log",
+      "slug": "construction-project-site-log",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Tracker",
+      "description": "A practical tracker for small business owners, operators and team leads. Use construction project site log to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/construction-project-site-log.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Tracker",
+        "Construction"
+      ]
+    },
+    {
+      "id": "CP-192",
+      "title": "Maintenance Schedule Tracker",
+      "slug": "maintenance-schedule-tracker",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Tracker",
+      "description": "A practical tracker for small business owners, operators and team leads. Use maintenance schedule tracker to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/maintenance-schedule-tracker.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Tracker",
+        "Maintenance"
+      ]
+    },
+    {
+      "id": "CP-193",
+      "title": "Equipment Asset Register",
+      "slug": "equipment-asset-register",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Tracker",
+      "description": "A practical tracker for small business owners, operators and team leads. Use equipment asset register to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/equipment-asset-register.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Tracker",
+        "Equipment"
+      ]
+    },
+    {
+      "id": "CP-194",
+      "title": "Supplier Order Planner",
+      "slug": "supplier-order-planner",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Planner",
+      "description": "A practical planner for small business owners, operators and team leads. Use supplier order planner to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/supplier-order-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Planner",
+        "Supplier"
+      ]
+    },
+    {
+      "id": "CP-195",
+      "title": "Quality Control Checklist",
+      "slug": "quality-control-checklist",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Template kit",
+      "description": "A practical template kit for small business owners, operators and team leads. Use quality control checklist to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/quality-control-checklist.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Template kit",
+        "Quality"
+      ]
+    },
+    {
+      "id": "CP-196",
+      "title": "Safety Meeting Notes Pack",
+      "slug": "safety-meeting-notes-pack",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Workbook",
+      "description": "A practical workbook for small business owners, operators and team leads. Use safety meeting notes pack to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/safety-meeting-notes-pack.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Workbook",
+        "Safety"
+      ]
+    },
+    {
+      "id": "CP-197",
+      "title": "Business Travel Expense Planner",
+      "slug": "business-travel-expense-planner",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Planner",
+      "description": "A practical planner for small business owners, operators and team leads. Use business travel expense planner to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/business-travel-expense-planner.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Planner",
+        "Business"
+      ]
+    },
+    {
+      "id": "CP-198",
+      "title": "Employee Onboarding Workbook",
+      "slug": "employee-onboarding-workbook",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Workbook",
+      "description": "A practical workbook for small business owners, operators and team leads. Use employee onboarding workbook to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/employee-onboarding-workbook.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Workbook",
+        "Employee"
+      ]
+    },
+    {
+      "id": "CP-199",
+      "title": "Team Training Plan",
+      "slug": "team-training-plan",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Workbook",
+      "description": "A practical workbook for small business owners, operators and team leads. Use team training plan to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/team-training-plan.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Workbook",
+        "Team"
+      ]
+    },
+    {
+      "id": "CP-200",
+      "title": "Annual Compliance Calendar",
+      "slug": "annual-compliance-calendar",
+      "category": "Small Business Operations",
+      "categoryKey": "operations",
+      "format": "Planner",
+      "description": "A practical planner for small business owners, operators and team leads. Use annual compliance calendar to make recurring work easier to hand over, check and improve with clear records and ownership, with guided prompts, reusable working pages and a simple review rhythm.",
+      "priceLabel": "Free launch download",
+      "file": "/downloads/products/annual-compliance-calendar.pdf",
+      "pages": 6,
+      "featured": false,
+      "tags": [
+        "Small Business Operations",
+        "Planner",
+        "Annual"
+      ]
+    }
+  ]
+}
