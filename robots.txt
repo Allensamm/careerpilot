@@ -1,9 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /dashboard
-Disallow: /admin
-Disallow: /assessment
-Disallow: /assessment-confirmation
-Disallow: /api/
-
 Sitemap: https://careerpilot-inky.vercel.app/sitemap.xml
